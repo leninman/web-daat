@@ -1,155 +1,154 @@
-*{
-
-  height:100%;  
+* {
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box
-  
-
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
-#cintillo_, #logo_{
+#imgEquipo1 {
+  position: absolute;
+  right: 11%;
+  top: 19%;
+}
 
+#imgEquipo1 img {
+  width: 100%;
+  height: 75%;
+}
+
+#imgEquipo2 {
+  position: absolute;
+  right: 1%;
+  top: 24.3%;
+}
+
+
+#imgEquipo2 img {
+  width: 100%;
+  height: 75%;
+}
+
+#cintillo_,
+#logo_ {
   display: none;
 }
 
-#cintillo, #cintillo_ {
+#cintillo,
+#cintillo_ {
+  width: 100%;
+  height: 70px;
+}
 
-  width:100%; 
+.logoDiv{
+
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+#logo,
+#cintillo {
+  position: absolute;
+  top: 0px;
+  z-index: 100;
+  
+}
+
+#logo,
+#logo_ {
   height:70px;
-  
-
+  width: 70px;
 }
-
-
-#logo, #cintillo {
-
-  position:absolute;
-  top:0px;
-  z-index: 100; 
-  
-}
-
-
-#logo, #logo_{
-
-  margin-left:47.5%;
-}
-
 
 .logo-fixed {
-
-     position:fixed;  
-     top: 0;
-     z-index: 1000
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
-
   width: 100%;
-  height:70px;  
+  height: 70px;
   position: absolute;
-  top:70px;
-  z-index:100
-  
-
+  top: 70px;
+  z-index: 100;
 }
 
 .listMenu {
-
   display: flex;
   flex-direction: row;
   padding-left: 0px;
-  margin-bottom: 0px; 
-  justify-content: center
-
+  margin-bottom: 0px;
+  justify-content: center;
 }
 
 .menu-fixed {
-
   position: fixed;
   z-index: 1000;
   top: 70px;
-
 }
 
-
 #stickyMenu {
-
   display: none;
 }
 
 #mainMenu ul,
 #stickyMenu ul {
-
-
-    list-style: none;
-   /* background: white;*/
-   /*border-bottom: 1px solid  #595959;*/
-
+  list-style: none;
+  
 }
 
-
-
 #mainMenu ul li a:hover,
-#stickyMenu ul li a:hover{
-
-    font-size: 16px;
-    cursor: pointer;
-    
+#stickyMenu ul li a:hover {
+  font-size: 19px;
+  cursor: pointer;
 }
 
 #mainMenu ul li a:hover::after,
-#stickyMenu ul li a:hover::after{
-    
-    content: '';
-    display: inline-block;
-    width: 100px; /* Ajusta el ancho */
-    height: 5px; /* Ajusta la altura */
-    margin-top: 10px;
-    margin-left: 10px; /* Espacio entre el texto y la imagen */
-   /* sbackground-image: url('../img/linea_gris.png');*/
-    background-image: var(--hover-image); /* Imagen dinámica según la variable */
-    background-size: contain; /* Hace que la imagen se ajuste al tamaño del contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */ 
-
+#stickyMenu ul li a:hover::after {
+  content: "";
+  display: inline-block;
+  width: 110px;  
+  height: 5px; 
+  margin-top: 10px;
+  /*margin-left: 10px;  */
+  background-image: var(--hover-image); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  
 }
 
-#mainMenu ul li a::after, 
+#mainMenu ul li a::after,
 #stickyMenu ul li a::after {
-    --hover-image: url('../img/linea_blanca.png'); /* Imagen inicial */
+  --hover-image: url("../img/linea_blanca.png");
+
 }
-
-
 
 #mainMenu ul li,
 #stickyMenu ul li {
-
-    width: 10%;
-
+  min-width: 180px;
+  max-width: 180px;
+  width: auto;
 }
 
 #mainMenu ul li a {
-
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    padding-top: 12%;
-    padding-bottom: 55px;
-    font-size: 15px;
-
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 12%;
+  padding-bottom: 55px;
+  font-size: 18px;
 }
 
 #stickyMenu ul li a {
-
   display: block;
   text-decoration: none;
   color: #595959;
@@ -159,540 +158,5003 @@ nav {
   text-align: center;
   padding-top: 12%;
   padding-bottom: 55px;
-  font-size: 15px;
-  
-
+  font-size: 18px;
 }
 
-
 #mainMenu ul li a span {
-
-  /*border: 1px solid white;*/
+ 
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 5%;
   padding-bottom: 5%;
-  /*font-size: 19px;
-  font-weight: bold;
-  border-radius: 7px;*/
-
+ 
 }
 
 #stickyMenu ul li a span {
 
-  /*border: 1px solid white;*/
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 5%;
   padding-bottom: 5%;
-  /*font-size: 19px;
-  font-weight: bold;
-  border-radius: 7px;
-  color: white;*/
-
+  
 }
-
 
 #stickyMenu .listMenu {
-
   opacity: 0.8;
-  height:55px
+  height: 55px;
 }
 
 
-
-
-/*#img1 {
-
-    max-height:100%;
-    background-image: url('img/fondoAzul_1.png');
-    background-size: cover;
-    background-repeat: no-repeat; 
-   
+#imgEquipo1 {
+  display: none;
 }
 
-#equipo1{
+#imgEquipo2 {
+  display: none;
+}
 
+#tituloNosotros,
+#tituloServicios {
+  /*max-height: 7%;*/
+  margin-top: 10%;
+  /*margin-left: 3.5%;*/
+  height:auto;
+  border: 1px solid blue;
+  text-align: center;
+}
+
+#tituloNosotros div, #tituloServicios div{
+  word-wrap: break-word;
+  height: auto;
+}
+
+#tituloNosotros h1,
+#tituloServicios h1 {
+  font-weight: lighter;
+  font-size: 50px;
+  color: #595959;
+}
+
+.tituloServ {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #595959;
+  margin-top: 45px;
+
+  flex: 1;
+  margin-top: 20px;
+  height: auto;
+  width: unset;
+  min-width: 30%;
   max-width: 80%;
-  max-height: 80%;
-  margin-left: 43%;
-  margin-top: 7%;
+  box-sizing: border-box;
+  background-color: lightblue;
+  word-wrap: break-word;
+}
+
+#contenedorServ{
+
+  height: auto;
 
 }
 
-#img2 {
-
-  max-height:100%;
-  background-image: url('img/fondoAzul_2.png');
-  background-size: cover;
-  background-repeat: no-repeat; 
-  
+.parrafoServ, .parrafoDesa, #nosotros {
+  height: auto;
+  border: 1px solid red;
+  top: 0%;
+  position: unset;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
+  max-height: unset;
 }
-
-#equipo2{
-
-  max-width: 80%;
-  max-height: 80%;
-  margin-left: 35%;
-  margin-top: 10.1%;
-
-}
-
-#img3 {
-
-  max-height:100%;
-  background-image: url('img/responsive.png');
-  background-size: cover;
-  background-repeat: no-repeat; 
-  
-  
-}
-
-#img4 {
-
-  max-height:100%;
-  background-image: url('img/tecnología.png');
-  background-size: cover;
-  background-repeat: no-repeat; 
-  
-}
-
-#img5 {
-
-  max-height:100%;
-  background-image: url('img/consultoría.png');
-  background-size: cover;
-  background-repeat: no-repeat;  
-  display:none
-}*/
-
-#imgEquipo1{
-
-  display:none;
-  
-}
-
-#imgEquipo2{
-
-display:none;  
-
-
-}
-
-
-#tituloNosotros, #tituloServicios{
-
-  max-height: 7%;
-  margin-top: 10%; 
-  margin-left: 3.5%;    
-  text-align: center;  
- 
-}
-
-
-#tituloNosotros h1, #tituloServicios h1{
-
- font-weight: lighter;
- font-size: 50px;
- color: #595959;
- 
-}
-
-
-.tituloServ{
-
-  font-size:24px; 
-  font-weight: lighter; 
-  color:#595959; 
-  margin-top:45px
-
-}
-
 
 .parrafoDesa {
-
-  padding: 0 20% 0 20%  
-
+  padding: 0 20% 0 20%;
 }
 
-#nosotros{
-
+#nosotros {
   display: flex;
-  justify-content: space-between;  
+ /* justify-content: space-between;*/
   margin-top: 10%;
-  max-height: 50%;
-  
+ /* max-height: 50%;*/
+  border:1px solid red;
+  height: auto;
+  word-wrap: break-word;
 }
 
-#desarrollos{
+.item .titulosPrimarios{
 
-  padding-top:3%;
   display: flex;
-  max-height: 50%;
-  position:absolute; 
-  top:45%
+  background-color: pink;
+   max-width: 100%;   
+  justify-content: center;
+}
+
+.titulosPrimarios h2{
+
+  flex: 1;
+}
+
+#nosotros div{
+
+  flex: 1;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+
+#desarrollos {
+  padding-top: 3%;
+  display: flex;
+
+  /*max-height: 50%;
+  position: absolute;
+  top: 45%;*/
+}
+
+.container {
+  height: auto;       
+  min-width: 50%;
+  box-sizing: border-box;
 
 }
 
-.container{
-
-  width: 270%;
+#divCentral div {
+  height: 80%;
 }
 
-#imgCentral{
- 
-  Width:100%; 
-  height:620px;
+#imgCintilloCentral {
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  position: absolute;
+}
+
+#imgCentral {
+  z-index: 200;
+  position: absolute;
+  height: 80%;
+  right: 25%;
+}
+
+#dudasComentarios {
+  height: auto;
+  text-align: center;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #595959;
+  word-wrap: break-word;
+}
+
+#contactanos div {
+  width: 100%;
+  display: flex;
   
-
 }
 
-#dudasComentarios{
-   
-  max-height:5%; 
-  text-align:center;
-  font-size: 28px; 
-  font-weight: lighter; 
-  color: #595959
-
+#contactanos {
+  position: relative;
 }
 
-#contactanos{
-
-  position:relative
-
-}
-
-#linea{
-
-  max-width:5%;
-  max-Height:5%
+#linea {
+  max-width: 5%;
+  max-height: 5%;
 }
 
 #nosotros p {
-
   margin: 90px 6% 6% 6%;
   color: #747474;
-  font-size: 23px;  
-
-} 
-
-
-#desarrollos p{
-
- 
-  margin-top:90px;
-  color: #747474;
-  font-size: 21px;
-  max-height: 65%;  
-  
+  font-size: 23px;
 }
 
-#nosotros .item{
-  
-  height: 9%;
-  color: #595959;  
+#desarrollos p {
+  margin-top: 90px;
+  color: #747474;
+  font-size: 21px;
+  max-height: 65%;
+}
+
+#nosotros .item {
+
+    
+  color: #595959;
   font-size: 20px;
   text-align: center;
 }
 
-
-
-#desarrollos .item{
-
-  
+#desarrollos .item {
   color: #595959;
   font-size: 17px;
-  margin-top: 5px;
- 
+  margin-top: 5px; 
+  flex: 1;
+  margin-top: 0px;
+  width: unset;
+  min-width: 30%;
+  max-width: 80%;
+  box-sizing: border-box;
+  background-color: lightblue;
+  word-wrap: break-word;
 
 }
 
 #desarrollos h2 {
-
   margin: 20px;
 }
 
-.icono_titulo{
-
-  display:flex; 
-  max-height: 5%;
+.icono_titulo {
+  display: flex;
+  height: auto;
   justify-content: center;
-
 }
 
-
 .servicios_ div p {
-
   margin: 80px 15% 6% 6%;
   color: #747474;
   font-size: 24px;
-  max-height: 130px; 
+  /*max-height: 130px;*/
 }
 
-.servicios_{
-
-  display:flex; 
-  max-height:60%; 
-  position:relative
-
+.servicios_ {
+  /*display: flex;
+  max-height: 60%;
+  position: relative;*/
 }
 
 #idServicios_ {
-
-  background:#FBFCFC; 
-  border: 1px solid #F2F2F2
-
+  background: #fbfcfc;
+  border: 1px solid #f2f2f2;
 }
 
-
-.figGeometricas{
-
-  width:410px; 
-  height:450px; 
-  position:absolute; 
-  right:0
+.figGeometricas {
+  width: 410px;
+  height: 450px;
+  position: absolute;
+  right: 0;
 }
 
-
-
-#cuadro{
-
-  position:relative; 
-  height: 115%;
-  background:#FBFCFC; 
-  border: 1px solid #F2F2F2; 
-  margin-top:10%
-
+#cuadro {
+  position: relative;
+  /*height: 115%;-*/
+  height:auto;
+  background: #fbfcfc;
+  border: 1px solid #f2f2f2;
+  margin-top: 10%;
 }
 
-
-#iconoLaptop{
-
-  width:75px; 
-  height:60px;
-  
+#iconoLaptop {
+  width: 75px;
+  height: 60px;
 }
 
-#iconoMovil{
-
-  width:35px; 
-  height:65px;
-
+#iconoMovil {
+  width: 35px;
+  height: 65px;
 }
 
-
-#iconoFabrica{
-
-  width:125px; 
-  height:120px;
-  top:0px 
-
-
+#iconoFabrica {
+  width: 125px;
+  height: 120px;
+  top: 0px;
 }
 
-
-#iconoConsultoria{
- 
-  width:120px; 
-  height:120px;
-  top:0px
-
+#iconoConsultoria {
+  width: 120px;
+  height: 120px;
+  top: 0px;
 }
 
-#iconoGerencia{
-
-  width:150px; 
-  height:120px;
-  top:0px
-
+#iconoGerencia {
+  width: 150px;
+  height: 120px;
+  top: 0px;
 }
 
-#iconoTalento{  
-  width:130px; 
-  height:120px;
-  top:0px 
+#iconoTalento {
+  width: 130px;
+  height: 120px;
+  top: 0px;
 }
 
-
-.iconoTitServ_{
-  display: flex; 
-  margin-left:6%;
+.iconoTitServ_ {
+  display: flex;
+  margin-left: 6%;
   margin-top: 4%;
 }
 
-
-.parrafoServ{
-  position:absolute; 
-  top:130px
+#contactanos {
+  /*display: flex;
+  max-height: 100%;*/
+  height: auto;
 }
 
-#contactanos{
-
-  display:flex;
-  max-height: 100%
-
+#imgContactanos {
+  height: 500px;
+  width: 750px;
+  /*position: absolute;*/
+  bottom: 10%;
 }
 
-#imgContactanos{
-
-  height:500px; 
-  width:750px; 
-  position:absolute; 
-  bottom:10%
-
+#footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f8;
+  /*max-height: 60%;*/
+  height:auto;
+  border: 1px solid #d1d1d1;
+  border-bottom: none;
 }
 
-#footer{
-
-  display:flex; 
-  justify-content:space-between; 
-  background-color:#F7F7F8; 
-  max-height:60%; 
-  border: 1px solid #D1D1D1; 
-  border-bottom:none
-
-}
-
-#footer div{
-
-  height:12%;
+#footer div {
+  /*height: 12%;*/
   margin-top: 6%;
-
+  max-width: 25%;
 }
 
-#footer div ul{
-
+#footer div ul {
   padding: 0 5% 0 5%;
   list-style-type: none;
 }
 
-#footer div ul li{
+#footer li{
 
-  color: #595959;
-  font-size: 16px;
-  padding: 25px 0 20px 0;  
+  word-wrap: break-word;
 }
 
-#footer div h2{
- 
+#footer div ul li {
+  color: #595959;
+  font-size: 16px;
+  padding: 25px 0 20px 0;
+  height: auto;
+
+}
+
+#footer div h2 {
   color: #595959;
   font-weight: lighter;
   padding-left: 5%;
+  word-wrap:break-word;
 }
 
-#footerServicios, #footerTecnologia{
-
-  width: 25%
+#footerServicios,
+#footerTecnologia {
+  /*width: 25%;*/
 }
 
-#footerHumanTalent{
-
-  width:40%
+#footerHumanTalent {
+  /*width: 40%;*/
 }
 
-#poweredBy{
-
-  max-height:3%; 
-  text-align:center; 
-  font-size: 12px; 
-  background-color:#F7F7F8;
+#poweredBy {
+  max-height: 3%;
+  text-align: center;
+  font-size: 12px;
+  background-color: #f7f7f8;
   color: #595959;
-  border:1px solid #D1D1D1;
+  border: 1px solid #d1d1d1;
   border-top: none;
-
-}
-
-/*  */
-
-ul,ol{
-	list-style: none;
-}
-
-.slideshow{
-	width: 100%;
-	position: relative;
-  
-}
-
-.slider li, ul{
-	width: 100%;
-}
-
-.slider li{
-	overflow: hidden;
-}
-
-.slider li img{
-	width: 100%;
 }
 
 
-.pagination{
-	position: absolute;
-	top: 95%;
-	width: 100%;
-  height:20px;
-	display: flex;
-	justify-content: center;
+ul,
+ol {
+  list-style: none;
+}
+
+.slideshow {
+  width: 100%;
+  position: relative;
+  height:auto;
+}
+
+.slider li,
+ul {
+  width: 100%;
+}
+
+.slider li {
+  overflow: hidden;
+}
+
+.slider li img {
+  width: 100%;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
   z-index: 100;
 }
 
-.pagination li{
+.pagination li {
+  font-size: 13px;
+  margin: 2px 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
 
-	font-size: 13px;
-	margin: 2px 5px;
-  color: #FFFFFF;
-	cursor: pointer;
+.left,
+.right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px) and (orientation: landscape) {
+  body {
+    background-color:chartreuse;
+    
+  }
+
+  #cintillo,
+  #cintillo_ {
+    width: 100%;
+    height: 90px;
+
+  }
+
+  .logoDiv{
+
+    display:flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  #logo_, #logo {
+
+    
+    margin-left:0%;
+    width:90px;
+    height:90px
+  }
+
+  nav{
+
+    top:60px
+  }
+
+  #imgEquipo1 {
+
+    top: 22%;
+    right:5%
+  }
+
+  #imgEquipo2 {
+
+    top: 35%
+  }
+
+  #imgEquipo1 img{
+    width: 100%;
+    height:60%
+  }
   
-	
+  #imgEquipo2 img {
+    width: 100%;
+    height: 65%;
+  }
+
+  .slideshow {
+    height: auto;
+  }
+
+  .menu-fixed{
+
+    top:59px;
+  }
+
+  #mainMenu {
+    width: 100%;
+  }
+
+  #mainMenu .listMenu{
+    margin-top: 30px;
+
+  }
+
+  #stickyMenu .listMenu {
+
+    height:80px;
+    margin-top:30px
+  }
+
+  #mainMenu ul li,
+  #stickyMenu ul li {
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  #stickyMenu ul li a, #mainMenu ul li a { 
+
+    width: 200px;
+    font-size: 25px;
+
+  }
+  
+
+  #mainMenu ul li a:hover::after,
+  #stickyMenu ul li a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 120px;
+    /* Ajusta el ancho */
+    height: 5px;
+    /* Ajusta la altura */
+    margin-top: 10px;
+    margin-left: 0px;
+    /* Espacio entre el texto y la imagen */
+    /* sbackground-image: url('../img/linea_gris.png');*/
+    background-image: var(--hover-image);
+    /* Imagen dinámica según la variable */
+    background-size: contain;
+    /* Hace que la imagen se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+  }
+
+
+  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+    font-size: 26px;
+    cursor: pointer;
 }
 
-.left, .right{
-	position: absolute;
-	top: 0;
-	height: 100%;
+  .listMenu {
+    justify-content: center;
+  }
 
-	display: flex;
-	align-items: center;
+  .item div, #nosotros div{
 
-	color: #fff;
-	font-size: 35px;
-	cursor: pointer;
-	z-index: 2;
-}
+    height:auto;
+    max-width: 100%;
+  }
+ 
+  .item h2 {
+    margin-top: 50px;
+    font-size: 25px;
+  }
 
-.left{
-	left: 10px;
-}
+  #tituloNosotros,
+  #tituloServicios {
+    height: auto;
+    border: 1px solid blue;
+    margin-left: 0%;
+  }  
 
-.right{
-	right: 10px;
-}
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    word-wrap: break-word;
+  }  
 
 
-@media screen and (max-width: 1200px){
-	/*.slider .caption p{
-		display: none;
-	}
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 31px;
+  }  
 
-	.slider .caption h1{
-		font-size: 35px;
-	}
+  #nosotros p {
+    font-size: 25px;
+    margin-top: 50px;
+  }
 
-	.left, .right{
-		font-size: 30px;
-	}*/
+  #cuadro {
 
-	.slider li img{
-		width: 1200px;
-	}
+    background-color: aqua;
+    height: unset;
+    height: auto;
+  }
 
-	/*.pagination{
-		display: none
-	}*/
+  .figGeometricas {
+    width: 210px;
+    height: 220px;
+    position: absolute;
+    right: 0;
+  }
 
-}
+  #nosotros{
 
+    display: flex;
+  
+    justify-content: unset;
+  }
+
+
+  #nosotros div{
+    flex: 1;       
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    word-wrap: break-word;
+  }
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    height:auto;
+    border:1px solid red;
+    top:0%;
+    position: unset;
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    max-height: unset;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+  .tituloServ {   
+
+        flex: 1;
+        margin-top: 20px;
+        height: auto;
+        width: unset;
+        min-width: 50%;
+        box-sizing: border-box;
+        background-color: lightblue;
+        word-wrap: break-word;
+  }
+
+  .tituloServ h2 {
+    font-size: 27px;
+  }
+
+  .servicios_ {
+    max-height: unset;
+    display: block;
+    position: unset;
+    height: auto;
+  }
+
+  #contenedorServ{
+
+    height:auto;
+    background-color: bisque;
+
+  }
+
+  .servicios_ div p {
+    margin: 20px 10% 6% 6%;
+  }
+
+  .servicios_ div p,
+  #desarrollos p {
+
+    font-size: 25px;    
+    max-height: unset;
+  }
+
+  #nosotros div .item {
+    border: 1px solid black;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  #iconoLaptop {
+    width: 50px;
+    height: 50px;
+  }
+
+  #iconoMovil {
+    width: 30px;
+    height: 55px;
+  }
+
+  #desarrollos{
+
+    max-height: unset;
+    position: unset;
+  }
+
+  #desarrollos p{
+
+    margin-top:30px;
+  }
+
+  #desarrollos .item {
+    flex:1;
+    margin-top: 0px; 
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    background-color: lightblue;
+    word-wrap: break-word;
+    
+  }
 
   
+  .container{
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    background-color: burlywood;
+    
+  }
+
+  .icono_titulo{
+    height: auto;
+    max-height: unset;
+  }
+
+  .parrafoDesa {
+      padding: 0 5% 0 5%;
+  }
+
+  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+    width: 120px;
+    height: 120px;
+    top: 0px;
+  }  
+
+  #divCentral {
+    height: 65%;
+  }
+
+  #divCentral div {
+    height: 100%;
+  }
+
+
+  #imgCintilloCentral {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 65%;
+    left: 50%;
+  }
+
+  #contactanos {
+    height: 45%;
+  }
+
+  #contactanos div {
+    width: 100%;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    top: 2%;
+    bottom: 0px;
+  }
+
+  #dudasComentarios {
+   
+      margin-top: 20px;
+      height: auto;
+      width: unset;
+      max-height: unset;     
+      background-color: lightblue;
+      word-wrap: break-word;
+  }
+
+  #dudasComentarios h2 {
+
+    font-size: 27px;
+
+  }
+
+  #footer div {
+
+    max-width: 25%;
+  
+  }
+
+  #footer div h2{
+
+    font-size: 24px;
+    text-align: center;
+    height: auto;
+  }
+
+  #footer div ul li{
+
+    font-size: 23px;
+    text-align: center;
+    height: auto;
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer {
+    max-height: unset;
+    height: auto
+  }
+
+ 
+  
+  #poweredBy {
+
+    font-size: 14px;
+    max-height: 5%;
+    border: unset
+  }
+}
+
+
+@media only screen and (min-width:1024px) and (max-width: 1300px) and (orientation: landscape) {
+  body {
+    background-color:blanchedalmond;
+    
+  }
+
+  #cintillo,
+  #cintillo_ {
+    width: 100%;
+    height: 90px;
+
+  }
+
+  .logoDiv{
+
+    display:flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  #logo_, #logo {
+
+    
+    margin-left:0%;
+    width:90px;
+    height:90px
+  }
+
+  nav{
+
+    top:60px
+  }
+
+  #imgEquipo1 {
+
+    top: 30%;
+    right: 1%;
+  }
+
+  #imgEquipo2 {
+
+    top: 34.3%
+  }
+
+
+  #imgEquipo1 img,
+  #imgEquipo2 img {
+    width: 100%;
+    height: 65%;
+  }
+
+  .slideshow {
+    height: auto;
+  }
+
+  .menu-fixed{
+
+    top:59px;
+  }
+
+  #mainMenu {
+    width: 100%;
+  }
+
+  #mainMenu ul, #stickyMenu{
+    margin-top:30px;
+  }
+
+  #mainMenu ul li,
+  #stickyMenu ul li {
+    min-width: 180px;
+    max-width: 180px;
+  }
+
+  #mainMenu ul li a:hover::after,
+  #stickyMenu ul li a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 130px;
+    /* Ajusta el ancho */
+    height: 5px;
+    /* Ajusta la altura */
+    margin-top: 10px;
+    margin-left: 0px;
+    /* Espacio entre el texto y la imagen */
+    /* sbackground-image: url('../img/linea_gris.png');*/
+    background-image: var(--hover-image);
+    /* Imagen dinámica según la variable */
+    background-size: contain;
+    /* Hace que la imagen se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+
+  
+  }
+
+  #mainMenu ul li a, #stickyMenu ul li a {
+
+    font-size: 18px;
+    width:180px;
+  }
+
+  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+
+  #stickyMenu .listMenu {
+    justify-content: center;
+    height: 60px;
+  }
+
+  .item div, #nosotros div{
+
+    height:auto;
+    max-width: 100%;
+  }
+ 
+  .item h2 {
+    margin-top: 50px;
+    font-size: 23px;
+  }
+
+  #tituloNosotros,
+  #tituloServicios {
+    height: auto;
+    border: 1px solid blue;
+    margin-left: 0%;
+  }  
+
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    word-wrap: break-word;
+  }  
+
+
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 29px;
+  }  
+
+  #nosotros p {
+    font-size: 23px;
+    margin-top: 50px;
+  }
+
+  #cuadro {
+
+    background-color: aqua;
+    height: unset;
+    height: auto;
+  }
+
+  .figGeometricas {
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    right: 0;
+  }
+
+  #nosotros{
+
+    display: flex;
+  
+    justify-content: unset;
+  }
+
+
+  #nosotros div{
+    flex: 1;       
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    word-wrap: break-word;
+  }
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    height:auto;
+    border:1px solid red;
+    top:0%;
+    position: unset;
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    max-height: unset;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+  .tituloServ {   
+
+        flex: 1;
+        margin-top: 20px;
+        height: auto;
+        width: unset;
+        min-width: 50%;
+        box-sizing: border-box;
+        background-color: lightblue;
+        word-wrap: break-word;
+  }
+
+  .tituloServ h2 {
+    font-size: 25px;
+  }
+
+  .servicios_ {
+    max-height: unset;
+    display: block;
+    position: unset;
+    height: auto;
+  }
+
+  #contenedorServ{
+
+    height:auto;
+    background-color: bisque;
+
+  }
+
+  .servicios_ div p {
+    margin: 20px 10% 6% 6%;
+  }
+
+  .servicios_ div p,
+  #desarrollos p {
+
+    font-size: 23px;    
+    max-height: unset;
+  }
+
+  #nosotros div .item {
+    border: 1px solid black;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  #iconoLaptop {
+    width: 50px;
+    height: 50px;
+  }
+
+  #iconoMovil {
+    width: 30px;
+    height: 55px;
+  }
+
+  #desarrollos{
+
+    max-height: unset;
+    position: unset;
+  }
+
+  #desarrollos p{
+
+    margin-top:30px;
+  }
+
+  #desarrollos .item {
+    flex:1;
+    margin-top: 0px; 
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    background-color: lightblue;
+    word-wrap: break-word;
+    
+  }
+
+  .container{
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    background-color: burlywood;
+    
+  }
+
+  .icono_titulo{
+    height: auto;
+    max-height: unset;
+  }
+
+  .parrafoDesa {
+      padding: 0 5% 0 5%;
+  }
+
+  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+    width: 125px;
+    height: 120px;
+    top: 0px;
+  }  
+
+  #divCentral {
+    height: 65%;
+  }
+
+  #divCentral div {
+    height: 100%;
+  }
+
+
+  #imgCintilloCentral {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 65%;
+    left: 50%;
+  }
+
+  #contactanos {
+    height: 50%;
+  }
+
+  #contactanos div {
+    width: 100%;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    top: 2%;
+    bottom: 0px;
+  }
+
+  #dudasComentarios {
+   
+      margin-top: 20px;
+      height: auto;
+      width: unset;
+      max-height: unset;     
+      background-color: lightblue;
+      word-wrap: break-word;
+  }
+
+  #dudasComentarios h2 {
+
+    font-size: 25px;
+
+  }
+
+  #footer div {
+
+    max-width: 25%;
+  
+  }
+
+  #footer div h2{
+
+    font-size: 22px;
+    text-align: center;
+    height: auto;
+  }
+
+  #footer div ul li{
+
+    font-size: 21px;
+    text-align: center;
+    height: auto;
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer {
+    max-height: unset;
+    height: auto
+  }
+
+ 
+  
+  #poweredBy {
+
+    font-size: 16px;
+    max-height: 5%;
+    border: unset
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    background-color:darkcyan;
+    
+  }
+
+  #cintillo,
+  #cintillo_ {
+    width: 100%;
+    height: 80px;
+
+  }
+
+  .logoDiv{
+
+    display:flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  #logo_, #logo {
+
+    
+    margin-left:0%;
+    width:80px;
+    height:80px
+  }
+
+  nav, .menu-fixed {
+
+    top:80px
+  }
+
+  #imgEquipo1 {
+
+    top: 30%;
+    right:5%;
+    /*height: auto;*/
+  }
+
+  #imgEquipo2 {
+
+    top: 35%
+  }
+
+
+  #imgEquipo1 img,
+  #imgEquipo2 img {
+    width: 100%;   
+    max-height: 65%;
+  
+  }
+
+  .slideshow {
+    height: 500px;
+  }
+
+ 
+  #mainMenu {
+    width: 100%;
+  }
+
+  #mainMenu ul li,
+  #stickyMenu ul li {
+    min-width: 130px;
+    max-width: 130px;
+    /*min-width: 17%;
+    max-width: 17%;*/
+  }
+
+  #mainMenu ul li a,
+  #stickyMenu ul li a{
+    font-size: 15px;
+    width: 130px;
+  }
+
+  #stickyMenu .listMenu {
+    opacity: 0.8;
+    height: 55px;
+}
+
+  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+    font-size: 16px;
+    cursor: pointer;
+  }  
+
+  #mainMenu ul li a:hover::after,
+  #stickyMenu ul li a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 85px;
+    /* Ajusta el ancho */
+    height: 10px;
+    /* Ajusta la altura */
+    margin-top: 10px;
+    margin-left: 0px;
+    /* Espacio entre el texto y la imagen */
+    /* sbackground-image: url('../img/linea_gris.png');*/
+    background-image: var(--hover-image);
+    /* Imagen dinámica según la variable */
+    background-size: contain;
+    /* Hace que la imagen se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+   
+  }
+
+  
+  #mainMenu ul, #stickyMenu {
+    margin-top: 0px;
+
+  }
+
+  .listMenu {
+    justify-content: center;
+  }
+
+  .item div, #nosotros div{
+
+    height:auto;
+    max-width: 100%;
+  }
+ 
+  .item h2 {
+    margin-top: 50px;
+    font-size: 19px;
+  }
+
+  #tituloNosotros,
+  #tituloServicios {
+    height: auto;
+    border: 1px solid blue;
+    margin-left: 0%;
+  }  
+
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    word-wrap: break-word;
+  }  
+
+
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 24px;
+  }  
+
+  #nosotros p {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  #cuadro {
+
+    background-color: aqua;
+    height: unset;
+    height: auto;
+  }
+
+  .figGeometricas {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    right: 0;
+  }
+
+  #nosotros{
+
+    display: flex;
+  
+    justify-content: unset;
+  }
+
+
+  #nosotros div{
+    flex: 1;       
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    word-wrap: break-word;
+  }
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    height:auto;
+    border:1px solid red;
+    top:0%;
+    position: unset;
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    max-height: unset;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+  .tituloServ {   
+
+        flex: 1;
+        margin-top: 35px;
+        height: auto;
+        width: unset;
+        min-width: 50%;
+        box-sizing: border-box;
+        background-color: lightblue;
+        word-wrap: break-word;
+  }
+
+  .tituloServ h2 {
+    font-size: 20px;
+  }
+
+  .servicios_ {
+    max-height: unset;
+    display: block;
+    position: unset;
+    height: auto;
+  }
+
+  #contenedorServ{
+
+    height:auto;
+    background-color: bisque;
+
+  }
+
+  .servicios_ div p {
+    margin: 20px 10% 6% 6%;
+  }
+
+  .servicios_ div p,
+  #desarrollos p {
+
+    font-size: 18px;    
+    max-height: unset;
+  }
+
+  #nosotros div .item {
+    border: 1px solid black;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  #iconoLaptop {
+    width: 50px;
+    height: 50px;
+  }
+
+  #iconoMovil {
+    width: 30px;
+    height: 55px;
+  }
+
+  #desarrollos{
+
+    max-height: unset;
+    position: unset;
+  }
+
+  #desarrollos p{
+
+    margin-top:30px;
+  }
+
+  #desarrollos .item {
+    flex:1;
+    margin-top: 0px; 
+    width: unset;
+    min-width: 30%;
+    max-width: 70%;
+    box-sizing: border-box;
+    background-color: lightblue;
+    word-wrap: break-word;
+    
+  }
+
+  .container{
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    background-color: burlywood;
+    
+  }
+
+  .icono_titulo{
+    height: auto;
+    max-height: unset;
+  }
+
+  .parrafoDesa {
+      padding: 0 5% 0 5%;
+  }
+
+  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+    width: 90px;
+    height: 80px;
+    top: 0px;
+  }  
+
+  #divCentral {
+    height: 65%;
+  }
+
+  #divCentral div {
+    height: 100%;
+  }
+
+
+  #imgCintilloCentral {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 65%;
+    left: 50%;
+  }
+
+  #contactanos {
+    height: 50%;
+  }
+
+  #contactanos div {
+    width: 100%;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    top: 2%;
+    bottom: 0px;
+  }
+
+  #dudasComentarios {
+   
+      margin-top: 20px;
+      height: auto;
+      width: unset;
+      max-height: unset;     
+      background-color: lightblue;
+      word-wrap: break-word;
+  }
+
+  #dudasComentarios h2 {
+
+    font-size: 20px;
+
+  }
+
+  #footer div {
+
+    max-width: 25%;
+  
+  }
+
+  #footer div h2{
+
+    font-size: 17px;
+    text-align: center;
+    height: auto;
+  }
+
+  #footer div ul li{
+
+    font-size: 16px;
+    text-align: center;
+    height: auto;
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer {
+    max-height: unset;
+    height: auto
+  }
+
+ 
+  
+  #poweredBy {
+
+    font-size: 14px;
+    max-height: 5%;
+    border: unset
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) and (orientation: landscape) {
+  body {
+    background-color:rgba(255, 166, 0, 0.681);
+    
+  }
+
+  #cintillo,
+  #cintillo_ {
+    width: 100%;
+    height: 60px;
+
+  }
+
+  .logoDiv{
+
+    display:flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  #logo_, #logo {
+
+    
+    margin-left:0%;
+    width:60px;
+    height:60px
+  }
+
+  nav, .menu-fixed {
+
+    top:58px
+  }
+
+  #imgEquipo1 {
+
+    top: 30%;
+    right: 5%;
+  }
+
+  #imgEquipo2 {
+
+    top: 35%
+  }
+
+
+  #imgEquipo1 img,
+  #imgEquipo2 img {
+    width: 100%;
+    height: 65%;
+  }
+
+  .slideshow {
+    height: 500px;
+  }
+
+ 
+  #mainMenu {
+    width: 100%;
+  }
+
+  #mainMenu ul li,
+  #stickyMenu ul li {
+    min-width: 130px;
+    max-width: 130px;
+    /*min-width: 17%;
+    max-width: 17%;*/
+  }
+
+  #mainMenu ul li a,
+  #stickyMenu ul li a{
+    font-size: 14px;
+  }
+
+  #stickyMenu .listMenu {
+    opacity: 0.8;
+    height: 55px;
+}
+
+  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+    font-size: 15px;
+    cursor: pointer;
+  }  
+
+  #mainMenu ul li a:hover::after,
+  #stickyMenu ul li a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    /* Ajusta el ancho */
+    height: 10px;
+    /* Ajusta la altura */
+    margin-top: 10px;
+    margin-left: 0px;
+    /* Espacio entre el texto y la imagen */
+    /* sbackground-image: url('../img/linea_gris.png');*/
+    background-image: var(--hover-image);
+    /* Imagen dinámica según la variable */
+    background-size: contain;
+    /* Hace que la imagen se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+  }
+
+ 
+  .listMenu {
+    justify-content: center;
+  }
+
+  .pagination li{
+
+    font-size:12px;
+  }
+
+  .item div, #nosotros div{
+
+    height:auto;
+    max-width: 100%;
+  }
+ 
+  .item h2 {
+    margin-top: 50px;
+    font-size: 15px;
+  }
+
+  #tituloNosotros,
+  #tituloServicios {
+    height: auto;
+    border: 1px solid blue;
+    margin-left: 0%;
+  }  
+
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    word-wrap: break-word;
+  }  
+
+
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 21px;
+  }  
+
+  #nosotros p {
+    font-size: 15px;
+    margin-top: 50px;
+  }
+
+  #cuadro {
+
+    background-color: aqua;
+    height: unset;
+    height: auto;
+  }
+
+  .figGeometricas {
+    width: 210px;
+    height: 220px;
+    position: absolute;
+    right: 0;
+  }
+
+  #nosotros{
+
+    display: flex;
+  
+    justify-content: unset;
+  }
+
+
+  #nosotros div{
+    flex: 1;       
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    word-wrap: break-word;
+  }
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    height:auto;
+    border:1px solid red;
+    top:0%;
+    position: unset;
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    max-height: unset;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+  .tituloServ {   
+
+        flex: 1;
+        margin-top: 35px;
+        height: auto;
+        width: unset;
+        min-width: 50%;
+        box-sizing: border-box;
+        background-color: lightblue;
+        word-wrap: break-word;
+  }
+
+  .tituloServ h2 {
+    font-size: 17px;
+  }
+
+  .servicios_ {
+    max-height: unset;
+    display: block;
+    position: unset;
+    height: auto;
+  }
+
+  #contenedorServ{
+
+    height:auto;
+    background-color: bisque;
+
+  }
+
+  .servicios_ div p {
+    margin: 20px 10% 6% 6%;
+  }
+
+  .servicios_ div p,
+  #desarrollos p {
+
+    font-size: 15px;    
+    max-height: unset;
+  }
+
+  #nosotros div .item {
+    border: 1px solid black;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  #iconoLaptop {
+    width: 50px;
+    height: 50px;
+  }
+
+  #iconoMovil {
+    width: 30px;
+    height: 55px;
+  }
+
+  #desarrollos{
+
+    max-height: unset;
+    position: unset;
+  }
+
+  #desarrollos p{
+
+    margin-top:30px;
+  }
+
+  #desarrollos .item {
+    flex:1;
+    margin-top: 0px; 
+    width: unset;
+    min-width: 30%;
+    max-width: 70%;
+    box-sizing: border-box;
+    background-color: lightblue;
+    word-wrap: break-word;
+    
+  }
+
+  .container{
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    background-color: burlywood;
+    
+  }
+
+  .icono_titulo{
+    height: auto;
+    max-height: unset;
+  }
+
+  .parrafoDesa {
+      padding: 0 5% 0 5%;
+  }
+
+  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+    width: 90px;
+    height: 80px;
+    top: 0px;
+  }  
+
+  #divCentral {
+    height: 65%;
+  }
+
+  #divCentral div {
+    height: 100%;
+  }
+
+
+  #imgCintilloCentral {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 65%;
+    left: 50%;
+  }
+
+  #contactanos {
+    height: 50%;
+  }
+
+  #contactanos div {
+    width: 100%;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    top: 2%;
+    bottom: 0px;
+  }
+
+  #dudasComentarios {
+   
+      margin-top: 20px;
+      height: auto;
+      width: unset;
+      max-height: unset;     
+      background-color: lightblue;
+      word-wrap: break-word;
+  }
+
+  #dudasComentarios h2 {
+
+    font-size: 17px;
+
+  }
+
+  #footer div {
+
+    max-width: 25%;
+  
+  }
+
+  #footer div h2{
+
+    font-size: 16px;
+    text-align: center;
+    height: auto;
+  }
+
+  #footer div ul li{
+
+    font-size: 15px;
+    text-align: center;
+    height: auto;
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer {
+    max-height: unset;
+    height: auto
+  }
+
+ 
+  
+  #poweredBy {
+
+    font-size: 14px;
+    max-height: 5%;
+    border: unset
+  }
+}
+
+
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+  body {
+    background-color: cornflowerblue;
+    
+  }
+
+  #cintillo,
+  #cintillo_ {
+    width: 100%;
+    height: 60px;
+
+  }
+
+  .logoDiv{
+
+    display:flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  #logo_, #logo {
+
+    
+    margin-left:0%;
+    width:60px;
+    height:60px
+  }
+
+  nav{
+
+    top:60px
+  }
+
+  .pagination li{
+
+    font-size: 11px;
+  }
+
+  #imgEquipo1 {
+
+    top: 30%;
+    right: 3%;
+  }
+
+  #imgEquipo2 {
+
+    top: 35%
+  }
+
+
+  #imgEquipo1 img,
+  #imgEquipo2 img {
+    width: 100%;
+    height: 65%;
+  }
+
+  .slideshow {
+    height: 100%;
+  }
+
+  .menu-fixed{
+
+    top:59px;
+  }
+
+  #mainMenu {
+    width: 100%;
+  }
+
+  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+    font-size: 15px;
+    cursor: pointer;
+  }  
+
+  #stickyMenu .listMenu {
+    opacity: 0.8;
+    height: 45px;
+}
+
+  #mainMenu ul li,
+  #stickyMenu ul li {
+    min-width: 100px;
+    max-width: 100px;
+    /*min-width: 17%;
+    max-width: 17%;*/
+  }
+
+  #mainMenu ul li a, #stickyMenu ul li a {
+    font-size: 14px;
+}
+
+  #mainMenu ul li a:hover::after,
+  #stickyMenu ul li a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 70px;
+    /* Ajusta el ancho */
+    height: 5px;
+    /* Ajusta la altura */
+    margin-top: 10px;
+    margin-left: 0px;
+    /* Espacio entre el texto y la imagen */
+    /* sbackground-image: url('../img/linea_gris.png');*/
+    background-image: var(--hover-image);
+    /* Imagen dinámica según la variable */
+    background-size: contain;
+    /* Hace que la imagen se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+  }
+
+  .listMenu {
+    justify-content: center;
+  }
+
+  .item div, #nosotros div{
+
+    height:auto;
+    max-width: 100%;
+  }
+ 
+  .item h2 {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  #tituloNosotros,
+  #tituloServicios {
+    height: auto;
+    border: 1px solid blue;
+    margin-left: 0%;
+  }  
+
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    word-wrap: break-word;
+  }  
+
+
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 21px;
+  }  
+
+  #nosotros p {
+    font-size: 15px;
+    margin-top: 50px;
+  }
+
+  #cuadro {
+
+    background-color: aqua;
+    height: unset;
+    height: auto;
+  }
+
+  .figGeometricas {
+    width: 210px;
+    height: 220px;
+    position: absolute;
+    right: 0;
+  }
+
+  #nosotros{
+
+    display: flex;
+  
+    justify-content: unset;
+  }
+
+
+  #nosotros div{
+    flex: 1;       
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    word-wrap: break-word;
+  }
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    height:auto;
+    border:1px solid red;
+    top:0%;
+    position: unset;
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    max-height: unset;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+  .tituloServ {   
+
+        flex: 1;
+        margin-top: 20px;
+        height: auto;
+        width: unset;
+        min-width: 30%;
+        max-width: 80%;
+        box-sizing: border-box;
+        background-color: lightblue;
+        word-wrap: break-word;
+  }
+
+  .tituloServ h2 {
+    font-size: 17px;
+  }
+
+  .servicios_ {
+    max-height: unset;
+    display: block;
+    position: unset;
+    height: auto;
+  }
+
+  #contenedorServ{
+
+    height:auto;
+    background-color: bisque;
+
+  }
+
+  .servicios_ div p {
+    margin: 20px 10% 6% 6%;
+  }
+
+  .servicios_ div p,
+  #desarrollos p {
+
+    font-size: 15px;    
+    max-height: unset;
+  }
+
+  #nosotros div .item {
+    border: 1px solid black;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  #iconoLaptop {
+    width: 40px;
+    height: 35px;
+  }
+
+  #iconoMovil {
+    width: 23px;
+    height: 45px;
+  }
+
+  #desarrollos{
+
+    max-height: unset;
+    position: unset;
+  }
+
+  #desarrollos p{
+
+    margin-top:30px;
+  }
+
+  #desarrollos .item {
+    flex:1;
+    margin-top: 0px; 
+    width: unset;
+    min-width: 30%;
+    max-width: 80%;
+    box-sizing: border-box;
+    background-color: lightblue;
+    word-wrap: break-word;
+    
+  }
+
+  .container{
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    background-color: burlywood;
+    
+  }
+
+  .icono_titulo{
+    height: auto;
+    max-height: unset;
+  }
+
+  .parrafoDesa {
+      padding: 0 5% 0 5%;
+  }
+
+  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+    width: 65px;
+    height: 60px;
+    top: 0px;
+  }  
+
+  #divCentral {
+    height: 65%;
+  }
+
+  #divCentral div {
+    height: 100%;
+  }
+
+
+  #imgCintilloCentral {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 65%;
+    left: 50%;
+  }
+
+  #contactanos {
+    height: 50%;
+  }
+
+  #contactanos div {
+    width: 100%;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    top: 2%;
+    bottom: 0px;
+  }
+
+  #dudasComentarios {
+   
+      margin-top: 20px;
+      height: auto;
+      width: unset;
+      max-height: unset;     
+      background-color: lightblue;
+      word-wrap: break-word;
+  }
+
+  #dudasComentarios h2 {
+
+    font-size: 17px;
+
+  }
+
+  #footer div {
+
+    max-width: 25%;
+  
+  }
+
+  #footer div h2{
+
+    font-size: 16px;
+    text-align: center;
+    height: auto;
+  }
+
+  #footer div ul li{
+
+    font-size: 15px;
+    text-align: center;
+    height: auto;
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer {
+    max-height: unset;
+    height: auto
+  }
+
+ 
+  
+  #poweredBy {
+
+    font-size: 12px;
+    max-height: 5%;
+    border: unset
+  }
+}
+
+
+@media only screen and (max-width: 320px) and (orientation: landscape) {
+
+  html,
+  body {
+
+    background-color:blueviolet;
+  }
+
+  #mainMenu ul li, #stickyMenu ul li {
+    min-width: 80px;
+    max-width: 80px;
+}
+
+#mainMenu ul li a, #stickyMenu ul li a {
+  font-size: 10px;
+}
+
+#mainMenu .listMenu, #stickyMenu .listMenu{
+  justify-content: start;
+}
+
+#stickyMenu ul li a {
+
+  width:80px;
+
+}
+
+#stickyMenu .listMenu {
+
+  height:35px;
+}
+
+#mainMenu ul li a:hover,
+#stickyMenu ul li a:hover {
+  font-size: 11px;
+  cursor: pointer;
+}
+
+#mainMenu ul li a:hover::after, #stickyMenu ul li a:hover::after {
+
+  width: 50px;
+
+}
+
+#imgEquipo1 {
+  top: 40%;
+  right: 3%;
+}
+
+#imgEquipo1 img {
+
+  height: 50%;
+}
+
+.imgDiv{
+
+  height:155px;
+}
+
+#imgEquipo2 img{
+
+  margin-top: 32px;
+  width: 100%;
+  height: 80%;
+}
+
+.item h2{
+  font-size: 11px;
+}
+
+#tituloNosotros h1, #tituloServicios h1 {
+  font-size: 18px;
+}
+
+#nosotros p {
+  font-size: 12px;
+  
+}
+
+.servicios_ div p, #desarrollos p {
+  font-size: 12px;
+ 
+}
+
+#desarrollos .item {
+
+  max-width: 70%;
+}
+
+#iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia {
+  width: 45px;
+  height: 40px;
+  top: 0px;
+}
+
+#iconoLaptop {
+  margin-top: 20px;
+  width: 30px;
+  height: 25px;
+}
+
+#iconoMovil {
+  margin-top: 15px;
+  width: 20px;
+  height: 35px;
+}
+
+.figGeometricas {
+  width: 180px;
+  height: 180px;
+  
+}
+
+.tituloServ h2 {
+  font-size: 14px;
+}
+
+#footer div h2 {
+  font-size: 12px;
+ 
+}
+
+#footer div ul li {
+  font-size: 11px;
+  
+}
+
+#poweredBy {
+  font-size: 10px;
+ 
+}
+
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+
+  
+  html,
+  body {
+
+    background-color: aquamarine;
+
+
+  }
+
+  
+  .logoDiv, .imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+    width: unset;
+    height: 600px;
+  }
+
+  .pagination{
+    bottom: 1%;
+  }
+
+  .pagination li {
+    font-size: 13px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    left: -24px;
+  }
+
+  #img_responsive {
+    position: relative;
+    left: -350px;
+  }
+
+  #img_tecnologia {
+    position: relative;
+    left: -350px;
+  }
+
+  #img_consultoria {
+    position: relative;
+    left: -200px;
+  }
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    top: 24%;
+    height: auto
+  }
+
+  #imgEquipo2 {
+     
+    position: absolute;
+    top: unset;
+    bottom: 4px;
+    height:auto;
+    border:1px solid red;
+    width: 100%;  
+    right:0%;
+        
+
+  }
+
+  
+  #imgEquipo2 img {
+
+    height: unset;
+    width: 450px; 
+    
+
+  }
+
+  #imgEquipo1 img {
+
+    height: unset;
+    width: 400px;
+
+  }
+
+
+  #nosotros .item {
+
+    height: auto;
+  }
+
+  #nosotros p {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .item h2 {
+    font-size: 18px;
+  }
+
+  #nosotros div {
+
+    height: auto;
+  }
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 24px;
+    word-wrap: break-word;
+  }
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    height: auto;
+  }
+
+  #nosotros {
+    flex-direction: column;
+  }
+
+  #tituloServicios,
+  #tituloNosotros {
+    max-height: unset;
+    min-height: 7%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+
+
+  #cuadro {
+
+    height: auto;
+  }
+
+  #contenedorServ {
+    height: auto;
+  }
+
+  .servicios_ {
+    display: flex;
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    position: unset;
+  }
+
+  .servicios_ div p {
+    font-size: 18px;
+    max-height: unset;
+    margin: 20px 30px 10px 30px;
+
+  }
+
+
+  #desarrollos p {
+    font-size: 18px;
+    margin: 20px 30px 20px 30px;
+  }
+
+  #desarrollos {
+    flex-direction: column;
+    height: auto;
+    position: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 10px 0 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  
+  #iconoFabrica, #iconoConsultoria, #iconoGerencia, #iconoTalento {
+    width: 80px;
+    height: 75px;
+    top: 0px;
+  }
+
+  
+
+  .figGeometricas {
+    width: 180px;
+    height: 200px;
+  }
+
+  .tituloServ {
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .tituloServ h2,
+  .tem h2 {
+    font-size: 20px;
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+  }
+
+  .iconoTitServ_ {
+    margin-top: 10%;
+  }
+
+  .parrafoServ {
+
+    position: unset;
+  }
+
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    max-height: unset;
+    height: auto;
+    text-align: justify;
+    /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+
+
+  #desarrollos {
+    top: 30%;
+  }
+
+  #desarrollos .item {
+
+    max-width: 55%;
+  }
+
+  #iconoLaptop {
+    margin-top: 25px;
+    width: 55px;
+    height: 50px;
+  }
+
+  #iconoMovil {
+    margin-top: 20px;
+    width: 30px;
+    height: 55px;
+  }
+
+  #divCentral {
+    min-height: 35%;
+    height: auto;
+
+  }
+
+  #divCentral div {
+    height: auto;
+  }
+
+  #cintillo {
+    height: 50px;
+  }
+
+  #imgCintilloCentral {
+    z-index: -1;
+    width: 100%;
+    height: 35%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 35%;
+    left: 50%;
+  }
+
+  #dudasComentarios {
+
+    max-height: unset;
+    margin-top: 20px;
+    height: auto
+  }
+
+  #dudasComentarios h2 {
+    font-size: 20px;
+  }
+
+  #contactanos {
+    height: 33%;
+  }
+
+  #contactanos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  #footer {
+    max-height: unset;
+    height: auto;
+  }
+
+  #footer div ul {
+
+    height: auto;
+  }
+
+
+  #footer h2 {
+
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /* word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer div ul li {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0 5px 0
+  }
+
+  #footer div h2 {
+    font-size: 17px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+
+  #footerHumanTalent,
+  #footerServicios,
+  #footerTecnologia {
+
+    max-width: 30%;
+
+  }
+
+  #footerContacto {
+
+    max-width: 25%;
+  }
+
+  #poweredBy {
+
+    font-size: 14px;
+  }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 600px) and (orientation: portrait) {
+
+  html,
+  body {
+
+    background-color: pink;
+
+
+  }
+
+  
+  .logoDiv, .imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+    width: unset;
+    height: 550px;
+  }
+
+  .pagination li {
+    font-size: 12px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    left: -24px;
+  }
+
+  #img_responsive {
+    position: relative;
+    left: -350px;
+  }
+
+  #img_tecnologia {
+    position: relative;
+    left: -350px;
+  }
+
+  #img_consultoria {
+    position: relative;
+    left: -200px;
+  }
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    top: 26%;
+    height: auto
+  }
+
+  #imgEquipo2 {
+
+    /*margin-right: 7%;   */     
+    position: absolute;
+    top: unset;
+    bottom: 4px;
+    height:auto;
+    border:1px solid red;
+    width: 100%;  
+    right:0%;
+        
+
+  }
+
+  
+  #imgEquipo2 img {
+
+    height: unset;
+    width: 430px; 
+    
+
+  }
+
+  #imgEquipo1 img {
+
+    height: unset;
+    width: 350px;
+
+  }
+
+
+  #nosotros .item {
+
+    height: auto;
+  }
+
+  #nosotros p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .item h2 {
+    font-size: 16px;
+  }
+
+  #nosotros div {
+
+    height: auto;
+  }
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 22px;
+    word-wrap: break-word;
+  }
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    height: auto;
+  }
+
+  #nosotros {
+    flex-direction: column;
+  }
+
+  #tituloServicios,
+  #tituloNosotros {
+    max-height: unset;
+    min-height: 7%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+
+
+  #cuadro {
+
+    height: auto;
+  }
+
+  #contenedorServ {
+    height: auto;
+  }
+
+  .servicios_ {
+    display: flex;
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    position: unset;
+  }
+
+  .servicios_ div p {
+    font-size: 16px;
+    max-height: unset;
+    margin: 20px 10px 10px 10px;
+
+  }
+
+
+  #desarrollos p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #desarrollos {
+    flex-direction: column;
+    height: auto;
+    position: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 10px 0 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #iconoFabrica {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoConsultoria {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoGerencia {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoTalento {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  .figGeometricas {
+    width: 180px;
+    height: 200px;
+  }
+
+  .tituloServ {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .tituloServ h2,
+  .tem h2 {
+    font-size: 18px;
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+  }
+
+  .iconoTitServ_ {
+    margin-top: 10%;
+  }
+
+  .parrafoServ {
+
+    position: unset;
+  }
+
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    max-height: unset;
+    height: auto;
+    text-align: justify;
+    /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+
+
+  #desarrollos {
+    top: 30%;
+  }
+
+  #desarrollos .item {
+
+    max-width: 55%;
+  }
+
+  #iconoLaptop {
+    margin-top: 25px;
+    width: 40px;
+    height: 35px;
+  }
+
+  #iconoMovil {
+    margin-top: 20px;
+    width: 22px;
+    height: 45px;
+  }
+
+  #divCentral {
+    min-height: 30%;
+    height: auto;
+
+  }
+
+  #divCentral div {
+    height: auto;
+  }
+
+  #cintillo {
+    height: 50px;
+  }
+
+  #imgCintilloCentral {
+    z-index: -1;
+    width: 100%;
+    height: 30%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 30%;
+    left: 50%;
+  }
+
+  #dudasComentarios {
+
+    max-height: unset;
+    margin-top: 20px;
+    height: auto
+  }
+
+  #dudasComentarios h2 {
+    font-size: 18px;
+  }
+
+  #contactanos {
+    height: 28%;
+  }
+
+  #contactanos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  #footer {
+    max-height: unset;
+    height: auto;
+  }
+
+  #footer div ul {
+
+    height: auto;
+  }
+
+
+  #footer h2 {
+
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /* word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer div ul li {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0 5px 0
+  }
+
+  #footer div h2 {
+    font-size: 16px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+
+  #footerHumanTalent,
+  #footerServicios,
+  #footerTecnologia {
+
+    max-width: 30%;
+
+  }
+
+  #footerContacto {
+
+    max-width: 25%;
+  }
+
+}
+
+
+@media only Screen and (min-width: 325px) and (max-width: 400px) and (orientation: portrait) {
+
+  html,
+  body {
+    background-color: aqua;
+    
+  } 
+
+  .logoDiv, .imgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+    width:70px;
+    height:70px
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+    width: unset;
+    height: 400px;
+  }
+
+  .pagination li {
+    font-size: 10px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    left: -24px;
+  }
+
+  #img_responsive {
+    position: relative;
+    left: -300px;
+  }
+
+  #img_tecnologia {
+    position: relative;
+    left: -300px;
+  }
+
+  #img_consultoria {
+    position: relative;
+    left: -200px;
+  }
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    top: 29%;
+    height: auto
+  }
+
+  #imgEquipo2 {
+
+    /*margin-right: 10%;
+    position: absolute;
+    top: unset;
+    bottom: 0px;
+    height: auto*/
+
+    position: absolute;
+    top: unset;
+    bottom: 4px;
+    height:auto;
+    border:1px solid red;
+    width: 100%;  
+    right:0%;
+  }
+
+  
+  #imgEquipo2 img {
+
+    height: unset;
+    width: 270px;
+
+  }
+
+  #imgEquipo1 img {
+
+    height: unset;
+    width: 240px;
+
+  }
+
+
+  #nosotros .item {
+
+    height: auto;
+  }
+
+  #nosotros p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .item h2 {
+    font-size: 12px;
+  }
+
+  #nosotros div {
+
+    height: auto;
+  }
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    height: auto;
+  }
+
+  #nosotros {
+    flex-direction: column;
+  }
+
+  #tituloServicios,
+  #tituloNosotros {
+    max-height: unset;
+    min-height: 7%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+
+
+  #cuadro {
+
+    height: auto;
+  }
+
+  #contenedorServ {
+    height: auto;
+  }
+
+  .servicios_ {
+    display: flex;
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    position: unset;
+  }
+
+  .servicios_ div p {
+    font-size: 12px;
+    max-height: unset;
+  }
+
+  #desarrollos p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  #desarrollos {
+    flex-direction: column;
+    height: auto;
+    position: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 10px 0 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #iconoFabrica {
+    width: 50px;
+    height: 45px;
+    top: 0px;
+  }
+
+  #iconoConsultoria {
+    width: 60px;
+    height: 55px;
+    top: 0px;
+  }
+
+  #iconoGerencia {
+    width: 65px;
+    height: 50px;
+    top: 0px;
+  }
+
+  #iconoTalento {
+    width: 60px;
+    height: 50px;
+    top: 0px;
+  }
+
+  .figGeometricas {
+    width: 180px;
+    height: 200px;
+  }
+
+  .tituloServ {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .tituloServ h2,
+  .tem h2 {
+    font-size: 14px;
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+  }
+
+  .iconoTitServ_ {
+    margin-top: 10%;
+  }
+
+  .parrafoServ {
+
+    position: unset;
+  }
+
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    max-height: unset;
+    height: auto;
+    text-align: justify;
+    /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+  .servicios_ div p {
+    margin: 20px 10px 10px 10px;
+  }
+
+  #desarrollos {
+    top: 30%;
+  }
+
+  #desarrollos .item {
+
+    max-width: 55%;
+  }
+
+  #iconoLaptop {
+    margin-top: 25px;
+    width: 40px;
+    height: 35px;
+  }
+
+  #iconoMovil {
+    margin-top: 20px;
+    width: 22px;
+    height: 45px;
+  }
+
+  #divCentral {
+    min-height: 28%;
+    height: auto;
+
+  }
+
+  #divCentral div {
+    height: auto;
+  }
+
+  #cintillo {
+    height: 50px;
+  }
+
+  #imgCintilloCentral {
+    z-index: -1;
+    width: 100%;
+    height: 28%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 28%;
+    left: 50%;
+  }
+
+  #dudasComentarios {
+
+    max-height: unset;
+    margin-top: 20px;
+    height: auto
+  }
+
+  #dudasComentarios h2 {
+    font-size: 14px;
+  }
+
+  #contactanos {
+    height: 26%;
+  }
+
+  #contactanos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #imgContactanos {
+   
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  #footer {
+    max-height: unset;
+    height: auto;
+  }
+
+  #footer div ul {
+
+    height: auto;
+  }
+
+
+  #footer h2 {
+
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /* word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer div ul li {
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 0 5px 0
+  }
+
+  #footer div h2 {
+    font-size: 12px;
+    margin-left: 0px;
+  }
+
+
+  #footerHumanTalent,
+  #footerServicios,
+  #footerTecnologia {
+
+    max-width: 30%;
+
+  }
+
+  #footerContacto {
+
+    max-width: 25%;
+  }
+
+  #poweredBy {
+
+    font-size: 10px;
+
+  }
+
+
+
+}
+
+@media only Screen and (min-width:240px) and (max-width:325px) and (orientation:portrait) {
+
+  html,
+  body {
+    background-color: burlywood;
+
+
+  }
+
+  .logoDiv, .imgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+  }
+
+  .logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+    width: unset;
+    height: 450px;
+  }
+
+  .pagination li {
+    font-size: 10px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    left: -24px;
+  }
+
+  #img_responsive {
+    position: relative;
+    left: -300px;
+  }
+
+  #img_tecnologia {
+    position: relative;
+    left: -300px;
+  }
+
+  #img_consultoria {
+    position: relative;
+    left: -200px;
+  }
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    top: 36%;
+    height: auto
+  }
+
+  #imgEquipo2 {
+
+    /*margin-right: 6%;
+    position: absolute;
+    top: unset;
+    bottom: 0px;
+    height: auto*/
+
+    position: absolute;
+        top: unset;
+        bottom: 4px;
+        height: auto;
+        border: 1px solid red;
+        width: 100%;
+        right: 0%;
+  }
+
+  #imgEquipo2 img {
+
+    height: unset;
+    width: 260px;
+
+  }
+
+  #imgEquipo1 img {
+
+    height: unset;
+    width: 230px;
+
+  }
+
+
+  #nosotros .item {
+
+    height: auto;
+  }
+
+  #nosotros p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .item h2 {
+    font-size: 12px;
+  }
+
+  #nosotros div {
+
+    height: auto;
+  }
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 17px;
+    word-wrap: break-word;
+  }
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    height: auto;
+  }
+
+  #nosotros {
+    flex-direction: column;
+  }
+
+  #tituloServicios,
+  #tituloNosotros {
+    max-height: unset;
+    min-height: 7%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+
+
+  #cuadro {
+
+    height: auto;
+  }
+
+  #contenedorServ {
+    height: auto;
+  }
+
+  .servicios_ {
+    display: flex;
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    position: unset;
+  }
+
+  .servicios_ div p {
+    font-size: 12px;
+    max-height: unset;
+  }
+
+  #desarrollos p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  #desarrollos {
+    flex-direction: column;
+    height: auto;
+    position: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 10px 0 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #iconoFabrica,
+  #iconoConsultoria,
+  #iconoGerencia,
+  #iconoTalento {
+    width: 45px;
+    height: 40px;
+    top: 0px;
+  }
+
+
+  .figGeometricas {
+    width: 180px;
+    height: 200px;
+  }
+
+  .tituloServ {
+    margin-top: 15px;
+    height: auto;
+  }
+
+  .tituloServ h2,
+  .tem h2 {
+    font-size: 13px;
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+  }
+
+  .iconoTitServ_ {
+    margin-top: 10%;
+  }
+
+  .parrafoServ {
+
+    position: unset;
+  }
+
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    max-height: unset;
+    height: auto;
+    text-align: justify;
+    /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+
+  .servicios_ div p {
+    margin: 20px 10px 10px 10px;
+  }
+
+  #desarrollos {
+    top: 30%;
+  }
+
+  #desarrollos .item {
+
+    max-width: 55%;
+  }
+
+  #iconoLaptop {
+    margin-top: 25px;
+    width: 30px;
+    height: 25px;
+  }
+
+  #iconoMovil {
+    margin-top: 20px;
+    width: 18px;
+    height: 35px;
+  }
+
+  #divCentral {
+    min-height: 21%;
+    height: auto;
+
+  }
+
+  #divCentral div {
+    height: auto;
+  }
+
+  #cintillo {
+    height: 50px;
+  }
+
+  #imgCintilloCentral {
+    z-index: -1;
+    width: 100%;
+    height: 21%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 21%;
+    left: 50%;
+  }
+
+  #dudasComentarios {
+
+    max-height: unset;
+    margin-top: 20px;
+    height: auto
+  }
+
+  #dudasComentarios h2 {
+    font-size: 13px;
+  }
+
+  #contactanos {
+    height: 19%;
+    width: unset;
+    display: block;
+
+  }
+
+  #contactanos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*height: unset;
+    width: unset;*/
+  }
+
+  #imgContactanos {
+    height: 100%;
+    z-index: -1;
+    width: unset;
+    top: 0px;
+    bottom: unset
+  }
+
+  #footer {
+    max-height: unset;
+    height: auto;
+  }
+
+  #footer div ul {
+
+    height: auto;
+  }
+
+
+  #footer h2 {
+
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /* word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer div ul li {
+    font-size: 9.5px;
+    text-align: center;
+    padding: 20px 0 5px 0
+  }
+
+  #footer div h2 {
+    font-size: 10.5px;
+    margin-left: 0px;
+  }
+
+
+  #footerHumanTalent,
+  #footerServicios,
+  #footerTecnologia {
+
+    max-width: 30%;
+
+  }
+
+  #footerContacto {
+
+    max-width: 25%;
+  }
+
+
+  #poweredBy {
+
+    max-height: 5%;
+  }
+
+
+}
+
+@media only Screen and (min-width: 231px) and (max-width: 240px) and (orientation: portrait) {
+
+  html,
+  body {
+    background-color: lightgray;
+
+
+  }
+
+  .logoDiv, .imgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+  }
+
+
+
+  .logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+    width: unset;
+    height: 400px;
+  }
+
+  .pagination li {
+    font-size: 10px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    left: -24px;
+  }
+
+  #img_responsive {
+    position: relative;
+    left: -300px;
+  }
+
+  #img_tecnologia {
+    position: relative;
+    left: -300px;
+  }
+
+  #img_consultoria {
+    position: relative;
+    left: -200px;
+  }
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    top: 40%;
+    height: auto
+  }
+
+  #imgEquipo2 {  
+    position: absolute;
+    top: unset;
+    bottom: 4px;
+    height: auto;
+    border: 1px solid red;
+    width: 100%;
+    right: 0%;
+}
+
+  #imgEquipo2 img {
+
+    height: unset;
+    width: 210px;
+
+  }
+
+  #imgEquipo1 img {
+
+    height: unset;
+    width: 180px;
+
+  }
+
+
+  #nosotros .item {
+
+    height: auto;
+  }
+
+  #nosotros p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .item h2 {
+    font-size: 12px;
+  }
+
+  #nosotros div {
+
+    height: auto;
+  }
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 17px;
+    word-wrap: break-word;
+  }
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    height: auto;
+  }
+
+  #nosotros {
+    flex-direction: column;
+  }
+
+  #tituloServicios,
+  #tituloNosotros {
+    max-height: unset;
+    min-height: 7%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+
+
+  #cuadro {
+
+    height: auto;
+  }
+
+  #contenedorServ {
+    height: auto;
+  }
+
+  .servicios_ {
+    display: flex;
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    position: unset;
+  }
+
+  .servicios_ div p {
+    font-size: 12px;
+    max-height: unset;
+  }
+
+  #desarrollos p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  #desarrollos {
+    flex-direction: column;
+    height: auto;
+    position: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 10px 0 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #iconoFabrica,
+  #iconoConsultoria,
+  #iconoGerencia,
+  #iconoTalento {
+    width: 45px;
+    height: 40px;
+    top: 0px;
+  }
+
+
+  .figGeometricas {
+    width: 180px;
+    height: 200px;
+  }
+
+  .tituloServ {
+    margin-top: 15px;
+    height: auto;
+  }
+
+  .tituloServ h2,
+  .tem h2 {
+    font-size: 13px;
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+  }
+
+  .iconoTitServ_ {
+    margin-top: 10%;
+  }
+
+  .parrafoServ {
+
+    position: unset;
+  }
+
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    max-height: unset;
+    height: auto;
+    text-align: justify;
+    /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+
+  .servicios_ div p {
+    margin: 20px 10px 10px 10px;
+  }
+
+  #desarrollos {
+    top: 30%;
+  }
+
+  #desarrollos .item {
+
+    max-width: 55%;
+  }
+
+  #iconoLaptop {
+    margin-top: 25px;
+    width: 30px;
+    height: 25px;
+  }
+
+  #iconoMovil {
+    margin-top: 20px;
+    width: 18px;
+    height: 35px;
+  }
+
+  #divCentral {
+    min-height: 20%;
+    height: auto;
+
+  }
+
+  #divCentral div {
+    height: auto;
+  }
+
+  #cintillo {
+    height: 50px;
+  }
+
+  #imgCintilloCentral {
+    z-index: -1;
+    width: 100%;
+    height: 20%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 20%;
+    left: 50%;
+  }
+
+  #dudasComentarios {
+
+    max-height: unset;
+    margin-top: 20px;
+    height: auto
+  }
+
+  #dudasComentarios h2 {
+    font-size: 13px;
+  }
+
+  #contactanos {
+    height: 18%;
+  }
+
+  #contactanos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  #footer {
+    max-height: unset;
+    height: auto;
+  }
+
+  #footer div ul {
+
+    height: auto;
+  }
+
+
+  #footer h2 {
+
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /* word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer div ul li {
+    font-size: 9.5px;
+    text-align: center;
+    padding: 20px 0 5px 0
+  }
+
+  #footer div h2 {
+    font-size: 10.5px;
+    margin-left: 0px;
+  }
+
+
+  #footerHumanTalent,
+  #footerServicios,
+  #footerTecnologia {
+
+    max-width: 30%;
+
+  }
+
+  #footerContacto {
+
+    max-width: 25%;
+  }
+
+
+  #poweredBy {
+
+    max-height: 5%;
+  }
+}
+
+@media only Screen and (min-width: 150px) and (max-width: 231px) and (orientation: portrait) {
+
+  html,
+  body {
+    background-color: lightblue;
+
+
+  }
+
+  .logoDiv, .imgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+    width: unset;
+    height: 300px;
+  }
+
+  .pagination li {
+    font-size: 10px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    left: -24px;
+  }
+
+  #img_responsive {
+    position: relative;
+    left: -300px;
+  }
+
+  #img_tecnologia {
+    position: relative;
+    left: -300px;
+  }
+
+  #img_consultoria {
+    position: relative;
+    left: -200px;
+  }
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    top: 40%;
+    height: auto
+  }
+
+  #imgEquipo2 {
+    position: absolute;
+    top: unset;
+    bottom: 4px;
+    height: auto;
+    border: 1px solid red;
+    width: 100%;
+    right: 0%;
+}
+
+  #imgEquipo2 img {
+
+    height: unset;
+    width: 130px;
+
+  }
+
+  #imgEquipo1 img {
+
+    height: unset;
+    width: 130px;
+
+  }
+
+
+  #nosotros .item {
+
+    height: auto;
+  }
+
+  #nosotros p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .item h2 {
+    font-size: 12px;
+  }
+
+  #nosotros div {
+
+    height: auto;
+  }
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 17px;
+    word-wrap: break-word;
+  }
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    height: auto;
+  }
+
+  #nosotros {
+    flex-direction: column;
+  }
+
+  #tituloServicios,
+  #tituloNosotros {
+    max-height: unset;
+    min-height: 7%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+
+
+  #cuadro {
+
+    height: auto;
+  }
+
+  #contenedorServ {
+    height: auto;
+  }
+
+  .servicios_ {
+    display: flex;
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    position: unset;
+  }
+
+  .servicios_ div p {
+    font-size: 12px;
+    max-height: unset;
+  }
+
+  #desarrollos p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  #desarrollos {
+    flex-direction: column;
+    height: auto;
+    position: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 10px 0 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #iconoFabrica,
+  #iconoConsultoria,
+  #iconoGerencia,
+  #iconoTalento {
+    width: 45px;
+    height: 40px;
+    top: 0px;
+  }
+
+
+  .figGeometricas {
+    width: 180px;
+    height: 200px;
+  }
+
+  .tituloServ {
+    margin-top: 15px;
+    height: auto;
+  }
+
+  .tituloServ h2,
+  .tem h2 {
+    font-size: 13px;
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+  }
+
+  .iconoTitServ_ {
+    margin-top: 10%;
+  }
+
+  .parrafoServ {
+
+    position: unset;
+  }
+
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    max-height: unset;
+    height: auto;
+    text-align: justify;
+    /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+
+  .servicios_ div p {
+    margin: 20px 10px 10px 10px;
+  }
+
+  #desarrollos {
+    top: 30%;
+  }
+
+  #desarrollos .item {
+
+    max-width: 55%;
+  }
+
+  #iconoLaptop {
+    margin-top: 25px;
+    width: 30px;
+    height: 25px;
+  }
+
+  #iconoMovil {
+    margin-top: 20px;
+    width: 18px;
+    height: 35px;
+  }
+
+  #divCentral {
+    min-height: 11%;
+    height: auto;
+
+  }
+
+  #divCentral div {
+    height: auto;
+  }
+
+  #cintillo {
+    height: 50px;
+  }
+
+  #imgCintilloCentral {
+    z-index: -1;
+    width: 100%;
+    height: 11%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 11%;
+    left: 50%;
+  }
+
+  #dudasComentarios {
+
+    max-height: unset;
+    margin-top: 20px;
+    height: auto
+  }
+
+  #dudasComentarios h2 {
+    font-size: 13px;
+  }
+
+  #contactanos {
+    height: 10%;
+  }
+
+  #contactanos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  #footer {
+    max-height: unset;
+    height: auto;
+  }
+
+  #footer div ul {
+
+    height: auto;
+    word-break: break-all;
+  }
+
+
+  #footer h2 {
+
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /* word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer div ul li {
+    font-size: 9.5px;
+    text-align: center;
+    padding: 20px 0 5px 0
+  }
+
+  #footer div h2 {
+    font-size: 10.5px;
+    margin-left: 0px;
+  }
+
+
+  #footerHumanTalent,
+  #footerServicios,
+  #footerTecnologia {
+
+    max-width: 30%;
+
+  }
+
+  #footerContacto {
+
+    max-width: 25%;
+  }
+
+
+  #poweredBy {
+
+    max-height: 5%;
+  }
+}

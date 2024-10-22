@@ -6,433 +6,458 @@
   <title>DAAH Corp</title>
   <!--<base href="/">-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="shortcut icon" href="assets/images/siga.png">--> 
-  <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+  <!--<link rel="shortcut icon" href="assets/images/siga.png">-->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
   <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">-->
-  <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />  --> 
+  <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />  -->
 
   <link rel="stylesheet" href="css/font-awesome.css">
 
-	<script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery-3.1.0.min.js"></script>
   <Sccript src="js/jquery-ui-1.13.3/external/jquery/jquery.js"></Sccript>
   <script src="js/jquery-ui-1.13.3/jquery-ui.min.js"></script>
-	<script src="js/main.js"></script>
- 
-  
+  <script src="js/main.js"></script>
+
+
 </head>
 
-<body>  
+<body>
 
 
-  <img id = "cintillo" src="img/cintilloMenu.png" alt="">
-  <img id = "logo" style="width:70px; height:70px" src="img/logoDaat.png" alt="">
+  <img id="cintillo" src="img/cintilloMenu.png" alt="">
+  <div class="logoDiv">
+  <img id="logo" style="" src="img/logoDaat.png" alt="">
+  </div>
+  <img id="cintillo_" src="img/cintilloMenu.png" alt="">
+  <div class="logoDiv">
+  <img id="logo_" style="" src="img/logoDaat.png" alt="">
+  </div>
 
-  <img id = "cintillo_" src="img/cintilloMenu.png" alt="">
-  <img id = "logo_" style="width:70px; height:70px" src="img/logoDaat.png" alt="">
 
 
-<!--<div id= "cintilloLogoSticky"></div>
-  <img id = "cintillo" src="img/cintilloMenu.png" alt="">
-  <img id = "logo" style="width:70px; height:70px" src="img/logoDaat.png" alt="">
-</div>-->
+  <nav id="mainMenu">
 
-<nav id="mainMenu"> 
-
-  <ul class="listMenu">
+    <ul class="listMenu">
       <li><a href="#cintillo" data-url="#principal">Principal</a></li>
       <li><a href="#tituloNosotros" data-url="#nosotros">Nosotros</a></li>
       <li><a href="#tituloServicios" data-url="#servicios">Servicios</a></li>
-      <li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>
+      <!--<li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>-->
       <li><a href="#contactanos" data-url="#contactanos"><span>Contáctanos</span></a></li>
-  </ul>
+    </ul>
 
-</nav>
+  </nav>
 
-<nav id="stickyMenu">
+  <nav id="stickyMenu">
 
-  <ul class="listMenu">
-    <li><a href="#cintillo" data-url="#principal">Principal</a></li>
-    <li><a href="#tituloNosotros" data-url="#nosotros">Nosotros</a></li>
-    <li><a href="#tituloServicios" data-url="#servicios">Servicios</a></li>
-    <li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>
-    <li><a href="#contactanos" data-url="#contactanos"><span>Contáctanos</span></a></li>
-  </ul>
+    <ul class="listMenu">
+      <li><a href="#cintillo" data-url="#principal">Principal</a></li>
+      <li><a href="#tituloNosotros" data-url="#nosotros">Nosotros</a></li>
+      <li><a href="#tituloServicios" data-url="#servicios">Servicios</a></li>
+      <!--<li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>-->
+      <li><a href="#contactanos" data-url="#contactanos"><span>Contáctanos</span></a></li>
+    </ul>
 
-</nav>
+  </nav>
 
-<div class="slideshow">   
-  
-  <ul class="slider">
-    
-    <li>
-      <img src="img/fondoAzul_1.png" alt="">     
-      
-     
-    </li>
-    <li>      
-      <img src="img/fondoAzul_2.png" alt="">
-      
-     
-    </li>
-    <li>
-      <img src="img/responsive.png" alt="">
-     
-    </li>
-    <li>
-      <img src="img/tecnología.png" alt="">
-     
-    </li>
-    <li>
-      <img src="img/consultoría.png" alt="">
-     
-    </li>
+  <div class="slideshow">
 
-    
-  </ul>
+    <ul class="slider">
 
-   
+      <li>
+        <img id="img_fondo1" src="img/fondoAzul_1.png" alt="">
 
-  <ol class="pagination">
 
-    
-    <li><span class="fa fa-circle"></span></li>
-    <li><span class="fa fa-circle"></span></li>
-    <li><span class="fa fa-circle"></span></li>
-    <li><span class="fa fa-circle"></span></li>
-    <li><span class="fa fa-circle"></span></li>
-    
-    
-  </ol>
+      </li>
+      <li>
+        <img src="img/fondoAzul_2.png" alt="">
 
-  <div id="imgEquipo1" style="position:absolute; right:11%; top:19%"><img src="img/equipo_1.png" alt="" style="width:100%; height:75%"></div>
-  <div id="imgEquipo2" style="position:absolute; right:1%; top:25%"><img src="img/equipo_2.png" alt="" style="width:100%; height:75%"></div>
-</div>
+
+      </li>
+      <li>
+        <img id="img_responsive" src="img/responsive.png" alt="">
+
+      </li>
+      <li>
+        <img id="img_tecnologia" src="img/tecnología.png" alt="">
+
+      </li>
+      <li>
+        <img id="img_consultoria" src="img/consultoría.png" alt="">
+
+      </li>
+
+
+    </ul>
 
 
 
-<div id="tituloNosotros">  
+    <ol class="pagination">
 
-  <div>
+
+      <li><span class="fa fa-circle"></span></li>
+      <li><span class="fa fa-circle"></span></li>
+      <li><span class="fa fa-circle"></span></li>
+      <li><span class="fa fa-circle"></span></li>
+      <li><span class="fa fa-circle"></span></li>
+
+
+    </ol>
+
+
+    <div id="imgEquipo1" style="">
+      <!--<div class="imgDiv">-->
+        <img src="img/equipo_1.png" alt="" style="">
+      <!--</div>-->     
+    </div>
+
+    <div id="imgEquipo2" style="">
+      <div class="imgDiv">
+        <img src="img/equipo_2.png" alt="" style="">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="tituloNosotros">
+
+    <div>
       <h1>Nosotros</h1>
-      <img id="linea" src="img/linea.png" alt=""  />
-  </div> 
+      <img id="linea" src="img/linea.png" alt="" />
+    </div>
+
+  </div>
+
+
+  <div id="nosotros" style="">
+
+    <div>
+
+      <div class="item">
+        <div class="titulosPrimarios">
+          <h2>Quiénes somos</h2>
+        </div>
+      </div>
+
+      <div>
+        <p> Somos un equipo de profesionales en las distintas áreas de TI con amplia experiencia y
+          altamente capacitados para brindarle a su empresa o negocio soluciones tecnológicas de automatización a la
+          medida,
+          con alta calidad y con una excelente relación costo/beneficio.
+        </p>
+      </div>
+
+    </div>
+
+    <div>
+
+      <div class="item">
+        <div class="titulosPrimarios">
+          <h2>Visión</h2>
+        </div>
+      </div>
+
+      <div>
   
-</div>
+        <p>Posicionarnos como empresa líder en el sector de TI, como proveedor de productos y servicios tecnológicos,
+          a nivel nacional e internacional, con un amplio nivel de creatividad, responsabilidad y compromiso,
+          centrándonos en las necesidades del cliente.
+        </p>
+      </div>
 
-
-<div id="nosotros">
-
-  <div>
-
-    <div class="item">
-      <h2>Quiénes somos</h2>
     </div>
 
     <div>
-      <p> Somos un equipo de profesionales en las distintas áreas de TI con amplia experiencia y 
-        altamente capacitados para brindarle a su empresa o negocio soluciones tecnológicas de automatización a la medida, 
-        con alta calidad y con una excelente relación costo/beneficio.
-      </p>
+
+      <div class="item">
+        <div class="titulosPrimarios">
+          <h2>Misión</h2>
+        </div>
+      </div>
+
+      <div>
+        <p> Proveer a las empresas de diferentes ramos, en el mercado nacional e internacional, soluciones tecnológicas
+          integrales adecuadas a sus necesidades, con altos niveles de calidad e innovación, generando valor al negocio.
+        </p>
+      </div>
+
     </div>
 
   </div>
 
-  <div>
-
-    <div class="item">
-      <h2>Visión</h2>
-    </div>
+  <div id="tituloServicios">
 
     <div>
-      <p>Posicionarnos como empresa líder en el sector de TI, como proveedor de productos y servicios tecnológicos,       
-        a nivel nacional e internacional, con un amplio nivel de creatividad, responsabilidad y compromiso, 
-        centrándonos en las necesidades del cliente.
-      </p>
+      <h1>Servicios</h1>
+      <img id="linea" src="img/linea.png" alt="" />
     </div>
 
   </div>
 
-  <div>
+  <div id="cuadro" style="">
 
-    <div class="item">
-      <h2>Misión</h2>
-    </div>
-
-    <div>
-      <p> Proveer a las empresas de diferentes ramos, en el mercado nacional e internacional, soluciones tecnológicas 
-        integrales adecuadas a sus necesidades, con altos niveles de calidad e innovación, generando valor al negocio.
-      </p>
-    </div>
-
-  </div>
-
-</div>
-
-<div id="tituloServicios">  
-
-    <div>
-        <h1>Servicios</h1>
-        <img id="linea" src="img/linea.png" alt=""  />
-    </div> 
-
-</div>
-
-  <div id="cuadro">
-
-    <img class="figGeometricas" src="img/figurasGeometricas.png" alt=""/>
+    <img class="figGeometricas" src="img/figurasGeometricas.png" alt="" />
 
 
-    <div class="servicios_"> 
-      
+    <div class="servicios_" style="">
 
-      <div class= "iconoTitServ_">
+
+      <div class="iconoTitServ_">
 
         <div>
-            <img id="iconoFabrica" src="img/icono_fab_softw.png" alt="">
-        </div>  
+          <img id="iconoFabrica" src="img/icono_fab_softw.png" alt="">
+        </div>
 
         <div class="tituloServ">
-            <h2 >Fábrica de software</h2>
-        </div> 
-
-      </div>      
-
-      <div class="parrafoServ">
-
-          <p> Ofrecemos servicio de desarrollo de software completo y personalizado, cubriendo todas las etapas del ciclo de vida, 
-            comenzando desde el levantamiento de la información hasta la implantación en ambiente productivo, 
-            incluyendo el mantenimiento y soporte. Estos desarrollos van adaptados al negocio, a los procesos y a las 
-            necesidades funcionales del cliente.</p>
+          <h2>Fábrica de software</h2>
+        </div>
 
       </div>
 
-    </div>  
-    
-    <div id="desarrollos">
+      <div class="parrafoServ">
+
+        <p> Ofrecemos servicio de desarrollo de software completo y personalizado, cubriendo todas las etapas del ciclo
+          de vida,
+          comenzando desde el levantamiento de la información hasta la implantación en ambiente productivo,
+          incluyendo el mantenimiento y soporte. Estos desarrollos van adaptados al negocio, a los procesos y a las
+          necesidades funcionales del cliente.</p>
+
+      </div>
+
+    </div>
+
+    <div id="desarrollos" style="">
 
       <div class="container">
 
         <div class="icono_titulo">
-          
-          <img id="iconoLaptop" src="img/icono_laptop.png" alt="">          
-    
+
+          <img id="iconoLaptop" src="img/icono_laptop.png" alt=""></img>
+
           <div class="item">
             <h2>Desarrollo de software</h2>
           </div>
 
         </div>
 
-          <div class="parrafoDesa">
-    
-            <p> Diseño, desarrollo, mantenimiento y/o soporte de soluciones web, según las necesidades del negocio. Contamos con un equipo de especialistas en diversas áreas de ingeniería de software, 
-                quiénes en conjunto con el cliente y sus usuarios funcionales, llevan a cabo un estricto esquema de pruebas, aplicando constantemente metodologías ágiles de trabajo, con lo cual 
-                garantizan entregas continuas y una mejor calidad del producto.
+        <div class="parrafoDesa">
 
-            </p>            
-          
+          <p> Diseño, desarrollo, mantenimiento y/o soporte de soluciones web, según las necesidades del negocio.
+            Contamos con un equipo de especialistas en diversas áreas de ingeniería de software,
+            quiénes en conjunto con el cliente y sus usuarios funcionales, llevan a cabo un estricto esquema de pruebas,
+            aplicando constantemente metodologías ágiles de trabajo, con lo cual
+            garantizan entregas continuas y una mejor calidad del producto.
 
-          </div>   
-    
+          </p>
+
+
+        </div>
+
       </div>
-    
+
       <div class="container">
 
         <div class="icono_titulo">
 
-          <img id="iconoMovil" src="img/icono_movil.png" alt="">
-    
+          <img id="iconoMovil" src="img/icono_movil.png" alt=""></img>
+
           <div class="item">
             <h2>Desarrollo móvil</h2>
           </div>
 
         </div>
-    
+
         <div class="parrafoDesa">
-          <p>Diseño y desarrollo de aplicaciones móviles nativas e híbridas, según las necesidades del negocio. 
-            Contamos con un equipo de trabajo integral, experto en el área de desarrollo de software, quiénes en 
-            conjunto con el cliente y sus usuarios funcionales, llevan a cabo un estricto esquema de pruebas, 
-            aplicando constantemente metodologías ágiles de trabajo, con lo cual garantizan entregas continuas 
+          <p>Diseño y desarrollo de aplicaciones móviles nativas e híbridas, según las necesidades del negocio.
+            Contamos con un equipo de trabajo integral, experto en el área de desarrollo de software, quiénes en
+            conjunto con el cliente y sus usuarios funcionales, llevan a cabo un estricto esquema de pruebas,
+            aplicando constantemente metodologías ágiles de trabajo, con lo cual garantizan entregas continuas
             y una mejor calidad del producto.
 
           </p>
         </div>
-    
-      </div>       
-    
-    </div>      
 
+      </div>
 
-</div>
+    </div>
+  </div>
 
-<div class="servicios_">
+  <div id="contenedorServ" style="">
 
-  <img  class="figGeometricas" src="img/figurasGeometricas.png" alt=""/>
+    <div class="servicios_">
 
-  <div class= "iconoTitServ_">
+      <img class="figGeometricas" src="img/figurasGeometricas.png" alt="" />
 
-    <div>
-      <img id="iconoConsultoria" src="img/consultoría_proyectos_.png" alt="">
-    </div>  
+      <div class="iconoTitServ_">
 
-    <div class="tituloServ">
-      <h2 >Ingeniería y consultoría de proyectos</h2>
-    </div> 
-  </div>       
-
-        <div class="parrafoServ">
-              <p> Realizamos la conceptualización del producto que necesita su empresa. 
-                Llevamos a cabo sesiones de trabajo que son dirigidas por nuestros expertos consultores 
-                en conjunto con el usuario funcional, con lo cual podemos identificar las necesidades de 
-                automatización de los procesos y definir de forma clara los objetivos, 
-                incluyendo los beneficios que a corto, mediano y largo plazo se desean alcanzar.</p>
+        <div>
+          <img id="iconoConsultoria" src="img/consultoría_proyectos_.png" alt="">
         </div>
-      
 
-</div>  
-
-<div id= "idServicios_" class="servicios_">
-
-  <div class= "iconoTitServ_">
-
-    <div>
-      <img id="iconoGerencia" src="img/icono_gerencia_proyecto.png" alt="">
-    </div>  
-
-    <div class="tituloServ">
-      <h2 >Gerencia de proyectos</h2>
-    </div> 
-  </div>       
-
-        <div class="parrafoServ">
-              <p> Es el servicio que ofrecemos a nuestros clientes para la ejecución de proyectos de tecnología de la información, 
-                basados en marcos de trabajos ágiles y estándares de Project Management.
-              </p>
+        <div class="tituloServ">
+          <h2>Ingeniería y consultoría de proyectos</h2>
         </div>
-      
 
-</div> 
+      </div>
 
-<div class="servicios_">
-
-  <img class=figGeometricas id="figura" src="img/figurasGeometricas.png" alt=""/>
-
-  <div class= "iconoTitServ_">
-
-    <div>
-      <img id="iconoTalento" src="img/icono_talento.png" alt="">
-    </div>  
-
-    <div class="tituloServ">
-      <h2 >Talento como servicio</h2>
-    </div> 
-  </div>       
-
-        <div class="parrafoServ">
-              <p>Somos proveedores de talento humano TI para su empresa, ya sea que desee tercerizar parte 
-                o el total de su staff de tecnología. A través de nuestro catálogo de talento, 
-                realizamos una selección optimizada de personal para su proyecto, 
-                garantizando especialistas con altas capacidades técnicas en diferentes áreas tecnológicas.
- 
-              </p>
-        </div>      
-
-</div>  
-
-<div id="imagenCentral">
-
-  <img id="imgCentral" src="img/imagenCintillo.png" alt=""></img>
-
-</div>
-
-<div id="dudasComentarios">
-  <h2>¿Dudas o comentarios? Contáctanos</h2>
-</div>
+      <div class="parrafoServ">
+        <p> Realizamos la conceptualización del producto que necesita su empresa.
+          Llevamos a cabo sesiones de trabajo que son dirigidas por nuestros expertos consultores
+          en conjunto con el usuario funcional, con lo cual podemos identificar las necesidades de
+          automatización de los procesos y definir de forma clara los objetivos,
+          incluyendo los beneficios que a corto, mediano y largo plazo se desean alcanzar.</p>
+      </div>
 
 
-<div id="contactanos">  
+    </div>
 
-  <div>
 
-  <img id="imgContactanos" src="img/contactanos.png" alt=""></img>
+    <div id="idServicios_" class="servicios_">
+
+      <div class="iconoTitServ_">
+
+        <div>
+          <img id="iconoGerencia" src="img/icono_gerencia_proyecto.png" alt="">
+        </div>
+
+        <div class="tituloServ">
+          <h2>Gerencia de proyectos</h2>
+        </div>
+      </div>
+
+      <div class="parrafoServ">
+        <p> Es el servicio que ofrecemos a nuestros clientes para la ejecución de proyectos de tecnología de la
+          información,
+          basados en marcos de trabajos ágiles y estándares de Project Management.
+        </p>
+      </div>
+
+
+    </div>
+
+    <div class="servicios_">
+
+      <img class=figGeometricas id="figura" src="img/figurasGeometricas.png" alt="" />
+
+      <div class="iconoTitServ_">
+
+        <div>
+          <img id="iconoTalento" src="img/icono_talento.png" alt="">
+        </div>
+
+        <div class="tituloServ">
+          <h2>Talento como servicio</h2>
+        </div>
+      </div>
+
+      <div class="parrafoServ">
+        <p>Somos proveedores de talento humano TI para su empresa, ya sea que desee tercerizar parte
+          o el total de su staff de tecnología. A través de nuestro catálogo de talento,
+          realizamos una selección optimizada de personal para su proyecto,
+          garantizando especialistas con altas capacidades técnicas en diferentes áreas tecnológicas.
+
+        </p>
+      </div>
+
+    </div>
 
   </div>
 
-  <div id="form">
+  <div id="divCentral" style="">
+
+    <div>
+      <img id="imgCintilloCentral" src="img/imagenCintillo.png" alt="" style=""></img>
+      <img id="imgCentral" src="img/img_central.png" alt="" style=""></img>
+    </div>
 
   </div>
 
-</div>
+      <div id="dudasComentarios">
+        <h2>¿Dudas o comentarios? Contáctanos</h2>
+      </div>
 
-<div id="footer">
-  
 
-    <div id="footerHumanTalent">
+      <div id="contactanos" style="">
 
-      <h2>Human Talent Staff</h2>
+        <div style="">
 
-      <ul>
+          <img id="imgContactanos" src="img/contactanos.png" alt=""></img>
 
-        <li>Expertos en gerencia, consultoría, desarrollo de software y reclutamiento de personal.</li>
+        </div>
 
-        <li>Copyright©humantalentstaff</li>
 
-      </ul>      
-      
 
-    </div>
+      </div>
 
-    <div id="footerServicios">
+      <div id="footer">
 
-      <h2>Servicios</h2>
 
-      <ul>
+      <div id="footerHumanTalent">
 
-        <li>Fábrica de software.</li>
-        <li>Ingeniería y consultoría de proyectos.</li>
-        <li>Gerencia de proyectos.</li>
-        <li>Talento como servicio.</li>
+        <h2>Human Talent Staff</h2>
 
-      </ul>
-      
-    </div>
+        <ul>
 
-    <div id="footerTecnologia">
+          <li>Expertos en gerencia, consultoría, desarrollo de software y reclutamiento de personal.</li>
 
-      <h2>Tecnología</h2>
-
-      <ul>
-
-        <li>Java, JavaScript.</li>
-        <li>Springboot, Angular, React.</li>
-        <li>Docker, Kubernetes, AWS.</li>
-        <li>Css, Html.</li>
+          <li>Copyright©humantalentstaff</li>
 
       </ul>
-      
+
+
+      </div>
+
+      <div id="footerServicios">
+
+        <h2>Servicios</h2>
+
+        <ul>
+
+          <li>Fábrica de software.</li>
+          <li>Ingeniería y consultoría de proyectos.</li>
+          <li>Gerencia de proyectos.</li>
+          <li>Talento como servicio.</li>
+
+        </ul>
+
+      </div>
+
+      <div id="footerTecnologia">
+
+        <h2>Tecnología</h2>
+
+        <ul>
+
+          <li>Java, JavaScript.</li>
+          <li>Springboot, Angular, React.</li>
+          <li>Docker, Kubernetes, AWS.</li>
+          <li>Css, Html.</li>
+
+        </ul>
+
+      </div>
+
+      <div id="footerContacto">
+
+        <h2>Contacto</h2>
+
+        <ul>
+
+          <li>Caracas-Venezuela.</li>
+          <li>Avenida los proceres, local 21-A. San Bernardino.</li>
+          <li>Teléfonos: 0212-5514789 | 0424-1482147 info@hts_soluciones.com</li>
+
+        </ul>
+
+      </div>
+
     </div>
 
-    <div id="footerContacto">
+    <div id="poweredBy">2024©Powered by Tecnodestreza
 
-      <h2>Contacto</h2>
-
-      <ul>
-
-        <li>Caracas Venezuela.</li>
-        <li>Avenida los proceres, local 21-A. San Bernardino.</li>
-        <li>Teléfonos: 0212-5514789 | 0424-1482147 info@htssoluciones.com</li>        
-
-      </ul>
-      
     </div>
 
-</div>
-
-<div id="poweredBy">2024©Powered by Tecnodestreza
-
-</div>
-    
-  
 </body>
 
 </html>

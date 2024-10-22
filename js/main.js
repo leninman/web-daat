@@ -1,55 +1,117 @@
-$(document).ready(function(){
+$(document).ready(function(){	
+	
+	// Ejecutar la función inmediatamente cuando se cargue la página
+
+    checkMediaQuery(); // Comprobar al cargar la página
+
+ 		valida;
+
+// Escuchar el redimensionamiento de la ventana y ejecutar la función
+$(window).on('resize', function() {
+    checkMediaQuery(); // Comprobar al redimensionar la ventana
+});
+
+  
+$('li .fa-circle').on('click', function() {			
+	// Detiene todas las animaciones en curso para los elementos #imgEquipo1 y #imgEquipo2
+	$('#imgEquipo1').stop(true, true);			
+	$('#imgEquipo2').stop(true, true);
+
+	console.log("pasa por aqui al hacer click 2")
+  });
+	
 
 
-	$(window).on('scroll', function () {
+	function checkMediaQuery() {
+	
 
-		if ($(window).scrollTop() > 1) {
+		if (window.matchMedia('(max-width: 900px) and (orientation: portrait)').matches) {			
+					
+				
+				$('#stickyMenu').css('display', 'none');
+				$('#mainMenu').css('display', 'none');	
+				$('#cintillo_').css('display','none');
+				$('#logo_').css('display','none');
+				
+				valida=true;
 
-			$('#stickyMenu').addClass('menu-fixed');
+				
+		} else {
 
-			$('#stickyMenu').show();
-
-			$('#mainMenu').hide();
-
-			$('#stickyMenu ul').css({'background': 'white'});
-
-			$('#stickyMenu ul').css({'border-bottom': '1px solid #D1D1D1'}); 			
-
-			$('#cintillo_').addClass('logo-fixed');
-
-			$('#cintillo_').show()
-
-			$('#logo_').addClass('logo-fixed');
-
-			$('#logo_').show()
-
-			cambiarImagenHover('img/linea_gris.png');
-
-
+						
+			console.log('La pantalla no cumple con la media query.');
 			
+			valida=false;
+			
+			if ($('#mainMenu').length > 0) {
+
+				$('#mainMenu').show();
+
+			}
+						
+			$(window).on('scroll', function () {
+
+				if ($(window).scrollTop() > 1) {
+
+					console.log('entra con el scroll');
+
+
+					$('#stickyMenu').addClass('menu-fixed');
+
+					console.log('valor de valida:'+ valida);
+
+					if(!valida){
+
+						$('#stickyMenu').show();
+
+						$('#mainMenu').hide();	
+						
+						$('#stickyMenu ul').css({'background': 'white'});
+
+						$('#stickyMenu ul').css({'border-bottom': '1px solid #D1D1D1'}); 			
+
+						$('#cintillo_').addClass('logo-fixed');
+
+						$('#cintillo_').show()
+
+						$('#logo_').addClass('logo-fixed');
+
+						$('#logo_').show()
+
+						cambiarImagenHover('img/linea_gris.png');
+
+					}
+					
+					
+		
 		} else {
 
 
 			$('#stickyMenu').addClass('menu-fixed');
 
+			if(!valida){
+
 			$('#stickyMenu').hide();
 
-			$('#mainMenu').show();		
+			$('#mainMenu').show();	
+
+			
+			}	
 			
 			cambiarImagenHover('img/linea_blanca.png');
 
 
 		}
 
-	});
+		
 
+	});
+		}
+	}
+	
 
 	function cambiarImagenHover(imagenUrl) {
 		
-		// Obtener todos los enlaces en #mainMenu y #stickyMenu
-		//document.querySelectorAll('#mainMenu ul li a, #stickyMenu ul li a').forEach(function(link) {
-			// Modificar el estilo usando JavaScript para cambiar el background-image
-			//link.style.setProperty('--hover-image', `url(${imagenUrl})`);
 
 		const estilo = document.createElement('style');
         estilo.innerHTML = `
@@ -60,7 +122,7 @@ $(document).ready(function(){
         `;
 	
         document.head.appendChild(estilo);
-		//});
+		
 	
 	}
 
@@ -109,9 +171,10 @@ $(document).ready(function(){
 	$('.pagination li:first').css({'color': '#0048FF'}); // Damos estilos al primer item de la paginacion
 
 	// Ejecutamos todas las funciones
+	
 	$('.pagination li').click(pagination);
-	/*$('.right span').click(nextSlider);
-	$('.left span').click(prevSlider);*/
+	/*$('.right span').click(nextSlider);*/
+	/*$('.left span').click(prevSlider);*/
 
 
 	myTimer = setInterval(nextSlider, 5000);	
@@ -120,14 +183,17 @@ $(document).ready(function(){
 
 	function pagination(){
 
+		
+
 		clearInterval(myTimer);
 		
         myTimer = setInterval(nextSlider, 5000);
 
-		console.log('Entr por el pagination');
-		
+		console.log('Entra por el pagination');
+				
 		var paginationPos = $(this).index() + 1; // Posicion de la paginacion seleccionada
 
+		
 		$('.slider li').hide(); // Ocultamos todos los slides
 		$('.slider li:nth-child('+ paginationPos +')').fadeIn(); // Mostramos el Slide seleccionado	
 
@@ -136,26 +202,27 @@ $(document).ready(function(){
 		$(this).css({'color':'#0048FF'});
 
 		imgPos = paginationPos;
-
+	
 		if(imgPos != 1){
 
 			$('#imgEquipo1').hide();
 
-		}else{
+		}else {
 			
 			$('#imgEquipo1').fadeIn(2500);
 		}
 
+		
 		if(imgPos !=2){	
 			
 			$('#imgEquipo2').hide();	
 			
-		}else{
+		}else {		
 			
 			$('#imgEquipo2').css("opacity", 0.2).effect("blind",{direction:"right",mode:"show"},2000, function(){		
 
 				$('#imgEquipo2').fadeTo(200,0.50);
-				$('#imgEquipo2').fadeTo(200,0.80);
+				$('#imgEquipo2').fadeTo(200,0.60);
 				$('#imgEquipo2').fadeTo(200,1);
 
 			  });				
@@ -163,12 +230,19 @@ $(document).ready(function(){
 
 			$('.pagination li').css({'z-index': 100});
 
+			
 		}
+
+		
+	
 		/******************************* */
 
 	}
 
 	function nextSlider(){
+
+		$('#imgEquipo1').stop(true, true);			
+		$('#imgEquipo2').stop(true, true);
 
 		clearInterval(myTimer);
         myTimer = setInterval(nextSlider, 5000);
@@ -195,16 +269,19 @@ $(document).ready(function(){
 
 		if(imgPos !=2){	
 			
-			$('#imgEquipo2').hide();	 
+			$('#imgEquipo2').hide();	
+			
 			
 		}else{
 
 			
 			$('#imgEquipo2').css("opacity", 0.2).effect("blind",{direction:"right",mode:"show"},2000, function(){		
 
-				$('#imgEquipo2').fadeTo(200,0.40);
-				$('#imgEquipo2').fadeTo(200,0.80);
-				$('#imgEquipo2').fadeTo(200,0.80);
+				
+				$('#imgEquipo2').fadeTo(200,0.50);
+				$('#imgEquipo2').fadeTo(200,0.60);
+				$('#imgEquipo2').fadeTo(200,1);
+
 
 			  });				
 		
@@ -214,79 +291,7 @@ $(document).ready(function(){
 		}
 	}
 
-	/*function prevSlider(){
-
-		
-		if( imgPos <= 1){imgPos = imgItems;} 
-		else {imgPos--;}
-
-		$('.pagination li').css({'color': '#FFFFFF'});		
-		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#0048FF'});
-
-		$('.slider li').hide(); // Ocultamos todos los slides
-		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
-
-		console.log("Se mete por prevSlider");
-
-		if(imgPos != 1){
-
-			$('#imgEquipo1').hide();
-
-		}else{
-
-			$('#imgEquipo1').fadeIn(2500);
-		}
-
-
-		if(imgPos !=2){	
-
-			$('#imgEquipo2').hide();
-
-		}else{
-
-			$('#imgEquipo2').css("opacity", 0.2).effect("blind",{direction:"right",mode:"show"},2000, function(){		
-
-				$('#imgEquipo2').fadeTo(200,0.50);
-				$('#imgEquipo2').fadeTo(200,0.80);
-				$('#imgEquipo2').fadeTo(200,1);
-
-			  });				
-		
-
-			$('.pagination li').css({'z-index': 100});
-
-		}
-
-		/*if(imgPos == 1){
-
-			$('#imgEquipo1').fadeIn(2500);
-
-		}else{
-
-			$('#imgEquipo1').hide();
-		}
-
-		if(imgPos ==2){	
-			
-				  $('#imgEquipo2').css("opacity", 0.2).effect("blind",{direction:"right",mode:"show"},2000, function(){		
-
-					$('#imgEquipo2').fadeTo(200,0.50);
-					$('#imgEquipo2').fadeTo(200,0.80);
-					$('#imgEquipo2').fadeTo(200,1);
-
-				  });				
-			
-
-				$('.pagination li').css({'z-index': 100});
-			
-		}else{
-
-			$('#imgEquipo2').hide();
-
-		}
-		
-	}*/
-
+	
 
 
 	
