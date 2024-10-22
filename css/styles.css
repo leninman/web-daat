@@ -181,7 +181,7 @@ nav {
 
 #stickyMenu .listMenu {
   opacity: 0.8;
-  height: 55px;
+  height: 65px;
 }
 
 
@@ -675,7 +675,7 @@ ul {
 
   #stickyMenu .listMenu {
 
-    height:80px;
+    height:65px;
     margin-top:30px
   }
 
@@ -688,7 +688,7 @@ ul {
   #stickyMenu ul li a, #mainMenu ul li a { 
 
     width: 200px;
-    font-size: 25px;
+    font-size: 18px;
 
   }
   
@@ -715,7 +715,7 @@ ul {
 
 
   #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
-    font-size: 26px;
+    font-size: 19px;
     cursor: pointer;
 }
 
@@ -1095,7 +1095,7 @@ ul {
   #stickyMenu ul li a:hover::after {
     content: "";
     display: inline-block;
-    width: 130px;
+    width: 110px;
     /* Ajusta el ancho */
     height: 5px;
     /* Ajusta la altura */
@@ -1127,7 +1127,7 @@ ul {
 
   #stickyMenu .listMenu {
     justify-content: center;
-    height: 60px;
+    height: 65px;
   }
 
   .item div, #nosotros div{
