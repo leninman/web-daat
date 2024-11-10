@@ -10,27 +10,64 @@
 
 
 #imgEquipo1 {
+  opacity: 0;
   position: absolute;
-  right: 11%;
-  top: 19%;
+  right: 12%;
+  bottom: 10%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.imgDiv1 {
+
+  height: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  object-fit: cover;
 }
 
 #imgEquipo1 img {
-  width: 100%;
-  height: 75%;
+  width: max-content;
+  height: 100%;
+
 }
+
 
 #imgEquipo2 {
+
+  opacity: 0;
   position: absolute;
-  right: 1%;
-  top: 24.3%;
+  bottom: 0;
+  right: 0; 
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+
+
 }
 
+.imgDiv {
+
+
+  height: 80%;
+  
+
+}
 
 #imgEquipo2 img {
+
   width: 100%;
-  height: 75%;
+  height: 100%;
+
 }
+
+
 
 #cintillo_,
 #logo_ {
@@ -43,7 +80,7 @@
   height: 70px;
 }
 
-.logoDiv{
+.logoDiv {
 
   display: flex;
   justify-content: center;
@@ -55,12 +92,12 @@
   position: absolute;
   top: 0px;
   z-index: 100;
-  
+
 }
 
 #logo,
 #logo_ {
-  height:70px;
+  height: 70px;
   width: 70px;
 }
 
@@ -99,7 +136,7 @@ nav {
 #mainMenu ul,
 #stickyMenu ul {
   list-style: none;
-  
+
 }
 
 #mainMenu ul li a:hover,
@@ -112,14 +149,13 @@ nav {
 #stickyMenu ul li a:hover::after {
   content: "";
   display: inline-block;
-  width: 110px;  
-  height: 5px; 
+  width: 110px;
+  height: 5px;
   margin-top: 10px;
-  /*margin-left: 10px;  */
-  background-image: var(--hover-image); 
+  background-image: var(--hover-image);
   background-size: contain;
   background-repeat: no-repeat;
-  
+
 }
 
 #mainMenu ul li a::after,
@@ -133,6 +169,97 @@ nav {
   min-width: 180px;
   max-width: 180px;
   width: auto;
+}
+
+#menuHamburguesa {
+  z-index: 5000;
+  display: none;
+  border: 1px solid gray;
+  height: 100vh;
+  background-color: white;
+  width: 80%;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+
+#menuHamburguesa ul li {
+
+  height: auto;
+  color: #676869;
+  padding: 3rem 2rem;
+  font-size: 16px;
+
+}
+
+#menuHamburguesa ul li a {
+
+  text-decoration: none;
+  color: #676869;
+
+}
+
+#menuHamburguesa ul li a:hover {
+
+  font-weight: bold;
+
+}
+
+
+#barras:hover {
+
+  color: #0048FF;
+}
+
+#barras {
+  cursor: pointer; 
+  z-index: 3000;
+  width: 80px;
+  position: relative;
+  margin-top: 12px;
+  bottom: 0;
+  left: 10px;
+  font-size: 30px;
+  color: #676869
+}
+
+#contenedorSocial {
+
+  height: 20% !important;
+  position: relative
+}
+
+li #social {
+
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  bottom: 0px;
+
+}
+
+#social li i:hover {
+  color: cadetblue
+}
+
+#cerrar {
+
+  border-bottom: 1px solid lightgray;
+  padding: 1rem !important;
+  text-align: end;
+}
+
+#cerrar span:hover {
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 #mainMenu ul li a {
@@ -162,12 +289,12 @@ nav {
 }
 
 #mainMenu ul li a span {
- 
+
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 5%;
   padding-bottom: 5%;
- 
+
 }
 
 #stickyMenu ul li a span {
@@ -176,7 +303,7 @@ nav {
   padding-right: 8%;
   padding-top: 5%;
   padding-bottom: 5%;
-  
+
 }
 
 #stickyMenu .listMenu {
@@ -185,25 +312,16 @@ nav {
 }
 
 
-#imgEquipo1 {
-  display: none;
-}
-
-#imgEquipo2 {
-  display: none;
-}
-
 #tituloNosotros,
 #tituloServicios {
-  /*max-height: 7%;*/
+  
   margin-top: 10%;
-  /*margin-left: 3.5%;*/
-  height:auto;
-  border: 1px solid blue;
+  height: auto; 
   text-align: center;
 }
 
-#tituloNosotros div, #tituloServicios div{
+#tituloNosotros div,
+#tituloServicios div {
   word-wrap: break-word;
   height: auto;
 }
@@ -227,20 +345,20 @@ nav {
   width: unset;
   min-width: 30%;
   max-width: 80%;
-  box-sizing: border-box;
-  background-color: lightblue;
+  box-sizing: border-box; 
   word-wrap: break-word;
 }
 
-#contenedorServ{
+#contenedorServ {
 
   height: auto;
 
 }
 
-.parrafoServ, .parrafoDesa, #nosotros {
-  height: auto;
-  border: 1px solid red;
+.parrafoServ,
+.parrafoDesa,
+#nosotros {
+  height: auto; 
   top: 0%;
   position: unset;
   overflow-wrap: break-word;
@@ -254,29 +372,25 @@ nav {
 }
 
 #nosotros {
-  display: flex;
- /* justify-content: space-between;*/
-  margin-top: 10%;
- /* max-height: 50%;*/
-  border:1px solid red;
+  display: flex; 
+  margin-top: 10%; 
   height: auto;
   word-wrap: break-word;
 }
 
-.item .titulosPrimarios{
+.item .titulosPrimarios {
 
   display: flex;
-  background-color: pink;
-   max-width: 100%;   
+  max-width: 100%;
   justify-content: center;
 }
 
-.titulosPrimarios h2{
+.titulosPrimarios h2 {
 
   flex: 1;
 }
 
-#nosotros div{
+#nosotros div {
 
   flex: 1;
   box-sizing: border-box;
@@ -286,36 +400,50 @@ nav {
 
 #desarrollos {
   padding-top: 3%;
-  display: flex;
-
-  /*max-height: 50%;
-  position: absolute;
-  top: 45%;*/
+  display: flex;  
 }
 
 .container {
-  height: auto;       
+  height: auto;
   min-width: 50%;
   box-sizing: border-box;
 
 }
 
-#divCentral div {
-  height: 80%;
+#divCentral {
+
+  height: auto;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
+#divCentral div {
+
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+
 #imgCintilloCentral {
+
   width: 100%;
-  height: 80%;
-  z-index: -1;
-  position: absolute;
+  height: 100%;
+  object-fit: cover;
 }
 
 #imgCentral {
   z-index: 200;
-  position: absolute;
-  height: 80%;
+  position: absolute;  
   right: 25%;
+  height: 100%;
+ 
 }
 
 #dudasComentarios {
@@ -330,7 +458,7 @@ nav {
 #contactanos div {
   width: 100%;
   display: flex;
-  
+
 }
 
 #contactanos {
@@ -357,7 +485,7 @@ nav {
 
 #nosotros .item {
 
-    
+
   color: #595959;
   font-size: 20px;
   text-align: center;
@@ -366,14 +494,13 @@ nav {
 #desarrollos .item {
   color: #595959;
   font-size: 17px;
-  margin-top: 5px; 
+  margin-top: 5px;
   flex: 1;
   margin-top: 0px;
   width: unset;
   min-width: 30%;
   max-width: 80%;
-  box-sizing: border-box;
-  background-color: lightblue;
+  box-sizing: border-box;  
   word-wrap: break-word;
 
 }
@@ -391,15 +518,9 @@ nav {
 .servicios_ div p {
   margin: 80px 15% 6% 6%;
   color: #747474;
-  font-size: 24px;
-  /*max-height: 130px;*/
+  font-size: 24px;  
 }
 
-.servicios_ {
-  /*display: flex;
-  max-height: 60%;
-  position: relative;*/
-}
 
 #idServicios_ {
   background: #fbfcfc;
@@ -415,8 +536,7 @@ nav {
 
 #cuadro {
   position: relative;
-  /*height: 115%;-*/
-  height:auto;
+  height: auto;
   background: #fbfcfc;
   border: 1px solid #f2f2f2;
   margin-top: 10%;
@@ -463,30 +583,27 @@ nav {
 }
 
 #contactanos {
-  /*display: flex;
-  max-height: 100%;*/
+
   height: auto;
 }
 
 #imgContactanos {
   height: 500px;
-  width: 750px;
-  /*position: absolute;*/
+  width: 750px; 
   bottom: 10%;
 }
 
 #footer {
   display: flex;
   justify-content: space-between;
-  background-color: #f7f7f8;
-  /*max-height: 60%;*/
-  height:auto;
+  background-color: #f7f7f8; 
+  height: auto;
   border: 1px solid #d1d1d1;
   border-bottom: none;
 }
 
 #footer div {
-  /*height: 12%;*/
+
   margin-top: 6%;
   max-width: 25%;
 }
@@ -496,7 +613,7 @@ nav {
   list-style-type: none;
 }
 
-#footer li{
+#footer li {
 
   word-wrap: break-word;
 }
@@ -513,17 +630,10 @@ nav {
   color: #595959;
   font-weight: lighter;
   padding-left: 5%;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 
-#footerServicios,
-#footerTecnologia {
-  /*width: 25%;*/
-}
 
-#footerHumanTalent {
-  /*width: 40%;*/
-}
 
 #poweredBy {
   max-height: 3%;
@@ -542,10 +652,14 @@ ol {
 }
 
 .slideshow {
-  width: 100%;
+
   position: relative;
-  height:auto;
+  height: 100vh;
+  overflow: hidden;
+
 }
+
+
 
 .slider li,
 ul {
@@ -556,15 +670,23 @@ ul {
   overflow: hidden;
 }
 
+
 .slider li img {
+
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Mantiene la imagen adaptada al contenedor sin deformarla */
+
+
 }
+
 
 .pagination {
   position: absolute;
   bottom: 1%;
   width: 100%;
-  height: 20px;
+  height: 13px;
   display: flex;
   justify-content: center;
   z-index: 100;
@@ -602,9 +724,14 @@ ul {
 
 
 @media only screen and (min-width: 1300px) and (max-width: 1400px) and (orientation: landscape) {
-  body {
-    background-color:chartreuse;
-    
+  /*body {
+    background-color: chartreuse;
+
+  }*/
+
+  #barras {
+
+    display: none;
   }
 
   #cintillo,
@@ -614,69 +741,76 @@ ul {
 
   }
 
-  .logoDiv{
+  .logoDiv {
 
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
   }
 
-  #logo_, #logo {
+  #logo_,
+  #logo {
 
-    
-    margin-left:0%;
-    width:90px;
-    height:90px
+
+    margin-left: 0%;
+    width: 90px;
+    height: 90px
   }
 
-  nav{
+  nav {
 
-    top:60px
+    top: 60px
   }
+
+
 
   #imgEquipo1 {
 
-    top: 22%;
-    right:5%
+    right: 5%
   }
 
-  #imgEquipo2 {
 
-    top: 35%
-  }
 
-  #imgEquipo1 img{
-    width: 100%;
-    height:60%
-  }
-  
-  #imgEquipo2 img {
-    width: 100%;
+  .imgDiv,
+  .imgDiv1 {
+
     height: 65%;
   }
 
-  .slideshow {
-    height: auto;
+
+  #imgEquipo1 img {
+    width: 100%;
+    height: 100%
   }
 
-  .menu-fixed{
+  #imgEquipo2 img {
+    width: max-content;
+    height: 100%;
+  }
 
-    top:59px;
+  .slideshow {
+    height: 100vh;
+  }
+
+
+  .menu-fixed {
+
+    top: 59px;
   }
 
   #mainMenu {
     width: 100%;
   }
 
-  #mainMenu .listMenu{
+  #mainMenu .listMenu {
     margin-top: 30px;
 
   }
 
   #stickyMenu .listMenu {
 
-    height:65px;
-    margin-top:30px
+    height: auto;
+    margin-top: 30px
   }
 
   #mainMenu ul li,
@@ -685,13 +819,14 @@ ul {
     max-width: 200px;
   }
 
-  #stickyMenu ul li a, #mainMenu ul li a { 
+  #stickyMenu ul li a,
+  #mainMenu ul li a {
 
     width: 200px;
-    font-size: 18px;
+    font-size: 25px;
 
   }
-  
+
 
   #mainMenu ul li a:hover::after,
   #stickyMenu ul li a:hover::after {
@@ -711,24 +846,44 @@ ul {
     /* Hace que la imagen se ajuste al tamaño del contenedor */
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
+    font-size: 27px;
   }
 
 
-  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
-    font-size: 19px;
+  #mainMenu ul li a:hover,
+  #stickyMenu ul li a:hover {
+    font-size: 27px;
     cursor: pointer;
-}
+  }
 
   .listMenu {
     justify-content: center;
   }
 
-  .item div, #nosotros div{
+  .pagination {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+  }
 
-    height:auto;
+  .pagination li {
+    font-size: 20px;
+    margin: 2px 5px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .item div,
+  #nosotros div {
+
+    height: auto;
     max-width: 100%;
   }
- 
+
   .item h2 {
     margin-top: 50px;
     font-size: 25px;
@@ -736,22 +891,21 @@ ul {
 
   #tituloNosotros,
   #tituloServicios {
-    height: auto;
-    border: 1px solid blue;
+    height: auto;   
     margin-left: 0%;
-  }  
+  }
 
 
   #tituloNosotros div,
   #tituloServicios div {
     word-wrap: break-word;
-  }  
+  }
 
 
   #tituloNosotros h1,
   #tituloServicios h1 {
     font-size: 31px;
-  }  
+  }
 
   #nosotros p {
     font-size: 25px;
@@ -760,7 +914,6 @@ ul {
 
   #cuadro {
 
-    background-color: aqua;
     height: unset;
     height: auto;
   }
@@ -772,16 +925,16 @@ ul {
     right: 0;
   }
 
-  #nosotros{
+  #nosotros {
 
     display: flex;
-  
+
     justify-content: unset;
   }
 
 
-  #nosotros div{
-    flex: 1;       
+  #nosotros div {
+    flex: 1;
     box-sizing: border-box;
     background-color: #f4f4f4;
     word-wrap: break-word;
@@ -791,9 +944,8 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height:auto;
-    border:1px solid red;
-    top:0%;
+    height: auto; 
+    top: 0%;
     position: unset;
     overflow-wrap: break-word;
     /* Pssermite que las palabras largas se dividan en varias líneas */
@@ -806,16 +958,15 @@ ul {
     /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
   }
 
-  .tituloServ {   
+  .tituloServ {
 
-        flex: 1;
-        margin-top: 20px;
-        height: auto;
-        width: unset;
-        min-width: 50%;
-        box-sizing: border-box;
-        background-color: lightblue;
-        word-wrap: break-word;
+    flex: 1;
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;   
+    word-wrap: break-word;
   }
 
   .tituloServ h2 {
@@ -829,11 +980,10 @@ ul {
     height: auto;
   }
 
-  #contenedorServ{
+  #contenedorServ {
 
-    height:auto;
-    background-color: bisque;
-
+    height: auto;
+   
   }
 
   .servicios_ div p {
@@ -843,12 +993,12 @@ ul {
   .servicios_ div p,
   #desarrollos p {
 
-    font-size: 25px;    
+    font-size: 25px;
     max-height: unset;
   }
 
   #nosotros div .item {
-    border: 1px solid black;
+   
     margin-top: 0px;
     height: auto;
   }
@@ -863,73 +1013,83 @@ ul {
     height: 55px;
   }
 
-  #desarrollos{
+  #desarrollos {
 
     max-height: unset;
     position: unset;
   }
 
-  #desarrollos p{
+  #desarrollos p {
 
-    margin-top:30px;
+    margin-top: 30px;
   }
 
   #desarrollos .item {
-    flex:1;
-    margin-top: 0px; 
+    flex: 1;
+    margin-top: 0px;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box;
-    background-color: lightblue;
+    box-sizing: border-box;   
     word-wrap: break-word;
-    
+
   }
 
-  
-  .container{
+
+  .container {
     height: auto;
     width: unset;
     min-width: 50%;
     box-sizing: border-box;
-    background-color: burlywood;
-    
+   
+
   }
 
-  .icono_titulo{
+  .icono_titulo {
     height: auto;
     max-height: unset;
   }
 
   .parrafoDesa {
-      padding: 0 5% 0 5%;
+    padding: 0 5% 0 5%;
   }
 
-  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+  #iconoFabrica,
+  #iconoTalento,
+  #iconoConsultoria,
+  #iconoGerencia {
     width: 120px;
     height: 120px;
     top: 0px;
-  }  
+  }
 
   #divCentral {
-    height: 65%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
   }
 
   #divCentral div {
     height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
 
   #imgCintilloCentral {
-    z-index: -1;
-    position: absolute;
     width: 100%;
-    height: 65%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #imgCentral {
     z-index: 200;
     position: absolute;
-    height: 65%;
+    height: 100%;
     left: 50%;
   }
 
@@ -953,13 +1113,12 @@ ul {
   }
 
   #dudasComentarios {
-   
-      margin-top: 20px;
-      height: auto;
-      width: unset;
-      max-height: unset;     
-      background-color: lightblue;
-      word-wrap: break-word;
+
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    max-height: unset;   
+    word-wrap: break-word;
   }
 
   #dudasComentarios h2 {
@@ -971,17 +1130,17 @@ ul {
   #footer div {
 
     max-width: 25%;
-  
+
   }
 
-  #footer div h2{
+  #footer div h2 {
 
     font-size: 24px;
     text-align: center;
     height: auto;
   }
 
-  #footer div ul li{
+  #footer div ul li {
 
     font-size: 23px;
     text-align: center;
@@ -1006,11 +1165,11 @@ ul {
     height: auto
   }
 
- 
-  
+
+
   #poweredBy {
 
-    font-size: 14px;
+    font-size: 18px;
     max-height: 5%;
     border: unset
   }
@@ -1018,10 +1177,16 @@ ul {
 
 
 @media only screen and (min-width:1024px) and (max-width: 1300px) and (orientation: landscape) {
-  body {
-    background-color:blanchedalmond;
-    
+  /*body {
+    background-color: blanchedalmond;
+
+  }*/
+
+  #barras {
+
+    display: none;
   }
+
 
   #cintillo,
   #cintillo_ {
@@ -1030,59 +1195,93 @@ ul {
 
   }
 
-  .logoDiv{
+  .logoDiv {
 
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
   }
 
-  #logo_, #logo {
+  #logo_,
+  #logo {
 
-    
-    margin-left:0%;
-    width:90px;
-    height:90px
+
+    margin-left: 0%;
+    width: 90px;
+    height: 90px
   }
 
-  nav{
+  nav {
 
-    top:60px
+    top: 60px
   }
 
   #imgEquipo1 {
 
-    top: 30%;
-    right: 1%;
+    right: 5%;
+    height: 100%;
   }
+
+  .imgDiv1 {
+
+    height: 65%
+  }
+
 
   #imgEquipo2 {
 
-    top: 34.3%
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  }
+
+  .imgDiv {
+
+    height: 70%;    
+    object-fit: cover;
   }
 
 
-  #imgEquipo1 img,
-  #imgEquipo2 img {
+  #imgEquipo1 img {
+
     width: 100%;
-    height: 65%;
+    height: 100%;
+
   }
+
+  #imgEquipo2 img {
+
+    width: 100%;
+    height: 100%;
+
+  }
+
 
   .slideshow {
-    height: auto;
+    height: 100vh;
   }
 
-  .menu-fixed{
 
-    top:59px;
+
+  .menu-fixed {
+
+    top: 59px;
   }
 
   #mainMenu {
     width: 100%;
   }
 
-  #mainMenu ul, #stickyMenu{
-    margin-top:30px;
+  #mainMenu ul,
+  #stickyMenu {
+    margin-top: 30px;
   }
 
   #mainMenu ul li,
@@ -1110,19 +1309,21 @@ ul {
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
 
-  
+
   }
 
-  #mainMenu ul li a, #stickyMenu ul li a {
+  #mainMenu ul li a,
+  #stickyMenu ul li a {
 
     font-size: 18px;
-    width:180px;
+    width: 180px;
   }
 
-  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+  #mainMenu ul li a:hover,
+  #stickyMenu ul li a:hover {
     font-size: 19px;
     cursor: pointer;
-}
+  }
 
 
   #stickyMenu .listMenu {
@@ -1130,12 +1331,13 @@ ul {
     height: 65px;
   }
 
-  .item div, #nosotros div{
+  .item div,
+  #nosotros div {
 
-    height:auto;
+    height: auto;
     max-width: 100%;
   }
- 
+
   .item h2 {
     margin-top: 50px;
     font-size: 23px;
@@ -1143,23 +1345,22 @@ ul {
 
   #tituloNosotros,
   #tituloServicios {
-    height: auto;
-    border: 1px solid blue;
+    height: auto;  
     margin-left: 0%;
-  }  
+  }
 
 
   #tituloNosotros div,
   #tituloServicios div {
     word-wrap: break-word;
-  }  
+  }
 
 
 
   #tituloNosotros h1,
   #tituloServicios h1 {
     font-size: 29px;
-  }  
+  }
 
   #nosotros p {
     font-size: 23px;
@@ -1167,8 +1368,7 @@ ul {
   }
 
   #cuadro {
-
-    background-color: aqua;
+   
     height: unset;
     height: auto;
   }
@@ -1180,16 +1380,16 @@ ul {
     right: 0;
   }
 
-  #nosotros{
+  #nosotros {
 
     display: flex;
-  
+
     justify-content: unset;
   }
 
 
-  #nosotros div{
-    flex: 1;       
+  #nosotros div {
+    flex: 1;
     box-sizing: border-box;
     background-color: #f4f4f4;
     word-wrap: break-word;
@@ -1199,9 +1399,8 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height:auto;
-    border:1px solid red;
-    top:0%;
+    height: auto;   
+    top: 0%;
     position: unset;
     overflow-wrap: break-word;
     /* Pssermite que las palabras largas se dividan en varias líneas */
@@ -1214,16 +1413,15 @@ ul {
     /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
   }
 
-  .tituloServ {   
+  .tituloServ {
 
-        flex: 1;
-        margin-top: 20px;
-        height: auto;
-        width: unset;
-        min-width: 50%;
-        box-sizing: border-box;
-        background-color: lightblue;
-        word-wrap: break-word;
+    flex: 1;
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    word-wrap: break-word;
   }
 
   .tituloServ h2 {
@@ -1237,10 +1435,9 @@ ul {
     height: auto;
   }
 
-  #contenedorServ{
+  #contenedorServ {
 
-    height:auto;
-    background-color: bisque;
+    height: auto;  
 
   }
 
@@ -1251,12 +1448,12 @@ ul {
   .servicios_ div p,
   #desarrollos p {
 
-    font-size: 23px;    
+    font-size: 23px;
     max-height: unset;
   }
 
   #nosotros div .item {
-    border: 1px solid black;
+   
     margin-top: 0px;
     height: auto;
   }
@@ -1271,72 +1468,76 @@ ul {
     height: 55px;
   }
 
-  #desarrollos{
+  #desarrollos {
 
     max-height: unset;
     position: unset;
   }
 
-  #desarrollos p{
+  #desarrollos p {
 
-    margin-top:30px;
+    margin-top: 30px;
   }
 
   #desarrollos .item {
-    flex:1;
-    margin-top: 0px; 
+    flex: 1;
+    margin-top: 0px;
     width: unset;
     min-width: 50%;
     box-sizing: border-box;
-    background-color: lightblue;
     word-wrap: break-word;
-    
+
   }
 
-  .container{
+  .container {
     height: auto;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box;
-    background-color: burlywood;
-    
+    box-sizing: border-box;   
+
   }
 
-  .icono_titulo{
+  .icono_titulo {
     height: auto;
     max-height: unset;
   }
 
   .parrafoDesa {
-      padding: 0 5% 0 5%;
+    padding: 0 5% 0 5%;
   }
 
-  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+  #iconoFabrica,
+  #iconoTalento,
+  #iconoConsultoria,
+  #iconoGerencia {
     width: 125px;
     height: 120px;
     top: 0px;
-  }  
+  }
 
   #divCentral {
-    height: 65%;
+    
+    height: auto;
   }
 
   #divCentral div {
-    height: 100%;
+ 
+    height: auto;
+    position: relative;
   }
 
 
   #imgCintilloCentral {
     z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 65%;
+    position: unset;
+    width: 100%;   
+    height: auto
   }
 
   #imgCentral {
     z-index: 200;
-    position: absolute;
-    height: 65%;
+    position: absolute;  
+    height: 100%;
     left: 50%;
   }
 
@@ -1360,13 +1561,12 @@ ul {
   }
 
   #dudasComentarios {
-   
-      margin-top: 20px;
-      height: auto;
-      width: unset;
-      max-height: unset;     
-      background-color: lightblue;
-      word-wrap: break-word;
+
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    max-height: unset;   
+    word-wrap: break-word;
   }
 
   #dudasComentarios h2 {
@@ -1378,17 +1578,17 @@ ul {
   #footer div {
 
     max-width: 25%;
-  
+
   }
 
-  #footer div h2{
+  #footer div h2 {
 
     font-size: 22px;
     text-align: center;
     height: auto;
   }
 
-  #footer div ul li{
+  #footer div ul li {
 
     font-size: 21px;
     text-align: center;
@@ -1413,8 +1613,8 @@ ul {
     height: auto
   }
 
- 
-  
+
+
   #poweredBy {
 
     font-size: 16px;
@@ -1424,9 +1624,14 @@ ul {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
-  body {
-    background-color:darkcyan;
-    
+  /*body {
+    background-color: darkcyan;
+
+  }*/
+
+  #barras {
+
+    display: none;
   }
 
   #cintillo,
@@ -1436,51 +1641,78 @@ ul {
 
   }
 
-  .logoDiv{
+  .logoDiv {
 
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
   }
 
-  #logo_, #logo {
+  #logo_,
+  #logo {
 
-    
-    margin-left:0%;
-    width:80px;
-    height:80px
+
+    margin-left: 0%;
+    width: 80px;
+    height: 80px
   }
 
-  nav, .menu-fixed {
+  nav,
+  .menu-fixed {
 
-    top:80px
+    top: 80px
   }
 
   #imgEquipo1 {
 
-    top: 30%;
-    right:5%;
-    /*height: auto;*/
+
+    right: 5%;
+    height: 100%
   }
+
+  .imgDiv1 {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    object-fit: cover;
+  }
+
+
 
   #imgEquipo2 {
 
-    top: 35%
+    right: 3%;
+
+  }
+
+  .imgDiv {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%
+  }
+
+  #imgEquipo1 img {
+
+    height: 100%;
+    width: 100%;
   }
 
 
-  #imgEquipo1 img,
   #imgEquipo2 img {
-    width: 100%;   
-    max-height: 65%;
-  
+    width: max-content;
+    height: 100%;
+
   }
 
   .slideshow {
-    height: 500px;
+    height: 100vh;
   }
 
- 
+
+
   #mainMenu {
     width: 100%;
   }
@@ -1489,12 +1721,11 @@ ul {
   #stickyMenu ul li {
     min-width: 130px;
     max-width: 130px;
-    /*min-width: 17%;
-    max-width: 17%;*/
+    
   }
 
   #mainMenu ul li a,
-  #stickyMenu ul li a{
+  #stickyMenu ul li a {
     font-size: 15px;
     width: 130px;
   }
@@ -1502,12 +1733,13 @@ ul {
   #stickyMenu .listMenu {
     opacity: 0.8;
     height: 55px;
-}
+  }
 
-  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+  #mainMenu ul li a:hover,
+  #stickyMenu ul li a:hover {
     font-size: 16px;
     cursor: pointer;
-  }  
+  }
 
   #mainMenu ul li a:hover::after,
   #stickyMenu ul li a:hover::after {
@@ -1527,25 +1759,28 @@ ul {
     /* Hace que la imagen se ajuste al tamaño del contenedor */
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
-   
+
   }
 
-  
-  #mainMenu ul, #stickyMenu {
+
+  #mainMenu ul,
+  #stickyMenu {
     margin-top: 0px;
 
   }
+
 
   .listMenu {
     justify-content: center;
   }
 
-  .item div, #nosotros div{
+  .item div,
+  #nosotros div {
 
-    height:auto;
+    height: auto;
     max-width: 100%;
   }
- 
+
   .item h2 {
     margin-top: 50px;
     font-size: 19px;
@@ -1553,23 +1788,22 @@ ul {
 
   #tituloNosotros,
   #tituloServicios {
-    height: auto;
-    border: 1px solid blue;
+    height: auto; 
     margin-left: 0%;
-  }  
+  }
 
 
   #tituloNosotros div,
   #tituloServicios div {
     word-wrap: break-word;
-  }  
+  }
 
 
 
   #tituloNosotros h1,
   #tituloServicios h1 {
     font-size: 24px;
-  }  
+  }
 
   #nosotros p {
     font-size: 18px;
@@ -1578,7 +1812,6 @@ ul {
 
   #cuadro {
 
-    background-color: aqua;
     height: unset;
     height: auto;
   }
@@ -1590,16 +1823,16 @@ ul {
     right: 0;
   }
 
-  #nosotros{
+  #nosotros {
 
     display: flex;
-  
+
     justify-content: unset;
   }
 
 
-  #nosotros div{
-    flex: 1;       
+  #nosotros div {
+    flex: 1;
     box-sizing: border-box;
     background-color: #f4f4f4;
     word-wrap: break-word;
@@ -1609,9 +1842,8 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height:auto;
-    border:1px solid red;
-    top:0%;
+    height: auto;   
+    top: 0%;
     position: unset;
     overflow-wrap: break-word;
     /* Pssermite que las palabras largas se dividan en varias líneas */
@@ -1624,16 +1856,15 @@ ul {
     /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
   }
 
-  .tituloServ {   
+  .tituloServ {
 
-        flex: 1;
-        margin-top: 35px;
-        height: auto;
-        width: unset;
-        min-width: 50%;
-        box-sizing: border-box;
-        background-color: lightblue;
-        word-wrap: break-word;
+    flex: 1;
+    margin-top: 35px;
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box; 
+    word-wrap: break-word;
   }
 
   .tituloServ h2 {
@@ -1647,10 +1878,9 @@ ul {
     height: auto;
   }
 
-  #contenedorServ{
+  #contenedorServ {
 
-    height:auto;
-    background-color: bisque;
+    height: auto;    
 
   }
 
@@ -1661,12 +1891,11 @@ ul {
   .servicios_ div p,
   #desarrollos p {
 
-    font-size: 18px;    
+    font-size: 18px;
     max-height: unset;
   }
 
   #nosotros div .item {
-    border: 1px solid black;
     margin-top: 0px;
     height: auto;
   }
@@ -1681,73 +1910,83 @@ ul {
     height: 55px;
   }
 
-  #desarrollos{
+  #desarrollos {
 
     max-height: unset;
     position: unset;
   }
 
-  #desarrollos p{
+  #desarrollos p {
 
-    margin-top:30px;
+    margin-top: 30px;
   }
 
   #desarrollos .item {
-    flex:1;
-    margin-top: 0px; 
+    flex: 1;
+    margin-top: 0px;
     width: unset;
     min-width: 30%;
     max-width: 70%;
-    box-sizing: border-box;
-    background-color: lightblue;
+    box-sizing: border-box;    
     word-wrap: break-word;
-    
+
   }
 
-  .container{
+  .container {
     height: auto;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box;
-    background-color: burlywood;
-    
+    box-sizing: border-box;    
+
   }
 
-  .icono_titulo{
+  .icono_titulo {
     height: auto;
     max-height: unset;
   }
 
   .parrafoDesa {
-      padding: 0 5% 0 5%;
+    padding: 0 5% 0 5%;
   }
 
-  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+  #iconoFabrica,
+  #iconoTalento,
+  #iconoConsultoria,
+  #iconoGerencia {
     width: 90px;
     height: 80px;
     top: 0px;
-  }  
+  }
 
   #divCentral {
-    height: 65%;
+ 
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
   }
 
   #divCentral div {
+
     height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
 
   #imgCintilloCentral {
-    z-index: -1;
-    position: absolute;
     width: 100%;
-    height: 65%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #imgCentral {
     z-index: 200;
-    position: absolute;
-    height: 65%;
+    height: 100;
     left: 50%;
   }
 
@@ -1771,13 +2010,12 @@ ul {
   }
 
   #dudasComentarios {
-   
-      margin-top: 20px;
-      height: auto;
-      width: unset;
-      max-height: unset;     
-      background-color: lightblue;
-      word-wrap: break-word;
+
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    max-height: unset;    
+    word-wrap: break-word;
   }
 
   #dudasComentarios h2 {
@@ -1789,17 +2027,17 @@ ul {
   #footer div {
 
     max-width: 25%;
-  
+
   }
 
-  #footer div h2{
+  #footer div h2 {
 
     font-size: 17px;
     text-align: center;
     height: auto;
   }
 
-  #footer div ul li{
+  #footer div ul li {
 
     font-size: 16px;
     text-align: center;
@@ -1824,8 +2062,8 @@ ul {
     height: auto
   }
 
- 
-  
+
+
   #poweredBy {
 
     font-size: 14px;
@@ -1835,9 +2073,14 @@ ul {
 }
 
 @media only screen and (min-width: 700px) and (max-width: 800px) and (orientation: landscape) {
-  body {
-    background-color:rgba(255, 166, 0, 0.681);
-    
+  /*body {
+    background-color: rgba(255, 166, 0, 0.681);
+
+  }*/
+
+  #barras {
+
+    display: none;
   }
 
   #cintillo,
@@ -1847,49 +2090,78 @@ ul {
 
   }
 
-  .logoDiv{
+  .logoDiv {
 
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
   }
 
-  #logo_, #logo {
+  #logo_,
+  #logo {
 
-    
-    margin-left:0%;
-    width:60px;
-    height:60px
+
+    margin-left: 0%;
+    width: 60px;
+    height: 60px
   }
 
-  nav, .menu-fixed {
+  nav,
+  .menu-fixed {
 
-    top:58px
+    top: 58px
   }
 
   #imgEquipo1 {
 
-    top: 30%;
     right: 5%;
+    height: 100%
+  }
+
+
+  .imgDiv1 {
+
+    height: 60%;
+  }
+
+  .imgDiv {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #imgEquipo1 {
+
+    bottom: 12%;
   }
 
   #imgEquipo2 {
 
-    top: 35%
+    position: absolute;
+    top: unset;   
+    right: 0%;
+    width: max-content
   }
 
+  #imgEquipo1 img {
 
-  #imgEquipo1 img,
+    width: 100%;
+    height: 100%;
+
+  }
+
   #imgEquipo2 img {
     width: 100%;
-    height: 65%;
+    height: 100%;
   }
 
   .slideshow {
-    height: 500px;
+    height: 100vh;
   }
 
- 
+
   #mainMenu {
     width: 100%;
   }
@@ -1898,24 +2170,24 @@ ul {
   #stickyMenu ul li {
     min-width: 130px;
     max-width: 130px;
-    /*min-width: 17%;
-    max-width: 17%;*/
+   
   }
 
   #mainMenu ul li a,
-  #stickyMenu ul li a{
+  #stickyMenu ul li a {
     font-size: 14px;
   }
 
   #stickyMenu .listMenu {
     opacity: 0.8;
     height: 55px;
-}
+  }
 
-  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+  #mainMenu ul li a:hover,
+  #stickyMenu ul li a:hover {
     font-size: 15px;
     cursor: pointer;
-  }  
+  }
 
   #mainMenu ul li a:hover::after,
   #stickyMenu ul li a:hover::after {
@@ -1937,22 +2209,23 @@ ul {
     /* Evita que la imagen se repita */
   }
 
- 
+
   .listMenu {
     justify-content: center;
   }
 
-  .pagination li{
+  .pagination li {
 
-    font-size:12px;
+    font-size: 12px;
   }
 
-  .item div, #nosotros div{
+  .item div,
+  #nosotros div {
 
-    height:auto;
+    height: auto;
     max-width: 100%;
   }
- 
+
   .item h2 {
     margin-top: 50px;
     font-size: 15px;
@@ -1961,22 +2234,21 @@ ul {
   #tituloNosotros,
   #tituloServicios {
     height: auto;
-    border: 1px solid blue;
     margin-left: 0%;
-  }  
+  }
 
 
   #tituloNosotros div,
   #tituloServicios div {
     word-wrap: break-word;
-  }  
+  }
 
 
 
   #tituloNosotros h1,
   #tituloServicios h1 {
     font-size: 21px;
-  }  
+  }
 
   #nosotros p {
     font-size: 15px;
@@ -1985,7 +2257,6 @@ ul {
 
   #cuadro {
 
-    background-color: aqua;
     height: unset;
     height: auto;
   }
@@ -1997,16 +2268,16 @@ ul {
     right: 0;
   }
 
-  #nosotros{
+  #nosotros {
 
     display: flex;
-  
+
     justify-content: unset;
   }
 
 
-  #nosotros div{
-    flex: 1;       
+  #nosotros div {
+    flex: 1;
     box-sizing: border-box;
     background-color: #f4f4f4;
     word-wrap: break-word;
@@ -2016,9 +2287,8 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height:auto;
-    border:1px solid red;
-    top:0%;
+    height: auto;    
+    top: 0%;
     position: unset;
     overflow-wrap: break-word;
     /* Pssermite que las palabras largas se dividan en varias líneas */
@@ -2031,16 +2301,15 @@ ul {
     /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
   }
 
-  .tituloServ {   
+  .tituloServ {
 
-        flex: 1;
-        margin-top: 35px;
-        height: auto;
-        width: unset;
-        min-width: 50%;
-        box-sizing: border-box;
-        background-color: lightblue;
-        word-wrap: break-word;
+    flex: 1;
+    margin-top: 35px;
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;  
+    word-wrap: break-word;
   }
 
   .tituloServ h2 {
@@ -2054,10 +2323,9 @@ ul {
     height: auto;
   }
 
-  #contenedorServ{
+  #contenedorServ {
 
-    height:auto;
-    background-color: bisque;
+    height: auto;
 
   }
 
@@ -2068,12 +2336,12 @@ ul {
   .servicios_ div p,
   #desarrollos p {
 
-    font-size: 15px;    
+    font-size: 15px;
     max-height: unset;
   }
 
   #nosotros div .item {
-    border: 1px solid black;
+   
     margin-top: 0px;
     height: auto;
   }
@@ -2088,73 +2356,82 @@ ul {
     height: 55px;
   }
 
-  #desarrollos{
+  #desarrollos {
 
     max-height: unset;
     position: unset;
   }
 
-  #desarrollos p{
+  #desarrollos p {
 
-    margin-top:30px;
+    margin-top: 30px;
   }
 
   #desarrollos .item {
-    flex:1;
-    margin-top: 0px; 
+    flex: 1;
+    margin-top: 0px;
     width: unset;
     min-width: 30%;
     max-width: 70%;
-    box-sizing: border-box;
-    background-color: lightblue;
+    box-sizing: border-box;   
     word-wrap: break-word;
-    
+
   }
 
-  .container{
+  .container {
     height: auto;
     width: unset;
     min-width: 50%;
     box-sizing: border-box;
-    background-color: burlywood;
-    
+   
+
   }
 
-  .icono_titulo{
+  .icono_titulo {
     height: auto;
     max-height: unset;
   }
 
   .parrafoDesa {
-      padding: 0 5% 0 5%;
+    padding: 0 5% 0 5%;
   }
 
-  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+  #iconoFabrica,
+  #iconoTalento,
+  #iconoConsultoria,
+  #iconoGerencia {
     width: 90px;
     height: 80px;
     top: 0px;
-  }  
+  }
 
   #divCentral {
-    height: 65%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   #divCentral div {
     height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
 
   #imgCintilloCentral {
-    z-index: -1;
-    position: absolute;
     width: 100%;
-    height: 65%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #imgCentral {
     z-index: 200;
-    position: absolute;
-    height: 65%;
+    height: 100%;
     left: 50%;
   }
 
@@ -2178,13 +2455,12 @@ ul {
   }
 
   #dudasComentarios {
-   
-      margin-top: 20px;
-      height: auto;
-      width: unset;
-      max-height: unset;     
-      background-color: lightblue;
-      word-wrap: break-word;
+
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    max-height: unset;   
+    word-wrap: break-word;
   }
 
   #dudasComentarios h2 {
@@ -2196,17 +2472,17 @@ ul {
   #footer div {
 
     max-width: 25%;
-  
+
   }
 
-  #footer div h2{
+  #footer div h2 {
 
     font-size: 16px;
     text-align: center;
     height: auto;
   }
 
-  #footer div ul li{
+  #footer div ul li {
 
     font-size: 15px;
     text-align: center;
@@ -2231,8 +2507,8 @@ ul {
     height: auto
   }
 
- 
-  
+
+
   #poweredBy {
 
     font-size: 14px;
@@ -2243,9 +2519,14 @@ ul {
 
 
 @media only screen and (max-width: 700px) and (orientation: landscape) {
-  body {
+  /*body {
     background-color: cornflowerblue;
-    
+
+  }*/
+
+  #barras {
+
+    display: none;
   }
 
   #cintillo,
@@ -2255,83 +2536,89 @@ ul {
 
   }
 
-  .logoDiv{
+  .logoDiv {
 
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
   }
 
-  #logo_, #logo {
+  #logo_,
+  #logo {
 
-    
-    margin-left:0%;
-    width:60px;
-    height:60px
+
+    margin-left: 0%;
+    width: 60px;
+    height: 60px
   }
 
-  nav{
+  nav {
 
-    top:60px
+    top: 60px
   }
 
-  .pagination li{
+  .pagination li {
 
     font-size: 11px;
   }
 
   #imgEquipo1 {
 
-    top: 30%;
     right: 3%;
+    height: 100%
   }
 
-  #imgEquipo2 {
-
-    top: 35%
+  .imgDiv1 {
+    height: 65%;
   }
 
 
   #imgEquipo1 img,
   #imgEquipo2 img {
-    width: 100%;
-    height: 65%;
-  }
-
-  .slideshow {
+    width: max-content;
     height: 100%;
   }
 
-  .menu-fixed{
+  .imgDiv {
+    height: 70%;
+  }
 
-    top:59px;
+
+  .slideshow {
+    height: 100vh;
+  }
+
+
+  .menu-fixed {
+
+    top: 59px;
   }
 
   #mainMenu {
     width: 100%;
   }
 
-  #mainMenu ul li a:hover, #stickyMenu ul li a:hover {
+  #mainMenu ul li a:hover,
+  #stickyMenu ul li a:hover {
     font-size: 15px;
     cursor: pointer;
-  }  
+  }
 
   #stickyMenu .listMenu {
     opacity: 0.8;
     height: 45px;
-}
+  }
 
   #mainMenu ul li,
   #stickyMenu ul li {
     min-width: 100px;
     max-width: 100px;
-    /*min-width: 17%;
-    max-width: 17%;*/
   }
 
-  #mainMenu ul li a, #stickyMenu ul li a {
+  #mainMenu ul li a,
+  #stickyMenu ul li a {
     font-size: 14px;
-}
+  }
 
   #mainMenu ul li a:hover::after,
   #stickyMenu ul li a:hover::after {
@@ -2357,12 +2644,13 @@ ul {
     justify-content: center;
   }
 
-  .item div, #nosotros div{
+  .item div,
+  #nosotros div {
 
-    height:auto;
+    height: auto;
     max-width: 100%;
   }
- 
+
   .item h2 {
     margin-top: 50px;
     font-size: 16px;
@@ -2370,23 +2658,22 @@ ul {
 
   #tituloNosotros,
   #tituloServicios {
-    height: auto;
-    border: 1px solid blue;
+    height: auto;   
     margin-left: 0%;
-  }  
+  }
 
 
   #tituloNosotros div,
   #tituloServicios div {
     word-wrap: break-word;
-  }  
+  }
 
 
 
   #tituloNosotros h1,
   #tituloServicios h1 {
     font-size: 21px;
-  }  
+  }
 
   #nosotros p {
     font-size: 15px;
@@ -2395,7 +2682,6 @@ ul {
 
   #cuadro {
 
-    background-color: aqua;
     height: unset;
     height: auto;
   }
@@ -2407,16 +2693,16 @@ ul {
     right: 0;
   }
 
-  #nosotros{
+  #nosotros {
 
     display: flex;
-  
+
     justify-content: unset;
   }
 
 
-  #nosotros div{
-    flex: 1;       
+  #nosotros div {
+    flex: 1;
     box-sizing: border-box;
     background-color: #f4f4f4;
     word-wrap: break-word;
@@ -2426,12 +2712,11 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height:auto;
-    border:1px solid red;
-    top:0%;
+    height: auto;    
+    top: 0%;
     position: unset;
     overflow-wrap: break-word;
-    /* Pssermite que las palabras largas se dividan en varias líneas */
+    /* Permite que las palabras largas se dividan en varias líneas */
     word-wrap: break-word;
     /* Compatibilidad adicional para navegadores más antiguos */
     /*word-break: break-word; /* Rompe palabras largas si es necesario */
@@ -2441,17 +2726,16 @@ ul {
     /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
   }
 
-  .tituloServ {   
+  .tituloServ {
 
-        flex: 1;
-        margin-top: 20px;
-        height: auto;
-        width: unset;
-        min-width: 30%;
-        max-width: 80%;
-        box-sizing: border-box;
-        background-color: lightblue;
-        word-wrap: break-word;
+    flex: 1;
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    min-width: 30%;
+    max-width: 80%;
+    box-sizing: border-box;    
+    word-wrap: break-word;
   }
 
   .tituloServ h2 {
@@ -2465,11 +2749,10 @@ ul {
     height: auto;
   }
 
-  #contenedorServ{
+  #contenedorServ {
 
-    height:auto;
-    background-color: bisque;
-
+    height: auto;
+   
   }
 
   .servicios_ div p {
@@ -2479,12 +2762,12 @@ ul {
   .servicios_ div p,
   #desarrollos p {
 
-    font-size: 15px;    
+    font-size: 15px;
     max-height: unset;
   }
 
   #nosotros div .item {
-    border: 1px solid black;
+   
     margin-top: 0px;
     height: auto;
   }
@@ -2499,55 +2782,56 @@ ul {
     height: 45px;
   }
 
-  #desarrollos{
+  #desarrollos {
 
     max-height: unset;
     position: unset;
   }
 
-  #desarrollos p{
+  #desarrollos p {
 
-    margin-top:30px;
+    margin-top: 30px;
   }
 
   #desarrollos .item {
-    flex:1;
-    margin-top: 0px; 
+    flex: 1;
+    margin-top: 0px;
     width: unset;
     min-width: 30%;
     max-width: 80%;
-    box-sizing: border-box;
-    background-color: lightblue;
+    box-sizing: border-box;   
     word-wrap: break-word;
-    
+
   }
 
-  .container{
+  .container {
     height: auto;
     width: unset;
     min-width: 50%;
     box-sizing: border-box;
-    background-color: burlywood;
     
   }
 
-  .icono_titulo{
+  .icono_titulo {
     height: auto;
     max-height: unset;
   }
 
   .parrafoDesa {
-      padding: 0 5% 0 5%;
+    padding: 0 5% 0 5%;
   }
 
-  #iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia{
+  #iconoFabrica,
+  #iconoTalento,
+  #iconoConsultoria,
+  #iconoGerencia {
     width: 65px;
     height: 60px;
     top: 0px;
-  }  
+  }
 
   #divCentral {
-    height: 65%;
+    height: 80%;
   }
 
   #divCentral div {
@@ -2557,15 +2841,14 @@ ul {
 
   #imgCintilloCentral {
     z-index: -1;
-    position: absolute;
     width: 100%;
-    height: 65%;
+    height: 100%;
   }
 
   #imgCentral {
     z-index: 200;
     position: absolute;
-    height: 65%;
+    height: 100%;
     left: 50%;
   }
 
@@ -2589,13 +2872,12 @@ ul {
   }
 
   #dudasComentarios {
-   
-      margin-top: 20px;
-      height: auto;
-      width: unset;
-      max-height: unset;     
-      background-color: lightblue;
-      word-wrap: break-word;
+
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    max-height: unset;  
+    word-wrap: break-word;
   }
 
   #dudasComentarios h2 {
@@ -2607,17 +2889,17 @@ ul {
   #footer div {
 
     max-width: 25%;
-  
+
   }
 
-  #footer div h2{
+  #footer div h2 {
 
     font-size: 16px;
     text-align: center;
     height: auto;
   }
 
-  #footer div ul li{
+  #footer div ul li {
 
     font-size: 15px;
     text-align: center;
@@ -2642,8 +2924,8 @@ ul {
     height: auto
   }
 
- 
-  
+
+
   #poweredBy {
 
     font-size: 12px;
@@ -2655,135 +2937,156 @@ ul {
 
 @media only screen and (max-width: 320px) and (orientation: landscape) {
 
-  html,
+  /*html,
   body {
 
-    background-color:blueviolet;
+    background-color: blueviolet;
+  }*/
+
+  #barras {
+
+    display: none;
   }
 
-  #mainMenu ul li, #stickyMenu ul li {
+  #mainMenu ul li,
+  #stickyMenu ul li {
     min-width: 80px;
     max-width: 80px;
-}
+  }
 
-#mainMenu ul li a, #stickyMenu ul li a {
-  font-size: 10px;
-}
+  #mainMenu ul li a,
+  #stickyMenu ul li a {
+    font-size: 10px;
+  }
 
-#mainMenu .listMenu, #stickyMenu .listMenu{
-  justify-content: start;
-}
+  #mainMenu .listMenu,
+  #stickyMenu .listMenu {
+    justify-content: start;
+  }
 
-#stickyMenu ul li a {
+  #stickyMenu ul li a {
 
-  width:80px;
+    width: 80px;
 
-}
+  }
 
-#stickyMenu .listMenu {
+  #stickyMenu .listMenu {
 
-  height:35px;
-}
+    height: 35px;
+  }
 
-#mainMenu ul li a:hover,
-#stickyMenu ul li a:hover {
-  font-size: 11px;
-  cursor: pointer;
-}
+  #mainMenu ul li a:hover,
+  #stickyMenu ul li a:hover {
+    font-size: 11px;
+    cursor: pointer;
+  }
 
-#mainMenu ul li a:hover::after, #stickyMenu ul li a:hover::after {
+  #mainMenu ul li a:hover::after,
+  #stickyMenu ul li a:hover::after {
 
-  width: 50px;
+    width: 50px;
 
-}
+  }
 
-#imgEquipo1 {
-  top: 40%;
-  right: 3%;
-}
+  #imgEquipo1 {
 
-#imgEquipo1 img {
+    right: 3%;
+  }
 
-  height: 50%;
-}
+  .imgDiv1 {
 
-.imgDiv{
+    height: 55%;
 
-  height:155px;
-}
+  }
 
-#imgEquipo2 img{
 
-  margin-top: 32px;
-  width: 100%;
-  height: 80%;
-}
+  #imgEquipo1 img {
 
-.item h2{
-  font-size: 11px;
-}
+    height: 100%;
+  }
 
-#tituloNosotros h1, #tituloServicios h1 {
-  font-size: 18px;
-}
+  .imgDiv {
 
-#nosotros p {
-  font-size: 12px;
-  
-}
+    height: 155px;
+  }
 
-.servicios_ div p, #desarrollos p {
-  font-size: 12px;
- 
-}
+  #imgEquipo2 img {
 
-#desarrollos .item {
+    margin-top: 32px;
+    width: max-content;
+    height: 80%;
+  }
 
-  max-width: 70%;
-}
+  .item h2 {
+    font-size: 11px;
+  }
 
-#iconoFabrica, #iconoTalento, #iconoConsultoria, #iconoGerencia {
-  width: 45px;
-  height: 40px;
-  top: 0px;
-}
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 18px;
+  }
 
-#iconoLaptop {
-  margin-top: 20px;
-  width: 30px;
-  height: 25px;
-}
+  #nosotros p {
+    font-size: 12px;
 
-#iconoMovil {
-  margin-top: 15px;
-  width: 20px;
-  height: 35px;
-}
+  }
 
-.figGeometricas {
-  width: 180px;
-  height: 180px;
-  
-}
+  .servicios_ div p,
+  #desarrollos p {
+    font-size: 12px;
 
-.tituloServ h2 {
-  font-size: 14px;
-}
+  }
 
-#footer div h2 {
-  font-size: 12px;
- 
-}
+  #desarrollos .item {
 
-#footer div ul li {
-  font-size: 11px;
-  
-}
+    max-width: 70%;
+  }
 
-#poweredBy {
-  font-size: 10px;
- 
-}
+  #iconoFabrica,
+  #iconoTalento,
+  #iconoConsultoria,
+  #iconoGerencia {
+    width: 45px;
+    height: 40px;
+    top: 0px;
+  }
+
+  #iconoLaptop {
+    margin-top: 20px;
+    width: 30px;
+    height: 25px;
+  }
+
+  #iconoMovil {
+    margin-top: 15px;
+    width: 20px;
+    height: 35px;
+  }
+
+  .figGeometricas {
+    width: 180px;
+    height: 180px;
+
+  }
+
+  .tituloServ h2 {
+    font-size: 14px;
+  }
+
+  #footer div h2 {
+    font-size: 12px;
+
+  }
+
+  #footer div ul li {
+    font-size: 11px;
+
+  }
+
+  #poweredBy {
+    font-size: 10px;
+
+  }
 
 }
 
@@ -2791,17 +3094,22 @@ ul {
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
 
-  
-  html,
+
+ /* html,
   body {
 
     background-color: aquamarine;
 
 
+  }*/
+
+  #barras {
+
+    display: none;
   }
 
-  
-  .logoDiv, .imgDiv {
+  .logoDiv,
+  .imgDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2826,16 +3134,24 @@ ul {
   }
 
   .slider li img {
-    width: unset;
+
     height: 600px;
+    width: unset
   }
 
-  .pagination{
-    bottom: 1%;
+
+  .pagination {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
   }
 
   .pagination li {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   #img_fondo1 {
@@ -2861,38 +3177,51 @@ ul {
   #imgEquipo1 {
     position: absolute;
     right: 1%;
-    top: 24%;
-    height: auto
+    height: 100%;
+    bottom: 21%
+  }
+
+  .imgDiv1 {
+
+    height: 60%;
+  }
+
+  #menuHamburguesa ul li {
+    padding: 5rem 2rem;
+    font-size: 22px;
+  }
+
+  #cerrar {
+
+    padding: 2rem !important;
   }
 
   #imgEquipo2 {
-     
+
     position: absolute;
     top: unset;
-    bottom: 4px;
-    height:auto;
-    border:1px solid red;
-    width: 100%;  
-    right:0%;
-        
-
+    height: auto;    
+    width: 100%;
+    right: 0%;
+    bottom: 4px
   }
 
-  
+
   #imgEquipo2 img {
 
     height: unset;
-    width: 450px; 
-    
+    width: 480px;
+
 
   }
 
   #imgEquipo1 img {
 
-    height: unset;
-    width: 400px;
+    height: 100%;
+    width: 100%;
 
   }
+
 
 
   #nosotros .item {
@@ -2983,14 +3312,17 @@ ul {
     width: 100%;
   }
 
-  
-  #iconoFabrica, #iconoConsultoria, #iconoGerencia, #iconoTalento {
+
+  #iconoFabrica,
+  #iconoConsultoria,
+  #iconoGerencia,
+  #iconoTalento {
     width: 80px;
     height: 75px;
     top: 0px;
   }
 
-  
+
 
   .figGeometricas {
     width: 180px;
@@ -3062,7 +3394,7 @@ ul {
   }
 
   #divCentral {
-    min-height: 35%;
+  
     height: auto;
 
   }
@@ -3084,7 +3416,7 @@ ul {
   #imgCentral {
     z-index: 200;
     position: absolute;
-    height: 35%;
+    height: 100%;
     left: 50%;
   }
 
@@ -3183,16 +3515,17 @@ ul {
 
 @media only screen and (min-width: 400px) and (max-width: 600px) and (orientation: portrait) {
 
-  html,
+  /*html,
   body {
 
     background-color: pink;
 
 
-  }
+  }*/
 
-  
-  .logoDiv, .imgDiv {
+
+  .logoDiv,
+  .imgDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3248,30 +3581,33 @@ ul {
   #imgEquipo1 {
     position: absolute;
     right: 1%;
-    top: 26%;
+    top: 25%;
     height: auto
+  }
+
+  .imgDiv1 {
+
+    height: 100%;
   }
 
   #imgEquipo2 {
 
-    /*margin-right: 7%;   */     
     position: absolute;
     top: unset;
     bottom: 4px;
-    height:auto;
-    border:1px solid red;
-    width: 100%;  
-    right:0%;
-        
+    height: auto;   
+    width: 100%;
+    right: 0%;
+
 
   }
 
-  
+
   #imgEquipo2 img {
 
     height: unset;
-    width: 430px; 
-    
+    width: 430px;
+
 
   }
 
@@ -3280,6 +3616,24 @@ ul {
     height: unset;
     width: 350px;
 
+  }
+
+  #menuHamburguesa ul li {
+
+    font-size: 20px;
+  }
+
+
+  #menuHamburguesa ul li {
+    height: auto;
+    color: #676869;
+    padding: 4rem 2rem;
+
+
+  }
+
+  #cerrar {
+    padding: 1.5rem !important;
   }
 
 
@@ -3466,7 +3820,7 @@ ul {
   }
 
   #divCentral {
-    min-height: 30%;
+
     height: auto;
 
   }
@@ -3482,13 +3836,13 @@ ul {
   #imgCintilloCentral {
     z-index: -1;
     width: 100%;
-    height: 30%;
+    height: 100%;
   }
 
   #imgCentral {
     z-index: 200;
     position: absolute;
-    height: 30%;
+    height: 100%;
     left: 50%;
   }
 
@@ -3583,13 +3937,30 @@ ul {
 
 @media only Screen and (min-width: 325px) and (max-width: 400px) and (orientation: portrait) {
 
-  html,
+  /*html,
   body {
-    background-color: aqua;
-    
-  } 
 
-  .logoDiv, .imgDiv{
+    background-color: aqua;
+
+  }*/
+
+
+
+  .item {
+
+    display: flex;
+  }
+
+
+  #menuHamburguesa ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+  }
+
+  .logoDiv,
+  .imgDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3600,8 +3971,8 @@ ul {
   #logo,
   #logo_ {
     margin-left: 0%;
-    width:70px;
-    height:70px
+    width: 70px;
+    height: 70px
   }
 
   #mainMenu,
@@ -3609,6 +3980,19 @@ ul {
     display: none;
   }
 
+  #menuHamburguesa ul li {
+    height: auto;
+    color: #676869;
+    padding: 2.5rem 2rem;
+  }
+
+
+
+  #social li {
+    padding: 1rem !important;
+
+
+  }
 
   .slideshow {
     height: auto;
@@ -3647,28 +4031,21 @@ ul {
   #imgEquipo1 {
     position: absolute;
     right: 1%;
-    top: 29%;
+    top: 13%;
     height: auto
   }
 
   #imgEquipo2 {
 
-    /*margin-right: 10%;
-    position: absolute;
-    top: unset;
-    bottom: 0px;
-    height: auto*/
-
     position: absolute;
     top: unset;
     bottom: 4px;
-    height:auto;
-    border:1px solid red;
-    width: 100%;  
-    right:0%;
+    height: auto;    
+    width: 100%;
+    right: 0%;
   }
 
-  
+
   #imgEquipo2 img {
 
     height: unset;
@@ -3865,7 +4242,7 @@ ul {
   }
 
   #divCentral {
-    min-height: 28%;
+    
     height: auto;
 
   }
@@ -3881,13 +4258,13 @@ ul {
   #imgCintilloCentral {
     z-index: -1;
     width: 100%;
-    height: 28%;
+    height: 100%;
   }
 
   #imgCentral {
     z-index: 200;
     position: absolute;
-    height: 28%;
+    height: 100%;
     left: 50%;
   }
 
@@ -3915,7 +4292,7 @@ ul {
   }
 
   #imgContactanos {
-   
+
     height: 100%;
     width: initial;
     z-index: -1;
@@ -3989,21 +4366,23 @@ ul {
 
 @media only Screen and (min-width:240px) and (max-width:325px) and (orientation:portrait) {
 
-  html,
+  /*html,
   body {
     background-color: burlywood;
 
 
-  }
+  }*/
 
-  .logoDiv, .imgDiv{
+  
+  .logoDiv,
+  .imgDiv {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
   }
 
-  
+
   #logo,
   #logo_ {
     margin-left: 0%;
@@ -4024,7 +4403,7 @@ ul {
 
 
   .slideshow {
-    height: auto;
+    height: 436px;
     width: unset;
   }
 
@@ -4060,31 +4439,31 @@ ul {
   #imgEquipo1 {
     position: absolute;
     right: 1%;
-    top: 36%;
+    top: 30%;
     height: auto
+  }
+
+  .imgDiv {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #imgEquipo2 {
 
-    /*margin-right: 6%;
     position: absolute;
     top: unset;
     bottom: 0px;
-    height: auto*/
-
-    position: absolute;
-        top: unset;
-        bottom: 4px;
-        height: auto;
-        border: 1px solid red;
-        width: 100%;
-        right: 0%;
+    height: auto;    
+    width: 100%;
+    right: 0%;
   }
 
   #imgEquipo2 img {
 
     height: unset;
-    width: 260px;
+    width: 270px;
 
   }
 
@@ -4264,7 +4643,7 @@ ul {
   }
 
   #divCentral {
-    min-height: 21%;
+ 
     height: auto;
 
   }
@@ -4280,13 +4659,13 @@ ul {
   #imgCintilloCentral {
     z-index: -1;
     width: 100%;
-    height: 21%;
+    height: 100%;
   }
 
   #imgCentral {
     z-index: 200;
     position: absolute;
-    height: 21%;
+    height: 100%;
     left: 50%;
   }
 
@@ -4312,8 +4691,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*height: unset;
-    width: unset;*/
+    
   }
 
   #imgContactanos {
@@ -4390,14 +4768,17 @@ ul {
 
 @media only Screen and (min-width: 231px) and (max-width: 240px) and (orientation: portrait) {
 
-  html,
+  /*html,
   body {
     background-color: lightgray;
 
 
-  }
+  }*/
 
-  .logoDiv, .imgDiv{
+  
+
+  .logoDiv,
+  .imgDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4427,7 +4808,7 @@ ul {
 
 
   .slideshow {
-    height: auto;
+    height: 280px;
     width: unset;
   }
 
@@ -4463,19 +4844,18 @@ ul {
   #imgEquipo1 {
     position: absolute;
     right: 1%;
-    top: 40%;
-    height: auto
+    top: 30%;
+    height: auto;
   }
 
-  #imgEquipo2 {  
+  #imgEquipo2 {
     position: absolute;
     top: unset;
-    bottom: 4px;
-    height: auto;
-    border: 1px solid red;
+    bottom: 0px;
+    height: auto;    
     width: 100%;
     right: 0%;
-}
+  }
 
   #imgEquipo2 img {
 
@@ -4676,13 +5056,13 @@ ul {
   #imgCintilloCentral {
     z-index: -1;
     width: 100%;
-    height: 20%;
+    height: 100%;
   }
 
   #imgCentral {
     z-index: 200;
     position: absolute;
-    height: 20%;
+    height: 100%;
     left: 50%;
   }
 
@@ -4698,7 +5078,7 @@ ul {
   }
 
   #contactanos {
-    height: 18%;
+    height: 30%;
   }
 
   #contactanos div {
@@ -4780,14 +5160,16 @@ ul {
 
 @media only Screen and (min-width: 150px) and (max-width: 231px) and (orientation: portrait) {
 
-  html,
+  /*html,
   body {
     background-color: lightblue;
 
 
-  }
+  }*/
+  
 
-  .logoDiv, .imgDiv{
+  .logoDiv,
+  .imgDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4843,7 +5225,7 @@ ul {
   #imgEquipo1 {
     position: absolute;
     right: 1%;
-    top: 40%;
+    top: 30%;
     height: auto
   }
 
@@ -4851,11 +5233,10 @@ ul {
     position: absolute;
     top: unset;
     bottom: 4px;
-    height: auto;
-    border: 1px solid red;
+    height: auto;   
     width: 100%;
     right: 0%;
-}
+  }
 
   #imgEquipo2 img {
 
@@ -5001,7 +5382,7 @@ ul {
   #nosotros {
 
     overflow-wrap: break-word;
-    /* Pssermite que las palabras largas se dividan en varias líneas */
+    /* Permite que las palabras largas se dividan en varias líneas */
     word-wrap: break-word;
     /* Compatibilidad adicional para navegadores más antiguos */
     /*word-break: break-word; /* Rompe palabras largas si es necesario */
@@ -5040,7 +5421,7 @@ ul {
   }
 
   #divCentral {
-    min-height: 11%;
+    
     height: auto;
 
   }
@@ -5062,7 +5443,7 @@ ul {
   #imgCentral {
     z-index: 200;
     position: absolute;
-    height: 11%;
+    height: 100%;
     left: 50%;
   }
 

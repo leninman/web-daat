@@ -4,34 +4,39 @@
 <head>
   <meta charset="utf-8">
   <title>DAAH Corp</title>
-  <!--<base href="/">-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="shortcut icon" href="assets/images/siga.png">-->
+  <!--<script src="https://kit.fontawesome.com/298895b6c4.js" crossorigin="anonymous"></script>-->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-  <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">-->
-  <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />  -->
+  <!--<link rel="stylesheet" href="css/font-awesome.css">-->
 
-  <link rel="stylesheet" href="css/font-awesome.css">
+  <link href="css/css/fontawesome.css" rel="stylesheet" />
+  <link href="css/css/brands.css" rel="stylesheet" />
+  <link href="css/css/solid.css" rel="stylesheet" />
 
   <script src="js/jquery-3.1.0.min.js"></script>
-  <Sccript src="js/jquery-ui-1.13.3/external/jquery/jquery.js"></Sccript>
+  <script src="js/jquery-ui-1.13.3/external/jquery/jquery.js"></script>
   <script src="js/jquery-ui-1.13.3/jquery-ui.min.js"></script>
   <script src="js/main.js"></script>
 
 
 </head>
 
+<!--<body style="overflow-y: hidden;">-->
+
 <body>
 
+  <div style="background-color: orange; border:1px solid red; height:auto">
+    <i class="fa-regular fa-bars" id="barras" style=""></i>
+  </div>
 
   <img id="cintillo" src="img/cintilloMenu.png" alt="">
   <div class="logoDiv">
-  <img id="logo" style="" src="img/logoDaat.png" alt="">
+    <img id="logo" style="" src="img/logoDaat.png" alt="">
   </div>
   <img id="cintillo_" src="img/cintilloMenu.png" alt="">
   <div class="logoDiv">
-  <img id="logo_" style="" src="img/logoDaat.png" alt="">
+    <img id="logo_" style="" src="img/logoDaat.png" alt="">
   </div>
 
 
@@ -60,11 +65,45 @@
 
   </nav>
 
+  <nav id="menuHamburguesa">
+
+    <ul>
+      <li id="cerrar"><span>X</span></li>
+      <li class="hamburguesaLi"><a href="#cintillo" data-url="#principal">Principal</a></li>
+      <li class="hamburguesaLi"><a href="#tituloNosotros" data-url="#nosotros">Nosotros</a></li>
+      <li class="hamburguesaLi"><a href="#tituloServicios" data-url="#servicios">Servicios</a></li>
+      <!--<li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>-->
+      <li class="hamburguesaLi"><a href="#contactanos" data-url="#contactanos"><span>Contáctanos</span></a></li>
+      <li class="hamburguesaLi"><a href="">Español | Inglés</a></li>
+      
+     
+      <li id="contenedorSocial">
+        <ul id="social">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-x-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--<ul id="social">
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-youtube"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-x-twitter"></i></li>
+        <li><i class="fa-brands fa-linkedin"></i></li>     
+      </ul>-->
+
+  </nav>
+
   <div class="slideshow">
 
     <ul class="slider">
 
       <li>
+
         <img id="img_fondo1" src="img/fondoAzul_1.png" alt="">
 
 
@@ -106,14 +145,21 @@
 
 
     <div id="imgEquipo1" style="">
-      <!--<div class="imgDiv">-->
+
+      <div class="imgDiv1">
+
         <img src="img/equipo_1.png" alt="" style="">
-      <!--</div>-->     
+
+      </div>
+
     </div>
 
     <div id="imgEquipo2" style="">
+
       <div class="imgDiv">
+
         <img src="img/equipo_2.png" alt="" style="">
+
       </div>
     </div>
   </div>
@@ -159,7 +205,7 @@
       </div>
 
       <div>
-  
+
         <p>Posicionarnos como empresa líder en el sector de TI, como proveedor de productos y servicios tecnológicos,
           a nivel nacional e internacional, con un amplio nivel de creatividad, responsabilidad y compromiso,
           centrándonos en las necesidades del cliente.
@@ -371,92 +417,95 @@
       <img id="imgCentral" src="img/img_central.png" alt="" style=""></img>
     </div>
 
+
   </div>
 
-      <div id="dudasComentarios">
-        <h2>¿Dudas o comentarios? Contáctanos</h2>
-      </div>
+  <div id="dudasComentarios">
+    <h2>¿Dudas o comentarios? Contáctanos</h2>
+  </div>
 
 
-      <div id="contactanos" style="">
+  <div id="contactanos" style="">
 
-        <div style="">
+    <div style="">
 
-          <img id="imgContactanos" src="img/contactanos.png" alt=""></img>
+      <img id="imgContactanos" src="img/contactanos.png" alt=""></img>
 
-        </div>
-
-
-
-      </div>
-
-      <div id="footer">
+    </div>
 
 
-      <div id="footerHumanTalent">
 
-        <h2>Human Talent Staff</h2>
+  </div>
 
-        <ul>
+  <div id="footer">
 
-          <li>Expertos en gerencia, consultoría, desarrollo de software y reclutamiento de personal.</li>
 
-          <li>Copyright©humantalentstaff</li>
+    <div id="footerHumanTalent">
+
+      <h2>Human Talent Staff</h2>
+
+      <ul>
+
+        <li>Expertos en gerencia, consultoría, desarrollo de software y reclutamiento de personal.</li>
+
+        <li>Copyright©humantalentstaff</li>
 
       </ul>
 
 
-      </div>
+    </div>
 
-      <div id="footerServicios">
+    <div id="footerServicios">
 
-        <h2>Servicios</h2>
+      <h2>Servicios</h2>
 
-        <ul>
+      <ul>
 
-          <li>Fábrica de software.</li>
-          <li>Ingeniería y consultoría de proyectos.</li>
-          <li>Gerencia de proyectos.</li>
-          <li>Talento como servicio.</li>
+        <li>Fábrica de software.</li>
+        <li>Ingeniería y consultoría de proyectos.</li>
+        <li>Gerencia de proyectos.</li>
+        <li>Talento como servicio.</li>
 
-        </ul>
-
-      </div>
-
-      <div id="footerTecnologia">
-
-        <h2>Tecnología</h2>
-
-        <ul>
-
-          <li>Java, JavaScript.</li>
-          <li>Springboot, Angular, React.</li>
-          <li>Docker, Kubernetes, AWS.</li>
-          <li>Css, Html.</li>
-
-        </ul>
-
-      </div>
-
-      <div id="footerContacto">
-
-        <h2>Contacto</h2>
-
-        <ul>
-
-          <li>Caracas-Venezuela.</li>
-          <li>Avenida los proceres, local 21-A. San Bernardino.</li>
-          <li>Teléfonos: 0212-5514789 | 0424-1482147 info@hts_soluciones.com</li>
-
-        </ul>
-
-      </div>
+      </ul>
 
     </div>
 
-    <div id="poweredBy">2024©Powered by Tecnodestreza
+    <div id="footerTecnologia">
+
+      <h2>Tecnología</h2>
+
+      <ul>
+
+        <li>Java, JavaScript.</li>
+        <li>Springboot, Angular, React.</li>
+        <li>Docker, Kubernetes, AWS.</li>
+        <li>Css, Html.</li>
+
+      </ul>
 
     </div>
+
+    <div id="footerContacto">
+
+      <h2>Contacto</h2>
+
+      <ul>
+
+        <li>Caracas-Venezuela.</li>
+        <li>Avenida los proceres, local 21-A. San Bernardino.</li>
+        <li>Teléfonos: 0212-5514789 | 0424-1482147 info@hts_soluciones.com</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div id="poweredBy">2024©Powered by Tecnodestreza
+
+  </div>
+
+
 
 </body>
 
