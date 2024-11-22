@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
 
-
+		$('#textoSomos').css({'display':'block'});
+		$('#textoEquipo').css({'display':'block'});
+		$('#textoTrabajamos').css({'display':'block'});
 	// Ejecutar la función inmediatamente cuando se cargue la página
 
 	checkMediaQuery(); // Comprobar al cargar la página
@@ -183,11 +185,11 @@ $(document).ready(function () {
 	// Ejecutamos todas las funciones
 
 	$('.pagination li').click(pagination);
-	$('.right span').click(nextSlider);
+	/*$('.right span').click(nextSlider);*/
 	/*$('.left span').click(prevSlider);*/
 
 
-	myTimer = setInterval(nextSlider, 5000);	
+	//myTimer = setInterval(nextSlider, 5000);	
 
 	// FUNCIONES =========================================================
 
@@ -195,9 +197,9 @@ $(document).ready(function () {
 
 
 
-		clearInterval(myTimer);
+		/*clearInterval(myTimer);
 		
-		myTimer = setInterval(nextSlider, 5000);
+		myTimer = setInterval(nextSlider, 5000);*/
 
 		//console.log('Entra por el pagination');
 
@@ -213,29 +215,31 @@ $(document).ready(function () {
 
 		imgPos = paginationPos;
 
-		if (imgPos != 1) {
 
-			$('#imgEquipo1').css('opacity', '0');
+		//if (imgPos != 1) {
+
+			//$('#imgEquipo1').css('opacity', '0');
 
 			/*$('#imgEquipo1').hide();*/
+			
 
-		} else {
+		//} else {
+		
 
-			//console.log("Se mete donde es");
-
-			$('#imgEquipo1').animate({ 'opacity': '1' }, 1000);
+			//$('#imgEquipo1').animate({ 'opacity': '1' }, 1000);
+			
 
 			/*$('#imgEquipo1').fadeIn(2500);*/
-		}
+		//}
 
 
-		if (imgPos != 2) {
+		//if (imgPos != 2) {
 
 			/*$('#imgEquipo2').hide();	*/
-			$('#imgEquipo2').css('opacity', '0');
+			//$('#imgEquipo2').css('opacity', '0');
 
 
-		} else {
+		//} else {
 
 			/*$('#imgEquipo2').css('opacity', '1');*/
 
@@ -252,6 +256,51 @@ $(document).ready(function () {
 
 			  });	*/
 
+			/*$('#imgEquipo2')
+				.css({
+					opacity: 0,
+					position: 'absolute',
+					right: '600px'
+				})
+				.animate({
+					opacity: 1,
+					right: '0px' // posición final en su lugar original
+				}, 1000); 
+
+
+			$('.pagination li').css({ 'z-index': 100 });*/
+
+
+						
+		//}
+
+		if(imgPos==1){
+
+			$('#imgEquipo1').animate({ 'opacity': '1' },1000);
+
+			$('#imgEquipo2').css('opacity', '0');
+			
+			$('#textoSomos').css({'display':'block'});
+			$('#textoEquipo').css({'display':'block'});
+			$('#textoTrabajamos').css({'display':'block'});
+
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+			
+		}else if (imgPos==2){
+
+			$('#imgEquipo1').css('opacity', '0');
+
 			$('#imgEquipo2')
 				.css({
 					opacity: 0,
@@ -261,15 +310,102 @@ $(document).ready(function () {
 				.animate({
 					opacity: 1,
 					right: '0px' // posición final en su lugar original
-				}, 1000); // Duración de 2 segundos
+				}, 1000); 
 
 
 			$('.pagination li').css({ 'z-index': 100 });
 
+			
+			$('#textoSomos').css({'display':'none'});
+			$('#textoEquipo').css({'display':'none'});
+			$('#textoTrabajamos').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+
+			$('#textoInnova').css({'display':'block'});
+			$('#textoNorte').css({'display':'block'});
+
+
+			
+			
+		}else if (imgPos==3){
+
+			$('#imgEquipo1').css('opacity', '0');
+			$('#imgEquipo2').css('opacity', '0');
+
+			$('#textoSomos').css({'display':'none'});
+			$('#textoEquipo').css({'display':'none'});
+			$('#textoTrabajamos').css({'display':'none'});
+			
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'block'});
+			$('#textoSitio').css({'display':'block'});
+			$('#textoAdaptado').css({'display':'block'});
+
+
+
+		}else if (imgPos==4){
+
+			$('#imgEquipo1').css('opacity', '0');
+			$('#imgEquipo2').css('opacity', '0');
+
+			$('#textoSomos').css({'display':'none'});
+			$('#textoEquipo').css({'display':'none'});
+			$('#textoTrabajamos').css({'display':'none'});
+			
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'block'});
+			$('#textoNecesidades').css({'display':'block'});
+
+		}else if (imgPos==5){
+
+			$('#imgEquipo1').css('opacity', '0');
+			$('#imgEquipo2').css('opacity', '0');
+
+			$('#textoOfrecemos').css({'display':'block'});
+			$('#textoServicios').css({'display':'block'});
+
+			$('#textoSomos').css({'display':'none'});
+			$('#textoEquipo').css({'display':'none'});
+			$('#textoTrabajamos').css({'display':'none'});
+			
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
 
 		}
-
-
 
 		/******************************* */
 
@@ -334,7 +470,7 @@ $(document).ready(function () {
 				.animate({
 					opacity: 1,
 					right: '0px' // posición final en su lugar original
-				}, 1000); // Duración de 2 segundos
+				}, 1000); 
 
 			/*$('#imgEquipo2')
 			.css({
@@ -354,13 +490,120 @@ $(document).ready(function () {
 			$('.pagination li').css({ 'z-index': 100 });
 
 		}
+
+
+		if(imgPos==1){
+
+			
+			$('#textoSomos').css({'display':'block'});
+			$('#textoEquipo').css({'display':'block'});
+			$('#textoTrabajamos').css({'display':'block'});
+
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+			
+		}else if (imgPos==2){
+
+			
+			$('#textoSomos').css({'display':'none'});
+			$('#textoEquipo').css({'display':'none'});
+			$('#textoTrabajamos').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+
+			$('#textoInnova').css({'display':'block'});
+			$('#textoNorte').css({'display':'block'});
+
+
+			
+			
+		}else if (imgPos==3){
+
+			$('#textoSomos').css({'display':'none'});
+			$('#textoEquipo').css({'display':'none'});
+			$('#textoTrabajamos').css({'display':'none'});
+			
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'block'});
+			$('#textoSitio').css({'display':'block'});
+			$('#textoAdaptado').css({'display':'block'});
+
+
+
+		}else if (imgPos==4){
+
+			$('#textoSomos').css({'display':'none'});
+			$('#textoEquipo').css({'display':'none'});
+			$('#textoTrabajamos').css({'display':'none'});
+			
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'block'});
+			$('#textoNecesidades').css({'display':'block'});
+
+		}else if (imgPos==5){
+
+			$('#textoOfrecemos').css({'display':'block'});
+			$('#textoServicios').css({'display':'block'});
+
+			$('#textoSomos').css({'display':'none'});
+			$('#textoEquipo').css({'display':'none'});
+			$('#textoTrabajamos').css({'display':'none'});
+			
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
+
+		}
+
 	}
 
 
 	$('#cerrar span').on('click', function () {
 
 		$('#menuHamburguesa').css('display', 'none');
-		$('body').css('overflow','scroll');
+		$('body').css('overflow-y','scroll');
 
 	})
 
@@ -389,6 +632,8 @@ $(document).ready(function () {
 			
 			$('#menuHamburguesa').css('display', 'none');
 			$('#barras').css('display', 'none');
+			$('body').css('overflow-y','scroll');
+
 
 		}
 	};

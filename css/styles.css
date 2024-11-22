@@ -9,6 +9,118 @@
 }
 
 
+
+.textos {
+
+  color: white;
+  position: absolute;
+  display: none;
+}
+
+#textoSomos {
+  top: 30%;
+  /*z-index:6000;*/
+  left: 70px;
+  font-size: 25px;
+}
+
+#textoEquipo {
+  top: 50%;
+  /*z-index: 6000;*/
+  left: 80px;
+  font-size: 60px;
+  text-align: center;
+}
+
+#textoTrabajamos {
+
+  top: 80%;
+  /* z-index: 6000;*/
+  left: 70px;
+  font-size: 28px
+}
+
+#textoInnova {
+  top: 30%;
+  /*z-index:6000;*/
+  left: 70px;
+  font-size: 25px;
+}
+
+#textoNorte {
+
+  top: 50%;
+  /*z-index:6000;*/
+  left: 70px;
+  font-size: 60px;
+
+}
+
+#textoDiseña {
+  top: 30%;
+  /*z-index:6000;*/
+  left: 120px;
+  font-size: 25px;
+}
+
+#textoSitio {
+
+  top: 50%;
+  /*z-index:6000;*/
+  left: 150px;
+  font-size: 60px;
+
+}
+
+#textoAdaptado {
+  top: 80%;
+  /*z-index:6000;*/
+  left: 120px;
+  font-size: 25px;
+}
+
+#textoSoluciones {
+
+  top: 60%;
+  /*z-index:6000;*/
+  left: 70px;
+  font-size: 60px;
+}
+
+#textoNecesidades {
+
+  top: 80%;
+  /*z-index:6000;*/
+  left: 70px;
+  font-size: 35px;
+  width: 80%;
+  text-align: end;
+
+}
+
+#textoOfrecemos {
+
+  top: 20%;
+  /*z-index:6000;*/
+  left: 60%;
+  font-size: 35px;
+  width: 20%;
+  text-align: end;
+
+}
+
+#textoServicios {
+
+  top: 30%;
+  /*z-index:6000;*/
+  left: 60%;
+  font-size: 35px;
+  /*width:80%;*/
+  text-align: center;
+
+}
+
+
 #imgEquipo1 {
   opacity: 0;
   position: absolute;
@@ -25,7 +137,7 @@
   height: 530px;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   object-fit: cover;
 }
 
@@ -41,7 +153,7 @@
   opacity: 0;
   position: absolute;
   bottom: 0;
-  right: 0; 
+  right: 0;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -56,7 +168,7 @@
 
 
   height: 80%;
-  
+
 
 }
 
@@ -214,7 +326,7 @@ nav {
 }
 
 #barras {
-  cursor: pointer; 
+  cursor: pointer;
   z-index: 3000;
   width: 80px;
   position: relative;
@@ -314,9 +426,9 @@ li #social {
 
 #tituloNosotros,
 #tituloServicios {
-  
+
   margin-top: 10%;
-  height: auto; 
+  height: auto;
   text-align: center;
 }
 
@@ -345,7 +457,7 @@ li #social {
   width: unset;
   min-width: 30%;
   max-width: 80%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   word-wrap: break-word;
 }
 
@@ -358,7 +470,7 @@ li #social {
 .parrafoServ,
 .parrafoDesa,
 #nosotros {
-  height: auto; 
+  height: auto;
   top: 0%;
   position: unset;
   overflow-wrap: break-word;
@@ -372,8 +484,8 @@ li #social {
 }
 
 #nosotros {
-  display: flex; 
-  margin-top: 10%; 
+  display: flex;
+  margin-top: 10%;
   height: auto;
   word-wrap: break-word;
 }
@@ -400,7 +512,7 @@ li #social {
 
 #desarrollos {
   padding-top: 3%;
-  display: flex;  
+  display: flex;
 }
 
 .container {
@@ -412,7 +524,7 @@ li #social {
 
 #divCentral {
 
-  height: auto;  
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,10 +552,10 @@ li #social {
 
 #imgCentral {
   z-index: 200;
-  position: absolute;  
+  position: absolute;
   right: 25%;
   height: 100%;
- 
+
 }
 
 #dudasComentarios {
@@ -500,7 +612,7 @@ li #social {
   width: unset;
   min-width: 30%;
   max-width: 80%;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   word-wrap: break-word;
 
 }
@@ -510,6 +622,7 @@ li #social {
 }
 
 .icono_titulo {
+  margin-left: 100px;
   display: flex;
   height: auto;
   justify-content: center;
@@ -518,7 +631,7 @@ li #social {
 .servicios_ div p {
   margin: 80px 15% 6% 6%;
   color: #747474;
-  font-size: 24px;  
+  font-size: 24px;
 }
 
 
@@ -589,14 +702,14 @@ li #social {
 
 #imgContactanos {
   height: 500px;
-  width: 750px; 
+  width: 750px;
   bottom: 10%;
 }
 
 #footer {
   display: flex;
   justify-content: space-between;
-  background-color: #f7f7f8; 
+  background-color: #f7f7f8;
   height: auto;
   border: 1px solid #d1d1d1;
   border-bottom: none;
@@ -724,10 +837,10 @@ ul {
 
 
 @media only screen and (min-width: 1300px) and (max-width: 1400px) and (orientation: landscape) {
-  /*body {
-    background-color: chartreuse;
+  body {
+    /*background-color: chartreuse;*/
 
-  }*/
+  }
 
   #barras {
 
@@ -788,9 +901,114 @@ ul {
     height: 100%;
   }
 
+  #textoSomos {
+    top: 40%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 30px;
+    height: auto;
+}
+
+#textoEquipo {
+  top: 55%;
+  z-index: 4000; 
+  left: 80px;
+  font-size: 60px;
+  text-align: center;
+  height: auto;
+}
+
+#textoTrabajamos {
+  top: 85%;  
+  left: 30px;
+  font-size: 30px;
+  height: auto;
+  z-index: 4000;
+}
+
+#textoInnova {
+  top: 30%;
+  left: 70px;
+  font-size: 40px;
+  height: auto;
+  z-index: 4000;
+}
+
+#textoNorte {
+  top: 50%; 
+  left: 70px;
+  font-size: 55px;
+  height: auto;
+  z-index: 4000;
+}
+
+#textoDiseña {
+  top: 30%;
+  z-index: 4000; 
+  left: 120px;
+  font-size: 35px;
+  height: auto;
+}
+
+#textoSitio {
+  top: 50%;
+  z-index: 4000; 
+  left: 150px;
+  font-size: 60px;
+  height: auto;
+}
+
+#textoAdaptado {
+  top: 85%;
+   z-index: 4000; 
+  left: 120px;
+  font-size: 35px;
+  height: auto;
+}
+
+#textoSoluciones{
+
+  top: 60%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 60px;
+    height: auto;
+
+}
+
+#textoOfrecemos{
+
+  top: 25%;
+    z-index: 4000;
+    left: 67%;
+    font-size: 40px;    
+    text-align: center;
+    height: auto;
+}
+
+#textoNecesidades {
+  top: 80%;
+  z-index: 4000;
+  left: 70px;
+  font-size: 40px;
+  width: 80%;
+  text-align: end;
+  height: auto;
+}
+
+#textoServicios{
+
+  top: 35%;
+    z-index: 4000;
+    left: 60%;
+    font-size: 40px;    
+    text-align: center;
+    height: auto;
+}
+
   .slideshow {
     height: 100vh;
-  }
+  } 
 
 
   .menu-fixed {
@@ -891,7 +1109,7 @@ ul {
 
   #tituloNosotros,
   #tituloServicios {
-    height: auto;   
+    height: auto;
     margin-left: 0%;
   }
 
@@ -944,7 +1162,7 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height: auto; 
+    height: auto;
     top: 0%;
     position: unset;
     overflow-wrap: break-word;
@@ -965,7 +1183,7 @@ ul {
     height: auto;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     word-wrap: break-word;
   }
 
@@ -983,7 +1201,7 @@ ul {
   #contenedorServ {
 
     height: auto;
-   
+
   }
 
   .servicios_ div p {
@@ -998,7 +1216,7 @@ ul {
   }
 
   #nosotros div .item {
-   
+
     margin-top: 0px;
     height: auto;
   }
@@ -1029,7 +1247,7 @@ ul {
     margin-top: 0px;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     word-wrap: break-word;
 
   }
@@ -1040,7 +1258,7 @@ ul {
     width: unset;
     min-width: 50%;
     box-sizing: border-box;
-   
+
 
   }
 
@@ -1067,7 +1285,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
   }
 
   #divCentral div {
@@ -1117,7 +1335,7 @@ ul {
     margin-top: 20px;
     height: auto;
     width: unset;
-    max-height: unset;   
+    max-height: unset;
     word-wrap: break-word;
   }
 
@@ -1177,10 +1395,10 @@ ul {
 
 
 @media only screen and (min-width:1024px) and (max-width: 1300px) and (orientation: landscape) {
-  /*body {
-    background-color: blanchedalmond;
+  body {
+   /* background-color: blanchedalmond;*/
 
-  }*/
+  }
 
   #barras {
 
@@ -1244,7 +1462,7 @@ ul {
 
   .imgDiv {
 
-    height: 70%;    
+    height: 70%;
     object-fit: cover;
   }
 
@@ -1261,6 +1479,112 @@ ul {
     width: 100%;
     height: 100%;
 
+  }
+
+
+  #textoSomos {
+    top: 35%;
+    left: 70px;
+    font-size: 25px;
+    height: auto;
+    z-index: 4000;
+  }
+
+  #textoEquipo {
+    top: 50%;
+    left: 80px;
+    font-size: 60px;
+    text-align: center;
+    height: auto;
+    z-index:4000;
+  }
+
+  #textoTrabajamos {
+    top: 80%;
+    left: 30px;
+    font-size: 25px;
+    height: auto;
+    z-index: 4000;
+  }
+
+  #textoInnova {
+    top: 30%;
+    left: 50px;
+    font-size: 25px;
+    height: auto;
+    z-index: 4000;
+  }
+
+  #textoNorte {
+    top: 50%;
+    left: 40px;
+    font-size: 50px;
+    height: auto;
+    z-index: 4000;
+  }
+
+  #textoDiseña {
+    top: 30%;
+    left: 100px;
+    font-size: 25px;
+    height: auto;
+    z-index: 4000;
+  }
+
+  #textoSitio {
+    top: 50%;
+    left: 100px;
+    font-size: 60px;
+    height: auto;
+    z-index: 4000;
+  }
+
+  #textoAdaptado {
+    top: 85%;
+    left: 100px;
+    font-size: 25px;
+    height: auto;
+    z-index:4000;
+  }
+
+  #textoSoluciones {
+    top: 30%;  
+    left: 70px;
+    font-size: 45px;
+    height: auto;
+    z-index: 4000;
+}
+
+
+  #textoNecesidades {
+    top: 80%;
+    left: 70px;
+    font-size: 35px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+    z-index:4000;
+  }
+
+
+  #textoOfrecemos {
+    top: 30%;
+    z-index: 4000;
+    left: 60%;
+    font-size: 35px;
+    width: 20%;
+    text-align: center;
+    height: auto;
+   
+  }
+
+  #textoServicios {
+    top: 45%;
+    z-index: 4000;
+    left: 50%;
+    font-size: 35px;
+    text-align: center;
+    height: auto;
   }
 
 
@@ -1345,7 +1669,7 @@ ul {
 
   #tituloNosotros,
   #tituloServicios {
-    height: auto;  
+    height: auto;
     margin-left: 0%;
   }
 
@@ -1368,7 +1692,7 @@ ul {
   }
 
   #cuadro {
-   
+
     height: unset;
     height: auto;
   }
@@ -1399,7 +1723,7 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height: auto;   
+    height: auto;
     top: 0%;
     position: unset;
     overflow-wrap: break-word;
@@ -1437,7 +1761,7 @@ ul {
 
   #contenedorServ {
 
-    height: auto;  
+    height: auto;
 
   }
 
@@ -1453,7 +1777,7 @@ ul {
   }
 
   #nosotros div .item {
-   
+
     margin-top: 0px;
     height: auto;
   }
@@ -1493,7 +1817,7 @@ ul {
     height: auto;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 
   }
 
@@ -1516,12 +1840,12 @@ ul {
   }
 
   #divCentral {
-    
+
     height: auto;
   }
 
   #divCentral div {
- 
+
     height: auto;
     position: relative;
   }
@@ -1530,13 +1854,13 @@ ul {
   #imgCintilloCentral {
     z-index: -1;
     position: unset;
-    width: 100%;   
+    width: 100%;
     height: auto
   }
 
   #imgCentral {
     z-index: 200;
-    position: absolute;  
+    position: absolute;
     height: 100%;
     left: 50%;
   }
@@ -1565,7 +1889,7 @@ ul {
     margin-top: 20px;
     height: auto;
     width: unset;
-    max-height: unset;   
+    max-height: unset;
     word-wrap: break-word;
   }
 
@@ -1623,11 +1947,14 @@ ul {
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
-  /*body {
-    background-color: darkcyan;
 
-  }*/
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
+
+  body {
+    /*background-color: darkmagenta;*/
+
+  }
 
   #barras {
 
@@ -1674,7 +2001,7 @@ ul {
     height: 60%;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
     object-fit: cover;
   }
 
@@ -1712,6 +2039,112 @@ ul {
   }
 
 
+  #textoSomos {
+    top: 35%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 50%;
+    z-index: 4000;
+    left: 80px;
+    font-size: 40px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoTrabajamos {
+    top: 80%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoInnova {
+    top: 40%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoNorte {
+    top: 55%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 40px;
+    height: auto;
+  }
+
+
+  #textoDiseña {
+    top: 35%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoSitio {
+    top: 50%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 40px;
+    height: auto;
+    }
+  
+
+  #textoAdaptado {
+    top: 85%;
+    z-index: 47000;
+    left: 70px;
+    font-size: 20px;
+    height: auto;
+  }
+
+
+  #textoSoluciones {
+    top: 40%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 30px;
+    height: auto;
+  }
+
+  #textoNecesidades {
+    top: 75%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 30px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
+  #textoOfrecemos {
+    top: 35%;
+    z-index: 4000;
+    left: 60%;
+    font-size: 25px;
+    width: 20%;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoServicios {
+    top: 50%;
+    z-index: 4000;
+    left: 50%;
+    font-size: 25px;
+    text-align: center;
+    height: auto;
+  }
+
+
 
   #mainMenu {
     width: 100%;
@@ -1721,7 +2154,7 @@ ul {
   #stickyMenu ul li {
     min-width: 130px;
     max-width: 130px;
-    
+
   }
 
   #mainMenu ul li a,
@@ -1788,7 +2221,7 @@ ul {
 
   #tituloNosotros,
   #tituloServicios {
-    height: auto; 
+    height: auto;
     margin-left: 0%;
   }
 
@@ -1842,7 +2275,7 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height: auto;   
+    height: auto;
     top: 0%;
     position: unset;
     overflow-wrap: break-word;
@@ -1863,7 +2296,7 @@ ul {
     height: auto;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     word-wrap: break-word;
   }
 
@@ -1880,7 +2313,7 @@ ul {
 
   #contenedorServ {
 
-    height: auto;    
+    height: auto;
 
   }
 
@@ -1927,7 +2360,7 @@ ul {
     width: unset;
     min-width: 30%;
     max-width: 70%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     word-wrap: break-word;
 
   }
@@ -1936,11 +2369,12 @@ ul {
     height: auto;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 
   }
 
   .icono_titulo {
+    margin-left: 0px;
     height: auto;
     max-height: unset;
   }
@@ -1959,12 +2393,12 @@ ul {
   }
 
   #divCentral {
- 
+
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
   }
 
   #divCentral div {
@@ -2014,7 +2448,567 @@ ul {
     margin-top: 20px;
     height: auto;
     width: unset;
-    max-height: unset;    
+    max-height: unset;
+    word-wrap: break-word;
+  }
+
+  #dudasComentarios h2 {
+
+    font-size: 20px;
+
+  }
+
+  #footer div {
+
+    max-width: 25%;
+
+  }
+
+  #footer div h2 {
+
+    font-size: 17px;
+    text-align: center;
+    height: auto;
+  }
+
+  #footer div ul li {
+
+    font-size: 16px;
+    text-align: center;
+    height: auto;
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer {
+    max-height: unset;
+    height: auto
+  }
+
+
+
+  #poweredBy {
+
+    font-size: 14px;
+    max-height: 5%;
+    border: unset
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+  body {
+    /*background-color: darkcyan;*/
+
+  }
+
+  #barras {
+
+    display: none;
+  }
+
+  #cintillo,
+  #cintillo_ {
+    width: 100%;
+    height: 80px;
+
+  }
+
+  .logoDiv {
+
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  #logo_,
+  #logo {
+
+
+    margin-left: 0%;
+    width: 80px;
+    height: 80px
+  }
+
+  nav,
+  .menu-fixed {
+
+    top: 80px
+  }
+
+  #imgEquipo1 {
+
+
+    right: 5%;
+    height: 100%
+  }
+
+  .imgDiv1 {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+
+
+  #imgEquipo2 {
+
+    right: 3%;
+
+  }
+
+  .imgDiv {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%
+  }
+
+  #imgEquipo1 img {
+
+    height: 100%;
+    width: 100%;
+  }
+
+
+  #imgEquipo2 img {
+    width: max-content;
+    height: 100%;
+
+  }
+
+  .slideshow {
+    height: 100vh;
+  }
+
+
+  #textoSomos {
+    top: 30%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 50%;
+    z-index: 4000;
+    left: 80px;
+    font-size: 60px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoTrabajamos {
+    top: 80%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoInnova {
+    top: 30%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 30px;
+    height: auto;
+  }
+
+  #textoNorte {
+    top: 50%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 60px;
+    height: auto;
+  }
+
+
+  #textoDiseña {
+    top: 30%;
+    z-index: 4000;
+    left: 90px;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoSitio {
+    top: 50%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 60px;
+    height: auto;
+  }
+
+  #textoAdaptado {
+    top: 85%;
+    z-index: 47000;
+    left: 70px;
+    font-size: 25px;
+    height: auto;
+  }
+
+
+  #textoSoluciones {
+    top: 30%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 40px;
+    height: auto;
+  }
+
+  #textoNecesidades {
+    top: 75%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 35px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
+  #textoOfrecemos {
+    top: 25%;
+    z-index: 4000;
+    left: 60%;
+    font-size: 35px;
+    width: 20%;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoServicios {
+    top: 40%;
+    z-index: 4000;
+    left: 50%;
+    font-size: 35px;
+    text-align: center;
+    height: auto;
+  }
+
+
+
+  #mainMenu {
+    width: 100%;
+  }
+
+  #mainMenu ul li,
+  #stickyMenu ul li {
+    min-width: 130px;
+    max-width: 130px;
+
+  }
+
+  #mainMenu ul li a,
+  #stickyMenu ul li a {
+    font-size: 15px;
+    width: 130px;
+  }
+
+  #stickyMenu .listMenu {
+    opacity: 0.8;
+    height: 55px;
+  }
+
+  #mainMenu ul li a:hover,
+  #stickyMenu ul li a:hover {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #mainMenu ul li a:hover::after,
+  #stickyMenu ul li a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 85px;
+    /* Ajusta el ancho */
+    height: 10px;
+    /* Ajusta la altura */
+    margin-top: 10px;
+    margin-left: 0px;
+    /* Espacio entre el texto y la imagen */
+    /* sbackground-image: url('../img/linea_gris.png');*/
+    background-image: var(--hover-image);
+    /* Imagen dinámica según la variable */
+    background-size: contain;
+    /* Hace que la imagen se ajuste al tamaño del contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+
+  }
+
+
+  #mainMenu ul,
+  #stickyMenu {
+    margin-top: 0px;
+
+  }
+
+
+  .listMenu {
+    justify-content: center;
+  }
+
+  .item div,
+  #nosotros div {
+
+    height: auto;
+    max-width: 100%;
+  }
+
+  .item h2 {
+    margin-top: 50px;
+    font-size: 19px;
+  }
+
+  #tituloNosotros,
+  #tituloServicios {
+    height: auto;
+    margin-left: 0%;
+  }
+
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    word-wrap: break-word;
+  }
+
+
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 24px;
+  }
+
+  #nosotros p {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  #cuadro {
+
+    height: unset;
+    height: auto;
+  }
+
+  .figGeometricas {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    right: 0;
+  }
+
+  #nosotros {
+
+    display: flex;
+
+    justify-content: unset;
+  }
+
+
+  #nosotros div {
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    word-wrap: break-word;
+  }
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    height: auto;
+    top: 0%;
+    position: unset;
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    max-height: unset;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    /*text-align: justify; /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+  .tituloServ {
+
+    flex: 1;
+    margin-top: 35px;
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  .tituloServ h2 {
+    font-size: 20px;
+  }
+
+  .servicios_ {
+    max-height: unset;
+    display: block;
+    position: unset;
+    height: auto;
+  }
+
+  #contenedorServ {
+
+    height: auto;
+
+  }
+
+  .servicios_ div p {
+    margin: 20px 10% 6% 6%;
+  }
+
+  .servicios_ div p,
+  #desarrollos p {
+
+    font-size: 18px;
+    max-height: unset;
+  }
+
+  #nosotros div .item {
+    margin-top: 0px;
+    height: auto;
+  }
+
+  #iconoLaptop {
+    width: 50px;
+    height: 50px;
+  }
+
+  #iconoMovil {
+    width: 30px;
+    height: 55px;
+  }
+
+  #desarrollos {
+
+    max-height: unset;
+    position: unset;
+  }
+
+  #desarrollos p {
+
+    margin-top: 30px;
+  }
+
+  #desarrollos .item {
+    flex: 1;
+    margin-top: 0px;
+    width: unset;
+    min-width: 30%;
+    max-width: 70%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+  }
+
+  .container {
+    height: auto;
+    width: unset;
+    min-width: 50%;
+    box-sizing: border-box;
+
+  }
+
+  .icono_titulo {
+    margin-left: 0px;
+    height: auto;
+    max-height: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 5% 0 5%;
+  }
+
+  #iconoFabrica,
+  #iconoTalento,
+  #iconoConsultoria,
+  #iconoGerencia {
+    width: 90px;
+    height: 80px;
+    top: 0px;
+  }
+
+  #divCentral {
+
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #divCentral div {
+
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+  #imgCintilloCentral {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    height: 100;
+    left: 50%;
+  }
+
+  #contactanos {
+    height: 50%;
+  }
+
+  #contactanos div {
+    width: 100%;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    top: 2%;
+    bottom: 0px;
+  }
+
+  #dudasComentarios {
+
+    margin-top: 20px;
+    height: auto;
+    width: unset;
+    max-height: unset;
     word-wrap: break-word;
   }
 
@@ -2073,10 +3067,10 @@ ul {
 }
 
 @media only screen and (min-width: 700px) and (max-width: 800px) and (orientation: landscape) {
-  /*body {
-    background-color: rgba(255, 166, 0, 0.681);
+  body {
+    /*background-color: rgba(255, 166, 0, 0.681);*/
 
-  }*/
+  }
 
   #barras {
 
@@ -2140,7 +3134,7 @@ ul {
   #imgEquipo2 {
 
     position: absolute;
-    top: unset;   
+    top: unset;
     right: 0%;
     width: max-content
   }
@@ -2157,6 +3151,112 @@ ul {
     height: 100%;
   }
 
+  #textoSomos {
+    top: 35%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 50%;
+    z-index: 4000;
+    left: 80px;
+    font-size: 35px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoTrabajamos {
+    top: 80%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoInnova {
+    top: 35%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 20px;
+    height: auto
+  }
+
+  #textoNorte {
+    top: 55%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 35px;
+    height: auto;
+  }
+
+
+  #textoDiseña {
+    top: 40%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoSitio {
+    top: 55%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 35px;
+    height: auto;
+  }
+
+  #textoAdaptado {
+    top: 85%;
+    z-index: 47000;
+    left: 70px;
+    font-size: 20px;
+    height: auto;
+  }
+
+
+  #textoSoluciones {
+    top: 40%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 30px;
+    height: auto;
+  }
+
+  #textoNecesidades {
+    top: 75%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 25px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+
+  }
+
+  #textoOfrecemos {
+    top: 34%;
+    z-index: 4000;
+    left: 60%;
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoServicios {
+    top: 50%;
+    z-index: 4000;
+    left: 55%;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+  }
+
+
   .slideshow {
     height: 100vh;
   }
@@ -2170,7 +3270,7 @@ ul {
   #stickyMenu ul li {
     min-width: 130px;
     max-width: 130px;
-   
+
   }
 
   #mainMenu ul li a,
@@ -2287,7 +3387,7 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height: auto;    
+    height: auto;
     top: 0%;
     position: unset;
     overflow-wrap: break-word;
@@ -2308,7 +3408,7 @@ ul {
     height: auto;
     width: unset;
     min-width: 50%;
-    box-sizing: border-box;  
+    box-sizing: border-box;
     word-wrap: break-word;
   }
 
@@ -2341,7 +3441,7 @@ ul {
   }
 
   #nosotros div .item {
-   
+
     margin-top: 0px;
     height: auto;
   }
@@ -2373,7 +3473,7 @@ ul {
     width: unset;
     min-width: 30%;
     max-width: 70%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     word-wrap: break-word;
 
   }
@@ -2383,11 +3483,12 @@ ul {
     width: unset;
     min-width: 50%;
     box-sizing: border-box;
-   
+
 
   }
 
   .icono_titulo {
+    margin-left: 0px;
     height: auto;
     max-height: unset;
   }
@@ -2410,7 +3511,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
   }
 
   #divCentral div {
@@ -2459,7 +3560,7 @@ ul {
     margin-top: 20px;
     height: auto;
     width: unset;
-    max-height: unset;   
+    max-height: unset;
     word-wrap: break-word;
   }
 
@@ -2519,10 +3620,10 @@ ul {
 
 
 @media only screen and (max-width: 700px) and (orientation: landscape) {
-  /*body {
-    background-color: cornflowerblue;
+  body {
+    /*background-color: cornflowerblue;*/
 
-  }*/
+  }
 
   #barras {
 
@@ -2577,6 +3678,115 @@ ul {
   #imgEquipo2 img {
     width: max-content;
     height: 100%;
+  }
+
+
+  #textoSomos {
+    top: 35%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 50%;
+    z-index: 4000;
+    left: 80px;
+    font-size: 35px;
+    text-align: center;
+    height: auto;
+  }
+
+
+  #textoTrabajamos {
+    top: 80%;
+    z-index: 4000;
+    left: 30px;
+    font-size: 15px;
+    height: auto;
+  }
+
+
+  #textoInnova {
+    top: 40%;
+    z-index: 4000;
+    left: 25px;
+    font-size: 15px;
+    height: auto;
+  }
+
+  #textoNorte {
+    top: 60%;
+    z-index: 4000;
+    left: 50px;
+    font-size: 30px;
+    height: auto;
+  }
+
+  #textoDiseña {
+    top: 33%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoSitio {
+    height: auto;
+    top: 53%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 30px;
+  }
+
+  #textoAdaptado {
+    top: 85%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 20px;
+    height: auto;
+  }
+
+
+
+  #textoSoluciones {
+    top: 40%;
+    z-index: 4000;
+    left: 50px;
+    font-size: 30px;
+    height: auto;
+  }
+
+
+  #textoNecesidades {
+    top: 85%;
+    z-index: 4000;
+    left: 70px;
+    font-size: 25px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
+
+  #textoOfrecemos {
+    top: 32%;
+    z-index: 4000;
+    left: 60%;
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoServicios {
+    top: 45%;
+    z-index: 4000;
+    left: 50%;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
   }
 
   .imgDiv {
@@ -2658,7 +3868,7 @@ ul {
 
   #tituloNosotros,
   #tituloServicios {
-    height: auto;   
+    height: auto;
     margin-left: 0%;
   }
 
@@ -2712,7 +3922,7 @@ ul {
   .parrafoDesa,
   #nosotros {
 
-    height: auto;    
+    height: auto;
     top: 0%;
     position: unset;
     overflow-wrap: break-word;
@@ -2734,7 +3944,7 @@ ul {
     width: unset;
     min-width: 30%;
     max-width: 80%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     word-wrap: break-word;
   }
 
@@ -2752,7 +3962,7 @@ ul {
   #contenedorServ {
 
     height: auto;
-   
+
   }
 
   .servicios_ div p {
@@ -2767,7 +3977,7 @@ ul {
   }
 
   #nosotros div .item {
-   
+
     margin-top: 0px;
     height: auto;
   }
@@ -2780,6 +3990,11 @@ ul {
   #iconoMovil {
     width: 23px;
     height: 45px;
+  }
+
+  .icono_titulo {
+
+    margin-left: 10px;
   }
 
   #desarrollos {
@@ -2799,7 +4014,7 @@ ul {
     width: unset;
     min-width: 30%;
     max-width: 80%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     word-wrap: break-word;
 
   }
@@ -2809,7 +4024,7 @@ ul {
     width: unset;
     min-width: 50%;
     box-sizing: border-box;
-    
+
   }
 
   .icono_titulo {
@@ -2876,7 +4091,7 @@ ul {
     margin-top: 20px;
     height: auto;
     width: unset;
-    max-height: unset;  
+    max-height: unset;
     word-wrap: break-word;
   }
 
@@ -2937,16 +4152,117 @@ ul {
 
 @media only screen and (max-width: 320px) and (orientation: landscape) {
 
-  /*html,
+  html,
   body {
 
-    background-color: blueviolet;
-  }*/
+    /*background-color: blueviolet;*/
+  }
 
   #barras {
 
     display: none;
   }
+
+  #textoSomos {
+    top: 45%;
+    z-index: 4000;
+    left: 12px;
+    font-size: 12px;
+    height: auto;
+}
+
+#textoEquipo {
+  top: 55%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 20px;
+  text-align: center;
+  height: auto;
+}
+
+#textoTrabajamos {
+  top: 80%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 12px;
+  height: auto;
+}
+
+#textoInnova {
+  top: 43%;
+  z-index: 4000;
+  left: 15px;
+  font-size: 12px;
+  height: auto;
+}
+
+#textoNorte {
+  top: 60%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoDiseña {
+  top: 40%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoSitio {
+  height: auto;
+  top: 60%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 15px;
+}
+
+#textoAdaptado {
+  top: 85%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoSoluciones {
+  top: 45%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoNecesidades {
+  top: 75%;
+  z-index: 4000;
+  left: 50px;
+  font-size: 15px;
+  width: 80%;
+  text-align: end;
+  height: auto;
+}
+
+#textoOfrecemos {
+  top: 40%;
+  z-index: 4000;
+  left: 60%;
+  font-size: 15px;
+  text-align: center;
+  height: auto;
+}
+
+#textoServicios {
+  top: 60%;
+  z-index: 4000;
+  left: 40%;
+  font-size: 15px;
+  text-align: center;
+  height: auto;
+}
 
   #mainMenu ul li,
   #stickyMenu ul li {
@@ -3092,16 +4408,16 @@ ul {
 
 
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 600px) and (max-width: 750px) and (orientation: portrait) {
 
 
- /* html,
+  html,
   body {
 
-    background-color: aquamarine;
+   /* background-color: aquamarine;*/
 
 
-  }*/
+  }
 
   #barras {
 
@@ -3156,23 +4472,25 @@ ul {
 
   #img_fondo1 {
     position: relative;
-    left: -24px;
+    /*left: -24px;*/
   }
 
   #img_responsive {
     position: relative;
-    left: -350px;
+    /*left: -350px;*/
   }
 
   #img_tecnologia {
     position: relative;
-    left: -350px;
+    /*left: -350px;*/
   }
 
   #img_consultoria {
     position: relative;
-    left: -200px;
+    /*left: -200px;*/
   }
+
+
 
   #imgEquipo1 {
     position: absolute;
@@ -3185,6 +4503,113 @@ ul {
 
     height: 60%;
   }
+
+
+  #textoSomos {
+    top: 15%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 25px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 40%;
+    z-index: 4000;
+    left: 50px;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoTrabajamos {
+    top: 80%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoInnova {
+    top: 20%;
+    z-index: 4000;
+    left: 20%;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoNorte {
+    top: 30%;
+    z-index: 4000;
+    left: 32%;
+    font-size: 35px;
+    height: auto;
+    text-align: center;
+  }
+
+  #textoDiseña {
+    top: 30%;
+    z-index: 4000;
+    left: 25px;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoSitio {
+    top: 50%;
+    z-index: 4000;
+    left: 120px;
+    font-size: 50px;
+    height: auto;
+  }
+
+  #textoAdaptado {
+    top: 85%;
+    z-index: 4000;
+    left: 25px;
+    font-size: 25px;
+    height: auto;
+  }
+
+
+  #textoSoluciones {
+    top: 30%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 35px;
+    height: auto;
+  }
+
+  #textoNecesidades {
+    top: 70%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 30px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
+  #textoOfrecemos {
+    top: 40%;
+    z-index: 4000;
+    left: 15%;
+    font-size: 30px;
+    width: 50%;
+    text-align: end;
+    height: auto;
+  }
+
+  #textoServicios {
+    top: 53%;
+    z-index: 4000;
+    left: 30%;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+  }
+
 
   #menuHamburguesa ul li {
     padding: 5rem 2rem;
@@ -3200,7 +4625,7 @@ ul {
 
     position: absolute;
     top: unset;
-    height: auto;    
+    height: auto;
     width: 100%;
     right: 0%;
     bottom: 4px
@@ -3334,6 +4759,11 @@ ul {
     height: auto;
   }
 
+  .icono_titulo {
+
+    margin-left: 0px;
+  }
+
   .tituloServ h2,
   .tem h2 {
     font-size: 20px;
@@ -3394,7 +4824,7 @@ ul {
   }
 
   #divCentral {
-  
+
     height: auto;
 
   }
@@ -3513,15 +4943,555 @@ ul {
 }
 
 
-@media only screen and (min-width: 400px) and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 750px) and (max-width: 1024px) and (orientation: portrait) {
 
-  /*html,
+
+  html,
   body {
 
-    background-color: pink;
+    /*background-color:orchid;*/
 
 
-  }*/
+  }
+
+  
+  #barras {
+
+    display: none;
+  }
+
+  .logoDiv,
+  .imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+
+    height: 600px;
+    width: unset
+  }
+
+
+  .pagination {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  .pagination li {
+    font-size: 14px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    /*left: -24px;*/
+  }
+
+  #img_responsive {
+    position: relative;
+    /*left: -350px;*/
+  }
+
+  #img_tecnologia {
+    position: relative;
+    /*left: -350px;*/
+  }
+
+  #img_consultoria {
+    position: relative;
+    /*left: -200px;*/
+  }
+
+
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    height: 100%;
+    bottom: 15%
+  }
+
+  .imgDiv1 {
+
+    height: 60%;
+  }
+
+  #textoSomos {
+    top: 30%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 25px;
+    text-align: center;
+    height: auto;
+}
+
+#textoEquipo {
+  top: 50%;
+  z-index: 4000;
+  left: 50px;
+  font-size: 30px;
+  text-align: center;
+  height: auto;
+}
+
+#textoTrabajamos {
+  top: 85%;
+  z-index: 4000;
+  left: 20px;
+  font-size: 25px;
+  height: auto;
+}
+
+#textoInnova {
+  top: 30%;
+  z-index: 4000;
+  left: 25%;
+  font-size: 25px;
+  height: auto;
+}
+
+#textoNorte {
+  top: 38%;
+  z-index: 4000;
+  left: 35%;
+  font-size: 35px;
+  height: auto;
+  text-align: center;
+}
+
+#textoDiseña {
+  top: 30%;
+  z-index: 4000;
+  left: 25px;
+  font-size: 25px;
+  height: auto;
+}
+
+#textoSitio {
+  top: 50%;
+  z-index: 4000;
+  left: 120px;
+  font-size: 50px;
+  height: auto;
+}
+
+#textoAdaptado {
+  top: 85%;
+  z-index: 4000;
+  left: 25px;
+  font-size: 25px;
+  height: auto;
+}
+
+
+#textoSoluciones {
+  top: 30%;
+  z-index: 4000;
+  left: 60px;
+  font-size: 35px;
+  height: auto;
+}
+
+#textoNecesidades {
+  top: 70%;
+  z-index: 4000;
+  left: 60px;
+  font-size: 30px;
+  width: 80%;
+  text-align: end;
+  height: auto;
+}
+
+#textoOfrecemos {
+  top: 40%;
+  z-index: 4000;
+  left: 12%;
+  font-size: 30px;
+  width: 50%;
+  text-align: end;
+  height: auto;
+}
+
+#textoServicios {
+  top: 53%;
+  z-index: 4000;
+  left: 30%;
+  font-size: 30px;
+  text-align: center;
+  height: auto;
+}
+
+
+#menuHamburguesa ul li {
+  padding: 5rem 2rem;
+  font-size: 22px;
+}
+
+#cerrar {
+
+  padding: 2rem !important;
+}
+
+#imgEquipo2 {
+
+  position: absolute;
+  top: unset;
+  height: auto;
+  width: 100%;
+  right: 0%;
+  bottom: 4px
+}
+
+
+#imgEquipo2 img {
+
+  height: unset;
+  width: 480px;
+
+
+}
+
+#imgEquipo1 img {
+
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+#nosotros .item {
+
+  height: auto;
+}
+
+#nosotros p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.item h2 {
+  font-size: 18px;
+}
+
+#nosotros div {
+
+  height: auto;
+}
+
+#tituloNosotros h1,
+#tituloServicios h1 {
+  font-size: 24px;
+  word-wrap: break-word;
+}
+
+#tituloNosotros div,
+#tituloServicios div {
+  height: auto;
+}
+
+#nosotros {
+  flex-direction: column;
+}
+
+#tituloServicios,
+#tituloNosotros {
+  max-height: unset;
+  min-height: 7%;
+  height: auto;
+  margin-top: 15%;
+  margin-left: 0%;
+}
+
+
+#cuadro {
+
+  height: auto;
+}
+
+#contenedorServ {
+  height: auto;
+}
+
+.servicios_ {
+  display: flex;
+  flex-direction: column;
+  max-height: unset;
+  height: auto;
+  position: unset;
+}
+
+.servicios_ div p {
+  font-size: 18px;
+  max-height: unset;
+  margin: 20px 30px 10px 30px;
+
+}
+
+
+#desarrollos p {
+  font-size: 18px;
+  margin: 20px 30px 20px 30px;
+}
+
+#desarrollos {
+  flex-direction: column;
+  height: auto;
+  position: unset;
+}
+
+.parrafoDesa {
+  padding: 0 10px 0 10px;
+}
+
+.container {
+  width: 100%;
+}
+
+
+#iconoFabrica,
+#iconoConsultoria,
+#iconoGerencia,
+#iconoTalento {
+  width: 80px;
+  height: 75px;
+  top: 0px;
+}
+
+
+
+.figGeometricas {
+  width: 180px;
+  height: 200px;
+}
+
+.tituloServ {
+  margin-top: 30px;
+  height: auto;
+}
+
+.icono_titulo {
+
+  margin-left: 0px;
+}
+
+.tituloServ h2,
+.tem h2 {
+  font-size: 20px;
+  overflow-wrap: break-word;
+  /* Permite que las palabras largas se dividan en varias líneas */
+  word-wrap: break-word;
+  /* Compatibilidad adicional para navegadores más antiguos */
+}
+
+.iconoTitServ_ {
+  margin-top: 10%;
+}
+
+.parrafoServ {
+
+  position: unset;
+}
+
+
+.parrafoServ,
+.parrafoDesa,
+#nosotros {
+
+  overflow-wrap: break-word;
+  /* Pssermite que las palabras largas se dividan en varias líneas */
+  word-wrap: break-word;
+  /* Compatibilidad adicional para navegadores más antiguos */
+  /*word-break: break-word; /* Rompe palabras largas si es necesario */
+  max-width: 100%;
+  /* Asegura que el contenido no exceda el ancho del contenedor */
+  max-height: unset;
+  height: auto;
+  text-align: justify;
+  /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+}
+
+
+
+#desarrollos {
+  top: 30%;
+}
+
+#desarrollos .item {
+
+  max-width: 55%;
+}
+
+#iconoLaptop {
+  margin-top: 25px;
+  width: 55px;
+  height: 50px;
+}
+
+#iconoMovil {
+  margin-top: 20px;
+  width: 30px;
+  height: 55px;
+}
+
+#divCentral {
+
+  height: auto;
+
+}
+
+#divCentral div {
+  height: auto;
+}
+
+#cintillo {
+  height: 50px;
+}
+
+#imgCintilloCentral {
+  z-index: -1;
+  width: 100%;
+  height: 35%;
+}
+
+#imgCentral {
+  z-index: 200;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+}
+
+#dudasComentarios {
+
+  max-height: unset;
+  margin-top: 20px;
+  height: auto
+}
+
+#dudasComentarios h2 {
+  font-size: 20px;
+}
+
+#contactanos {
+  height: 33%;
+}
+
+#contactanos div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#imgContactanos {
+  height: 100%;
+  width: initial;
+  z-index: -1;
+  bottom: 0px;
+}
+
+#footer {
+  max-height: unset;
+  height: auto;
+}
+
+#footer div ul {
+
+  height: auto;
+}
+
+
+#footer h2 {
+
+  word-wrap: break-word;
+  text-align: center;
+
+}
+
+
+#footer li {
+  margin-bottom: 10px;
+  /* Añade espacio entre los elementos de la lista */
+  overflow-wrap: break-word;
+  /* Permite que las palabras largas se dividan en varias líneas */
+  word-wrap: break-word;
+  /* Compatibilidad adicional para navegadores más antiguos */
+  /* word-break: break-word; /* Rompe palabras largas si es necesario */
+}
+
+
+#footer div ul li {
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0 5px 0
+}
+
+#footer div h2 {
+  font-size: 17px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+
+#footerHumanTalent,
+#footerServicios,
+#footerTecnologia {
+
+  max-width: 30%;
+
+}
+
+#footerContacto {
+
+  max-width: 25%;
+}
+
+#poweredBy {
+
+  font-size: 14px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 390px) and (max-width: 500px) and (orientation: portrait) {
+
+
+
+
+html,
+  body {
+
+    /*background-color: palevioletred;*/
+
+
+  }
 
 
   .logoDiv,
@@ -3595,7 +5565,7 @@ ul {
     position: absolute;
     top: unset;
     bottom: 4px;
-    height: auto;   
+    height: auto;
     width: 100%;
     right: 0%;
 
@@ -3617,6 +5587,649 @@ ul {
     width: 350px;
 
   }
+
+
+  
+  #menuHamburguesa ul li {
+
+    font-size: 20px;
+  }
+
+
+  #menuHamburguesa ul li {
+    height: auto;
+    color: #676869;
+    padding: 4rem 2rem;
+
+
+  }
+
+  #cerrar {
+    padding: 1.5rem !important;
+  }
+
+
+  #nosotros .item {
+
+    height: auto;
+  }
+
+  #nosotros p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .item h2 {
+    font-size: 16px;
+  }
+
+  #nosotros div {
+
+    height: auto;
+  }
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 22px;
+    word-wrap: break-word;
+  }
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    height: auto;
+  }
+
+  #nosotros {
+    flex-direction: column;
+  }
+
+  #tituloServicios,
+  #tituloNosotros {
+    max-height: unset;
+    min-height: 7%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+
+
+  #cuadro {
+
+    height: auto;
+  }
+
+  #contenedorServ {
+    height: auto;
+  }
+
+  .servicios_ {
+    display: flex;
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    position: unset;
+  }
+
+  .servicios_ div p {
+    font-size: 16px;
+    max-height: unset;
+    margin: 20px 10px 10px 10px;
+
+  }
+
+  .icono_titulo {
+
+    margin-left: 0px;
+  }
+
+
+  #desarrollos p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #desarrollos {
+    flex-direction: column;
+    height: auto;
+    position: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 10px 0 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #iconoFabrica {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoConsultoria {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoGerencia {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoTalento {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  .figGeometricas {
+    width: 180px;
+    height: 200px;
+  }
+
+  .tituloServ {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .tituloServ h2,
+  .tem h2 {
+    font-size: 18px;
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+  }
+
+  .iconoTitServ_ {
+    margin-top: 10%;
+  }
+
+  .parrafoServ {
+
+    position: unset;
+  }
+
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    max-height: unset;
+    height: auto;
+    text-align: justify;
+    /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+
+
+  #desarrollos {
+    top: 30%;
+  }
+
+  #desarrollos .item {
+
+    max-width: 55%;
+  }
+
+  #iconoLaptop {
+    margin-top: 25px;
+    width: 40px;
+    height: 35px;
+  }
+
+  #iconoMovil {
+    margin-top: 20px;
+    width: 22px;
+    height: 45px;
+  }
+
+  #divCentral {
+
+    height: auto;
+
+  }
+
+  #divCentral div {
+    height: auto;
+  }
+
+  #cintillo {
+    height: 50px;
+  }
+
+  #imgCintilloCentral {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+  }
+
+  #dudasComentarios {
+
+    max-height: unset;
+    margin-top: 20px;
+    height: auto
+  }
+
+  #dudasComentarios h2 {
+    font-size: 18px;
+  }
+
+  #contactanos {
+    height: 28%;
+  }
+
+  #contactanos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  #footer {
+    max-height: unset;
+    height: auto;
+  }
+
+  #footer div ul {
+
+    height: auto;
+  }
+
+
+  #footer h2 {
+
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /* word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer div ul li {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0 5px 0
+  }
+
+  #footer div h2 {
+    font-size: 16px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+
+  #footerHumanTalent,
+  #footerServicios,
+  #footerTecnologia {
+
+    max-width: 30%;
+
+  }
+
+  #footerContacto {
+
+    max-width: 25%;
+  }
+
+
+  
+  #textoSomos {
+    top: 20%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 18px;
+    text-align: center;
+    height: auto;
+}
+
+#textoEquipo {
+  top: 50%;
+  z-index: 4000;
+  left: 50px;
+  font-size: 30px;
+  text-align: center;
+  height: auto;
+}
+
+#textoTrabajamos {
+  top: 85%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 18px;
+  height: auto;
+}
+
+#textoInnova {
+  top: 20%;
+  z-index: 4000;
+  left: 10%;
+  font-size: 23px;
+  height: auto;
+}
+
+#textoNorte {
+  top: 35%;
+  z-index: 4000;
+  left: 30%;
+  font-size: 30px;
+  height: auto;
+  text-align: center;
+}
+
+#textoDiseña {
+  top: 10%;
+  z-index: 4000;
+  left: 25px;
+  font-size: 20px;
+  height: auto;
+}
+
+#textoSitio {
+  top: 30%;
+  z-index: 4000;
+  left: 20px;
+  font-size: 35px;
+  height: auto;
+}
+
+#textoAdaptado {
+  top: 85%;
+  z-index: 4000;
+  left: 25px;
+  font-size: 25px;
+  height: auto;
+}
+
+#textoSoluciones {
+  top: 15%;
+  z-index: 4000;
+  left: 30px;
+  font-size: 30px;
+  height: auto;
+  width: 100%;
+}
+
+#textoNecesidades {
+  top: 75%;
+  z-index: 4000;
+  left: 60px;
+  font-size: 25px;
+  width: 80%;
+  text-align: end;
+  height: auto;
+}
+
+#textoOfrecemos {
+  top: 10%;
+  z-index: 4000;
+  left: 5%;
+  font-size: 25px;
+  width: 80%;
+  text-align: end;
+  height: auto;
+}
+
+#textoServicios {
+  top: 20%;
+  z-index: 4000;
+  left: 50px;
+  font-size: 25px;
+  text-align: center;
+  height: auto;
+}
+
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 550px) and (orientation: portrait) {
+
+  html,
+  body {
+
+    /*background-color:brown;*/
+
+
+  }
+
+
+  .logoDiv,
+  .imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+    width: unset;
+    height: 550px;
+  }
+
+  .pagination li {
+    font-size: 12px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    left: -24px;
+  }
+
+  #img_responsive {
+    position: relative;
+    left: -350px;
+  }
+
+  #img_tecnologia {
+    position: relative;
+    left: -350px;
+  }
+
+  #img_consultoria {
+    position: relative;
+    left: -200px;
+  }
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    top: 25%;
+    height: auto
+  }
+
+  .imgDiv1 {
+
+    height: 100%;
+  }
+
+  #imgEquipo2 {
+
+    position: absolute;
+    top: unset;
+    bottom: 4px;
+    height: auto;
+    width: 100%;
+    right: 0%;
+
+
+  }
+
+
+  #imgEquipo2 img {
+
+    height: unset;
+    width: 430px;
+
+
+  }
+
+  #imgEquipo1 img {
+
+    height: unset;
+    width: 350px;
+
+  }
+
+  #textoSomos {
+    top: 20%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 16px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 50%;
+    z-index: 4000;
+    left: 30px;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoTrabajamos {
+    top: 83%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoInnova {
+    top: 20%;
+    z-index: 4000;
+    left: 10%;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoNorte {
+    top: 35%;
+    z-index: 4000;
+    left: 32%;
+    font-size: 30px;
+    height: auto;
+    text-align: center;
+  }
+
+  #textoDiseña {
+    top: 10%;
+    z-index: 4000;
+    left: 25px;
+    font-size: 20px;
+    height: auto;
+    
+  }
+
+  #textoSitio {
+    top: 30%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 35px;
+    height: auto;
+  }
+
+  #textoAdaptado {
+    top: 85%;
+    z-index: 4000;
+    left: 25px;
+    font-size: 25px;
+    height: auto;
+  }
+
+
+  #textoSoluciones {
+    top: 15%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 35px;
+    height: auto;
+  }
+
+  #textoNecesidades {
+    top: 75%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 25px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
+  #textoOfrecemos {
+    top: 10%;
+    z-index: 4000;
+    left: 5%;
+    font-size: 25px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
+  #textoServicios {
+    top: 20%;
+    z-index: 4000;
+    left: 25%;
+    font-size: 25px;
+    text-align: center;
+    height: auto;
+  }
+
 
   #menuHamburguesa ul li {
 
@@ -3703,6 +6316,544 @@ ul {
     max-height: unset;
     margin: 20px 10px 10px 10px;
 
+  }
+
+  .icono_titulo {
+
+    margin-left: 0px;
+  }
+
+
+  #desarrollos p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #desarrollos {
+    flex-direction: column;
+    height: auto;
+    position: unset;
+  }
+
+  .parrafoDesa {
+    padding: 0 10px 0 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #iconoFabrica {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoConsultoria {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoGerencia {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  #iconoTalento {
+    width: 70px;
+    height: 65px;
+    top: 0px;
+  }
+
+  .figGeometricas {
+    width: 180px;
+    height: 200px;
+  }
+
+  .tituloServ {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .tituloServ h2,
+  .tem h2 {
+    font-size: 18px;
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+  }
+
+  .iconoTitServ_ {
+    margin-top: 10%;
+  }
+
+  .parrafoServ {
+
+    position: unset;
+  }
+
+
+  .parrafoServ,
+  .parrafoDesa,
+  #nosotros {
+
+    overflow-wrap: break-word;
+    /* Pssermite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /*word-break: break-word; /* Rompe palabras largas si es necesario */
+    max-width: 100%;
+    /* Asegura que el contenido no exceda el ancho del contenedor */
+    max-height: unset;
+    height: auto;
+    text-align: justify;
+    /* Opcional: ajusta el texto para que se vea mejor en el contenedor */
+  }
+
+
+
+  #desarrollos {
+    top: 30%;
+  }
+
+  #desarrollos .item {
+
+    max-width: 55%;
+  }
+
+  #iconoLaptop {
+    margin-top: 25px;
+    width: 40px;
+    height: 35px;
+  }
+
+  #iconoMovil {
+    margin-top: 20px;
+    width: 22px;
+    height: 45px;
+  }
+
+  #divCentral {
+
+    height: auto;
+
+  }
+
+  #divCentral div {
+    height: auto;
+  }
+
+  #cintillo {
+    height: 50px;
+  }
+
+  #imgCintilloCentral {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  #imgCentral {
+    z-index: 200;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+  }
+
+  #dudasComentarios {
+
+    max-height: unset;
+    margin-top: 20px;
+    height: auto
+  }
+
+  #dudasComentarios h2 {
+    font-size: 18px;
+  }
+
+  #contactanos {
+    height: 28%;
+  }
+
+  #contactanos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #imgContactanos {
+    height: 100%;
+    width: initial;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  #footer {
+    max-height: unset;
+    height: auto;
+  }
+
+  #footer div ul {
+
+    height: auto;
+  }
+
+
+  #footer h2 {
+
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+
+
+  #footer li {
+    margin-bottom: 10px;
+    /* Añade espacio entre los elementos de la lista */
+    overflow-wrap: break-word;
+    /* Permite que las palabras largas se dividan en varias líneas */
+    word-wrap: break-word;
+    /* Compatibilidad adicional para navegadores más antiguos */
+    /* word-break: break-word; /* Rompe palabras largas si es necesario */
+  }
+
+
+  #footer div ul li {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0 5px 0
+  }
+
+  #footer div h2 {
+    font-size: 16px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+
+  #footerHumanTalent,
+  #footerServicios,
+  #footerTecnologia {
+
+    max-width: 30%;
+
+  }
+
+  #footerContacto {
+
+    max-width: 25%;
+  }
+
+
+}
+
+@media only screen and (min-width: 550px) and (max-width: 600px) and (orientation: portrait) {
+
+  html,
+  body {
+
+    /*background-color: pink;*/
+
+
+  }
+
+
+  .logoDiv,
+  .imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  #logo,
+  #logo_ {
+    margin-left: 0%;
+  }
+
+  #mainMenu,
+  #stickyMenu {
+    display: none;
+  }
+
+
+  .slideshow {
+    height: auto;
+    width: unset;
+  }
+
+  .slider li img {
+    width: unset;
+    height: 550px;
+  }
+
+  .pagination li {
+    font-size: 12px;
+  }
+
+  #img_fondo1 {
+    position: relative;
+    left: -24px;
+  }
+
+  #img_responsive {
+    position: relative;
+    left: -350px;
+  }
+
+  #img_tecnologia {
+    position: relative;
+    left: -350px;
+  }
+
+  #img_consultoria {
+    position: relative;
+    left: -200px;
+  }
+
+  #imgEquipo1 {
+    position: absolute;
+    right: 1%;
+    top: 25%;
+    height: auto
+  }
+
+  .imgDiv1 {
+
+    height: 100%;
+  }
+
+  #imgEquipo2 {
+
+    position: absolute;
+    top: unset;
+    bottom: 4px;
+    height: auto;
+    width: 100%;
+    right: 0%;
+
+
+  }
+
+
+  #imgEquipo2 img {
+
+    height: unset;
+    width: 430px;
+
+
+  }
+
+  #imgEquipo1 img {
+
+    height: unset;
+    width: 350px;
+
+  }
+
+  #textoSomos {
+    top: 20%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 23px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 40%;
+    z-index: 4000;
+    left: 50px;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoTrabajamos {
+    top: 80%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 23px;
+    height: auto;
+  }
+
+  #textoInnova {
+    top: 20%;
+    z-index: 4000;
+    left: 15%;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoNorte {
+    top: 35%;
+    z-index: 4000;
+    left: 32%;
+    font-size: 30px;
+    height: auto;
+    text-align: center
+  }
+
+  #textoDiseña {
+    top: 10%;
+    z-index: 4000;
+    left: 25px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoSitio {
+    top: 30%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 35px;
+    height: auto;
+  }
+
+  #textoAdaptado {
+    top: 85%;
+    z-index: 4000;
+    left: 25px;
+    font-size: 25px;
+    height: auto;
+  }
+
+
+  #textoSoluciones {
+    top: 15%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 35px;
+    height: auto;
+  }
+
+  #textoNecesidades {
+    top: 75%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 25px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
+  #textoOfrecemos {
+    top: 10%;
+    z-index: 4000;
+    left: 5%;
+    font-size: 25px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
+  #textoServicios {
+    top: 20%;
+    z-index: 4000;
+    left: 32%;
+    font-size: 25px;
+    text-align: center;
+    height: auto;
+  }
+
+
+  #menuHamburguesa ul li {
+
+    font-size: 20px;
+  }
+
+
+  #menuHamburguesa ul li {
+    height: auto;
+    color: #676869;
+    padding: 4rem 2rem;
+
+
+  }
+
+  #cerrar {
+    padding: 1.5rem !important;
+  }
+
+
+  #nosotros .item {
+
+    height: auto;
+  }
+
+  #nosotros p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .item h2 {
+    font-size: 16px;
+  }
+
+  #nosotros div {
+
+    height: auto;
+  }
+
+  #tituloNosotros h1,
+  #tituloServicios h1 {
+    font-size: 22px;
+    word-wrap: break-word;
+  }
+
+  #tituloNosotros div,
+  #tituloServicios div {
+    height: auto;
+  }
+
+  #nosotros {
+    flex-direction: column;
+  }
+
+  #tituloServicios,
+  #tituloNosotros {
+    max-height: unset;
+    min-height: 7%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+
+
+  #cuadro {
+
+    height: auto;
+  }
+
+  #contenedorServ {
+    height: auto;
+  }
+
+  .servicios_ {
+    display: flex;
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    position: unset;
+  }
+
+  .servicios_ div p {
+    font-size: 16px;
+    max-height: unset;
+    margin: 20px 10px 10px 10px;
+
+  }
+
+  .icono_titulo {
+
+    margin-left: 0px;
   }
 
 
@@ -3935,14 +7086,14 @@ ul {
 }
 
 
-@media only Screen and (min-width: 325px) and (max-width: 400px) and (orientation: portrait) {
+@media only Screen and (min-width: 325px) and (max-width: 390px) and (orientation: portrait) {
 
-  /*html,
+  html,
   body {
 
-    background-color: aqua;
+    /*background-color: aqua;*/
 
-  }*/
+  }
 
 
 
@@ -3994,6 +7145,113 @@ ul {
 
   }
 
+  #textoSomos {
+    top: 25%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 15px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 40%;
+    z-index: 4000;
+    left: 8px;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoTrabajamos {
+    top: 80%;
+    z-index: 4000;
+    left: 15px;
+    font-size: 15px;
+    height: auto;
+  }
+
+  #textoInnova {
+    top: 25%;
+    z-index: 4000;
+    left: 10%;
+    font-size: 18px;
+    height: auto;
+  }
+
+  #textoNorte {
+    top: 40%;
+    z-index: 4000;
+    left: 28%;
+    font-size: 25px;
+    height: auto;
+    text-align: center;
+  }
+
+  #textoDiseña {
+    top: 10%;
+    z-index: 4000;
+    left: 15px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoSitio {
+    top: 30%;
+    z-index: 4000;
+    left: 10px;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoAdaptado {
+    top: 85%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 20px;
+    height: auto;
+  }
+
+
+  #textoSoluciones {
+    top: 15%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoOfrecemos {
+    top: 35%;
+    z-index: 4000;
+    left: 45%;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+}
+  
+
+  #textoServicios {
+    top: 50%;
+    z-index: 4000;
+    left: 20%;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    
+  }
+
+
+  #textoNecesidades {
+    top: 75%;
+    z-index: 4000;
+    left: 60px;
+    font-size: 20px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+
   .slideshow {
     height: auto;
     width: unset;
@@ -4040,7 +7298,7 @@ ul {
     position: absolute;
     top: unset;
     bottom: 4px;
-    height: auto;    
+    height: auto;
     width: 100%;
     right: 0%;
   }
@@ -4125,6 +7383,11 @@ ul {
   .servicios_ div p {
     font-size: 12px;
     max-height: unset;
+  }
+
+  .icono_titulo {
+
+    margin-left: 0px;
   }
 
   #desarrollos p {
@@ -4242,7 +7505,7 @@ ul {
   }
 
   #divCentral {
-    
+
     height: auto;
 
   }
@@ -4366,14 +7629,14 @@ ul {
 
 @media only Screen and (min-width:240px) and (max-width:325px) and (orientation:portrait) {
 
-  /*html,
+  html,
   body {
-    background-color: burlywood;
+    /*background-color: burlywood;*/
 
 
-  }*/
+  }
 
-  
+
   .logoDiv,
   .imgDiv {
     display: flex;
@@ -4455,7 +7718,7 @@ ul {
     position: absolute;
     top: unset;
     bottom: 0px;
-    height: auto;    
+    height: auto;
     width: 100%;
     right: 0%;
   }
@@ -4473,6 +7736,114 @@ ul {
     width: 230px;
 
   }
+
+  #textoSomos {
+    top: 25%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 13px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoEquipo {
+    top: 50%;
+    z-index: 4000;
+    left: 12px;
+    font-size: 18px;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoTrabajamos {
+    top: 82%;
+    z-index: 4000;
+    left: 12px;
+    font-size: 13px;
+    height: auto;
+  }
+
+  #textoInnova {
+    top: 25%;
+    z-index: 4000;
+    left: 10%;
+    font-size: 15px;
+    height: auto;
+  }
+
+  #textoNorte {
+    top: 40%;
+    z-index: 4000;
+    left: 20%;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  #textoDiseña {
+    top: 10%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 15px;
+    height: auto;
+  
+  }
+
+  #textoSitio {
+    top: 38%;
+    z-index: 4000;
+    left: 12px;
+    font-size: 25px;
+    height: auto;
+  }
+
+  #textoAdaptado {
+    top: 80%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 20px;
+    height: auto;
+  }
+
+
+  #textoSoluciones {
+    top: 15%;
+    z-index: 4000;
+    left: 12px;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #textoNecesidades {
+    top: 75%;
+    z-index: 4000;
+    left: 25px;
+    font-size: 18px;
+    width: 80%;
+    text-align: end;
+    height: auto;
+  }
+  
+  #textoOfrecemos {
+    top: 43%;
+    z-index: 4000;
+    left: 23%;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    height: auto;
+  }
+
+  #textoServicios {
+    top: 55%;
+    z-index: 4000;
+    left: 20%;
+    font-size: 15px;
+    text-align: center;
+    height: auto;
+  }
+
+
 
 
   #nosotros .item {
@@ -4539,6 +7910,11 @@ ul {
   .servicios_ div p {
     font-size: 12px;
     max-height: unset;
+  }
+
+  .icono_titulo {
+
+    margin-left: 0px;
   }
 
   #desarrollos p {
@@ -4643,7 +8019,7 @@ ul {
   }
 
   #divCentral {
- 
+
     height: auto;
 
   }
@@ -4691,7 +8067,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
   }
 
   #imgContactanos {
@@ -4768,14 +8144,13 @@ ul {
 
 @media only Screen and (min-width: 231px) and (max-width: 240px) and (orientation: portrait) {
 
-  /*html,
+  html,
   body {
-    background-color: lightgray;
+    /*background-color: lightgray;*/
 
 
-  }*/
+  }
 
-  
 
   .logoDiv,
   .imgDiv {
@@ -4852,7 +8227,7 @@ ul {
     position: absolute;
     top: unset;
     bottom: 0px;
-    height: auto;    
+    height: auto;
     width: 100%;
     right: 0%;
   }
@@ -4871,6 +8246,110 @@ ul {
 
   }
 
+  #textoSomos {
+    top: 15%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 13px;
+    text-align: center;
+    height: auto;
+}
+
+#textoEquipo {
+  top: 40%;
+  z-index: 4000;
+  left: 20px;
+  font-size: 15px;
+  text-align: center;
+  height: auto;
+}
+
+#textoTrabajamos {
+  top: 65%;
+  z-index: 4000;
+  left: 20px;
+  font-size: 13px;
+  height: auto;
+}
+
+#textoInnova {
+  top: 15%;
+  z-index: 4000;
+  left: 10%;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoNorte {
+  top: 32%;
+  z-index: 4000;
+  left: 50px;
+  font-size: 20px;
+  height: auto;
+  text-align: center;
+}
+
+#textoDiseña {
+  top: 10%;
+  z-index: 4000;
+  left: 20px;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoSitio {
+  top: 30%;
+  z-index: 4000;
+  left: 10px;
+  font-size: 20px;
+  height: auto;
+    
+}
+
+#textoAdaptado {
+  top: 60%;
+  z-index: 4000;
+  left: 20px;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoSoluciones {
+  top: 15%;
+  z-index: 4000;
+  left: 20px;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoNecesidades {
+  top: 75%;
+  z-index: 4000;
+  left: 15px;
+  font-size: 15px;
+  width: 80%;
+  text-align: end;
+  height: auto;
+}
+
+#textoOfrecemos {
+  top: 25%;
+  z-index: 4000;
+  left: 23%;
+  font-size: 15px;
+  width: 50%;
+  text-align: center;
+  height: auto;
+}
+
+#textoServicios {
+  top: 40%;
+  z-index: 4000;
+  left: 10%;
+  font-size: 15px;
+  text-align: center;
+  height: auto;
+}
 
   #nosotros .item {
 
@@ -4936,6 +8415,11 @@ ul {
   .servicios_ div p {
     font-size: 12px;
     max-height: unset;
+  }
+
+  .icono_titulo {
+
+    margin-left: 0px;
   }
 
   #desarrollos p {
@@ -5160,13 +8644,13 @@ ul {
 
 @media only Screen and (min-width: 150px) and (max-width: 231px) and (orientation: portrait) {
 
-  /*html,
+  html,
   body {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
 
 
-  }*/
-  
+  }
+
 
   .logoDiv,
   .imgDiv {
@@ -5182,10 +8666,121 @@ ul {
     margin-left: 0%;
   }
 
+  #textoSomos {
+    top: 15%;
+    z-index: 4000;
+    left: 20px;
+    font-size: 10px;
+    text-align: center;
+    height: auto;
+}
+
+#textoEquipo {
+  top: 30%;
+  z-index: 4000;
+  left: 20px;
+  font-size: 15px;
+  text-align: center;
+  height: auto;
+}
+
+#textoTrabajamos {
+  top: 75%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 10px;
+  height: auto;
+}
+
+#textoInnova {
+  top: 20%;
+  z-index: 4000;
+  left: 12%;
+  font-size: 12px;
+  height: auto;
+}
+
+#textoNorte {
+  top: 40%;
+  z-index: 4000;
+  left: 10%;
+  font-size: 15px;
+  height: auto;
+  text-align: center;
+}
+
+#textoDiseña {
+  top: 10%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 10px;
+  height: auto;
+}
+
+#textoSitio {
+  top: 18%;
+  z-index: 4000;
+  left: 10px;
+  font-size: 15px;
+  height: auto;
+}
+
+#textoAdaptado {
+  top: 80%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 12px;
+  height: auto;
+}
+
+#textoSoluciones {
+  top: 15%;
+  z-index: 4000;
+  left: 12px;
+  font-size: 13px;
+  height: auto;
+}
+
+#textoNecesidades {
+  top: 75%;
+  z-index: 4000;
+  left: 5px;
+  font-size: 13px;
+  width: 80%;
+  text-align: end;
+  height: auto;
+}
+
+#textoOfrecemos {
+  top: 25%;
+  z-index: 4000;
+  left: 25%;
+  font-size: 13px;
+  width: 50%;
+  text-align: center;
+  height: auto;
+}
+
+#textoServicios {
+  top: 45%;
+  z-index: 4000;
+  left: 8%;
+  font-size: 13px;
+  text-align: center;
+  height: auto;
+}
+
   #mainMenu,
   #stickyMenu {
     display: none;
   }
+
+  #menuHamburguesa ul li {
+    height: auto;
+    color: #676869;
+    padding: 3rem 1rem;
+    font-size: 16px;
+}
 
 
   .slideshow {
@@ -5233,7 +8828,7 @@ ul {
     position: absolute;
     top: unset;
     bottom: 4px;
-    height: auto;   
+    height: auto;
     width: 100%;
     right: 0%;
   }
@@ -5252,7 +8847,7 @@ ul {
 
   }
 
-
+ 
   #nosotros .item {
 
     height: auto;
@@ -5317,6 +8912,11 @@ ul {
   .servicios_ div p {
     font-size: 12px;
     max-height: unset;
+  }
+
+  .icono_titulo {
+
+    margin-left: 0px;
   }
 
   #desarrollos p {
@@ -5421,7 +9021,7 @@ ul {
   }
 
   #divCentral {
-    
+
     height: auto;
 
   }
