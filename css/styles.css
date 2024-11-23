@@ -19,14 +19,12 @@
 
 #textoSomos {
   top: 30%;
-  /*z-index:6000;*/
   left: 70px;
   font-size: 25px;
 }
 
 #textoEquipo {
-  top: 50%;
-  /*z-index: 6000;*/
+  top: 50%; 
   left: 80px;
   font-size: 60px;
   text-align: center;
@@ -35,14 +33,12 @@
 #textoTrabajamos {
 
   top: 80%;
-  /* z-index: 6000;*/
   left: 70px;
   font-size: 28px
 }
 
 #textoInnova {
   top: 30%;
-  /*z-index:6000;*/
   left: 70px;
   font-size: 25px;
 }
@@ -50,7 +46,6 @@
 #textoNorte {
 
   top: 50%;
-  /*z-index:6000;*/
   left: 70px;
   font-size: 60px;
 
@@ -58,39 +53,34 @@
 
 #textoDiseña {
   top: 30%;
-  /*z-index:6000;*/
   left: 120px;
   font-size: 25px;
 }
 
 #textoSitio {
 
-  top: 50%;
-  /*z-index:6000;*/
+  top: 50%; 
   left: 150px;
   font-size: 60px;
 
 }
 
 #textoAdaptado {
-  top: 80%;
-  /*z-index:6000;*/
+  top: 80%;  
   left: 120px;
   font-size: 25px;
 }
 
 #textoSoluciones {
 
-  top: 60%;
-  /*z-index:6000;*/
+  top: 60%;  
   left: 70px;
   font-size: 60px;
 }
 
 #textoNecesidades {
 
-  top: 80%;
-  /*z-index:6000;*/
+  top: 80%; 
   left: 70px;
   font-size: 35px;
   width: 80%;
@@ -100,8 +90,7 @@
 
 #textoOfrecemos {
 
-  top: 20%;
-  /*z-index:6000;*/
+  top: 20%;  
   left: 60%;
   font-size: 35px;
   width: 20%;
@@ -111,11 +100,9 @@
 
 #textoServicios {
 
-  top: 30%;
-  /*z-index:6000;*/
+  top: 30%;  
   left: 60%;
-  font-size: 35px;
-  /*width:80%;*/
+  font-size: 35px;  
   text-align: center;
 
 }
@@ -326,6 +313,7 @@ nav {
 }
 
 #barras {
+  display:none;
   cursor: pointer;
   z-index: 3000;
   width: 80px;
@@ -550,7 +538,7 @@ li #social {
   object-fit: cover;
 }
 
-#imgCentral {
+#imgCentral, #imgCentral_ {
   z-index: 200;
   position: absolute;
   right: 25%;
@@ -559,6 +547,7 @@ li #social {
 }
 
 #dudasComentarios {
+  padding-top: 5%;
   height: auto;
   text-align: center;
   font-size: 28px;
@@ -1304,7 +1293,7 @@ ul {
     object-fit: cover;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -1858,7 +1847,7 @@ ul {
     height: auto
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -2418,7 +2407,7 @@ ul {
     object-fit: cover;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     height: 100;
     left: 50%;
@@ -2978,7 +2967,7 @@ ul {
     object-fit: cover;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     height: 100;
     left: 50%;
@@ -3530,7 +3519,7 @@ ul {
     object-fit: cover;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     height: 100%;
     left: 50%;
@@ -4060,7 +4049,7 @@ ul {
     height: 100%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -4843,7 +4832,7 @@ ul {
     height: 35%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -5378,7 +5367,7 @@ ul {
   height: 35%;
 }
 
-#imgCentral {
+#imgCentral, #imgCentral_ {
   z-index: 200;
   position: absolute;
   height: 100%;
@@ -5816,7 +5805,7 @@ html,
     height: 100%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -6457,7 +6446,7 @@ html,
     height: 100%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -6990,7 +6979,7 @@ html,
     height: 100%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -7524,7 +7513,7 @@ html,
     height: 100%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -8038,7 +8027,7 @@ html,
     height: 100%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -8543,7 +8532,7 @@ html,
     height: 100%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;
@@ -9040,7 +9029,7 @@ html,
     height: 11%;
   }
 
-  #imgCentral {
+  #imgCentral, #imgCentral_ {
     z-index: 200;
     position: absolute;
     height: 100%;

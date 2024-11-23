@@ -1,9 +1,29 @@
 $(document).ready(function () {
 
+			animacionEterna = true;
+			efectoEterno(); // Inicia la animación
 
-		$('#textoSomos').css({'display':'block'});
-		$('#textoEquipo').css({'display':'block'});
-		$('#textoTrabajamos').css({'display':'block'});
+			$('#textoSomos').css({'display':'block'});
+			
+			$('#textoEquipo').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(2000);	
+			$('#textoTrabajamos').css({'display':'block'});
+
+			$('#textoInnova').css({'display':'none'});
+			$('#textoNorte').css({'display':'none'});
+
+			$('#textoDiseña').css({'display':'none'});
+			$('#textoSitio').css({'display':'none'});
+			$('#textoAdaptado').css({'display':'none'});
+
+			$('#textoSoluciones').css({'display':'none'});
+			$('#textoNecesidades').css({'display':'none'});
+
+			$('#textoOfrecemos').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});
+
+
 	// Ejecutar la función inmediatamente cuando se cargue la página
 
 	checkMediaQuery(); // Comprobar al cargar la página
@@ -12,6 +32,7 @@ $(document).ready(function () {
 
 	// Escuchar el redimensionamiento de la ventana y ejecutar la función
 	$(window).on('resize', function () {
+		$('#imgCentral_').css({'display':'none'});
 		checkMediaQuery(); // Comprobar al redimensionar la ventana
 	});
 
@@ -20,6 +41,25 @@ $(document).ready(function () {
 		// Detiene todas las animaciones en curso para los elementos #imgEquipo1 y #imgEquipo2
 		$('#imgEquipo1').stop(true, true);
 		$('#imgEquipo2').stop(true, true);
+
+		$('#textoSomos').stop(true, true);
+			
+		$('#textoEquipo').stop(true, true);
+
+		$('#textoTrabajamos').stop(true, true);
+
+		$('#textoInnova').stop(true, true);
+		$('#textoNorte').stop(true, true);
+
+		$('#textoDiseña').stop(true, true);
+		$('#textoSitio').stop(true, true);
+		$('#textoAdaptado').stop(true, true);
+
+		$('#textoSoluciones').stop(true, true);
+		$('#textoNecesidades').stop(true, true);
+
+		$('#textoOfrecemos').stop(true, true);
+		$('#textoServicios').stop(true, true);
 
 		//console.log("pasa por aqui al hacer click 2")
 	});
@@ -185,11 +225,11 @@ $(document).ready(function () {
 	// Ejecutamos todas las funciones
 
 	$('.pagination li').click(pagination);
-	/*$('.right span').click(nextSlider);*/
+	$('.right span').click(nextSlider);
 	/*$('.left span').click(prevSlider);*/
 
 
-	//myTimer = setInterval(nextSlider, 5000);	
+	myTimer = setInterval(nextSlider, 5000);	
 
 	// FUNCIONES =========================================================
 
@@ -197,9 +237,9 @@ $(document).ready(function () {
 
 
 
-		/*clearInterval(myTimer);
+		clearInterval(myTimer);
 		
-		myTimer = setInterval(nextSlider, 5000);*/
+		myTimer = setInterval(nextSlider, 5000);
 
 		//console.log('Entra por el pagination');
 
@@ -276,12 +316,14 @@ $(document).ready(function () {
 
 		if(imgPos==1){
 
-			$('#imgEquipo1').animate({ 'opacity': '1' },1000);
+			$('#imgEquipo1').animate({ 'opacity': '1' }, 1000);
 
 			$('#imgEquipo2').css('opacity', '0');
 			
-			$('#textoSomos').css({'display':'block'});
-			$('#textoEquipo').css({'display':'block'});
+			$('#textoSomos').css({'display':'block'});		
+			$('#textoEquipo').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(2000);			
 			$('#textoTrabajamos').css({'display':'block'});
 
 			$('#textoInnova').css({'display':'none'});
@@ -310,7 +352,7 @@ $(document).ready(function () {
 				.animate({
 					opacity: 1,
 					right: '0px' // posición final en su lugar original
-				}, 1000); 
+				}, 2000); 
 
 
 			$('.pagination li').css({ 'z-index': 100 });
@@ -330,13 +372,19 @@ $(document).ready(function () {
 			$('#textoOfrecemos').css({'display':'none'});
 			$('#textoServicios').css({'display':'none'});
 
-			$('#textoInnova').css({'display':'block'});
-			$('#textoNorte').css({'display':'block'});
+			$('#textoInnova').css({'display':'block'});			
+			$('#textoNorte').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(1000);	
 
 
 			
 			
 		}else if (imgPos==3){
+
+			$('#textoSitio').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(1000);	
 
 			$('#imgEquipo1').css('opacity', '0');
 			$('#imgEquipo2').css('opacity', '0');
@@ -353,9 +401,7 @@ $(document).ready(function () {
 
 			$('#textoOfrecemos').css({'display':'none'});
 			$('#textoServicios').css({'display':'none'});
-
-			$('#textoDiseña').css({'display':'block'});
-			$('#textoSitio').css({'display':'block'});
+			$('#textoDiseña').css({'display':'block'});					
 			$('#textoAdaptado').css({'display':'block'});
 
 
@@ -378,17 +424,24 @@ $(document).ready(function () {
 
 			$('#textoOfrecemos').css({'display':'none'});
 			$('#textoServicios').css({'display':'none'});
-
-			$('#textoSoluciones').css({'display':'block'});
-			$('#textoNecesidades').css({'display':'block'});
+			
+			$('#textoSoluciones').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(500);	
+			
+			$('#textoNecesidades').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(1000);	
 
 		}else if (imgPos==5){
 
 			$('#imgEquipo1').css('opacity', '0');
 			$('#imgEquipo2').css('opacity', '0');
 
-			$('#textoOfrecemos').css({'display':'block'});
-			$('#textoServicios').css({'display':'block'});
+			$('#textoOfrecemos').css({'display':'block'});		
+			$('#textoServicios').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(1000);	
 
 			$('#textoSomos').css({'display':'none'});
 			$('#textoEquipo').css({'display':'none'});
@@ -415,6 +468,24 @@ $(document).ready(function () {
 
 		$('#imgEquipo1').stop(true, true);
 		$('#imgEquipo2').stop(true, true);
+		$('#textoSomos').stop(true, true);
+			
+		$('#textoEquipo').stop(true, true);
+
+		$('#textoTrabajamos').stop(true, true);
+
+		$('#textoInnova').stop(true, true);
+		$('#textoNorte').stop(true, true);
+
+		$('#textoDiseña').stop(true, true);
+		$('#textoSitio').stop(true, true);
+		$('#textoAdaptado').stop(true, true);
+
+		$('#textoSoluciones').stop(true, true);
+		$('#textoNecesidades').stop(true, true);
+
+		$('#textoOfrecemos').stop(true, true);
+		$('#textoServicios').stop(true, true);
 
 		clearInterval(myTimer);
 		myTimer = setInterval(nextSlider, 5000);
@@ -470,7 +541,7 @@ $(document).ready(function () {
 				.animate({
 					opacity: 1,
 					right: '0px' // posición final en su lugar original
-				}, 1000); 
+				},2000); 
 
 			/*$('#imgEquipo2')
 			.css({
@@ -496,7 +567,10 @@ $(document).ready(function () {
 
 			
 			$('#textoSomos').css({'display':'block'});
-			$('#textoEquipo').css({'display':'block'});
+			
+			$('#textoEquipo').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(2000);	
 			$('#textoTrabajamos').css({'display':'block'});
 
 			$('#textoInnova').css({'display':'none'});
@@ -530,12 +604,19 @@ $(document).ready(function () {
 			$('#textoServicios').css({'display':'none'});
 
 			$('#textoInnova').css({'display':'block'});
-			$('#textoNorte').css({'display':'block'});
+			
+			$('#textoNorte').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(1000);	
 
 
 			
 			
 		}else if (imgPos==3){
+
+			$('#textoSitio').css("display", "block") // Asegura que sea un bloque
+                .hide() // Oculta nuevamente para iniciar el fadeIn
+                .fadeIn(1000);		
 
 			$('#textoSomos').css({'display':'none'});
 			$('#textoEquipo').css({'display':'none'});
@@ -550,8 +631,8 @@ $(document).ready(function () {
 			$('#textoOfrecemos').css({'display':'none'});
 			$('#textoServicios').css({'display':'none'});
 
-			$('#textoDiseña').css({'display':'block'});
-			$('#textoSitio').css({'display':'block'});
+			$('#textoDiseña').css({'display':'block'});			
+					
 			$('#textoAdaptado').css({'display':'block'});
 
 
@@ -570,15 +651,23 @@ $(document).ready(function () {
 			$('#textoAdaptado').css({'display':'none'});
 
 			$('#textoOfrecemos').css({'display':'none'});
-			$('#textoServicios').css({'display':'none'});
+			$('#textoServicios').css({'display':'none'});			
 
-			$('#textoSoluciones').css({'display':'block'});
-			$('#textoNecesidades').css({'display':'block'});
+			$('#textoSoluciones').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(500);	
+			
+			$('#textoNecesidades').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(1000);	
 
 		}else if (imgPos==5){
 
-			$('#textoOfrecemos').css({'display':'block'});
-			$('#textoServicios').css({'display':'block'});
+			$('#textoOfrecemos').css({'display':'block'});			
+			
+			$('#textoServicios').css("display", "block") // Asegura que sea un bloque
+                    .hide() // Oculta nuevamente para iniciar el fadeIn
+                    .fadeIn(1000);	
 
 			$('#textoSomos').css({'display':'none'});
 			$('#textoEquipo').css({'display':'none'});
@@ -642,6 +731,14 @@ $(document).ready(function () {
 	window.addEventListener("resize", checkMediaMenu);
 
 
+
+	function efectoEterno() {
+		$('#imgCentral_').toggle('blind', { direction: 'down' }, 4000, function () {
+		  if (animacionEterna) {
+			efectoEterno(); // Vuelve a llamar la función
+		  }
+		});
+	  }
 	
 
 
