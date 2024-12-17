@@ -8,9 +8,42 @@
   box-sizing: border-box;
 }
 
+ 
+
+.english{
+
+  display:none;
+}
+
+.languages{
+
+  position:absolute; 
+  z-index:6000; 
+  height:auto;  
+  top:2%; 
+  right:2%
+
+}
+
+#langEnglish{
+
+  display:none;
+}
 
 
-.textos {
+
+#spa{
+
+  color:blue;
+}
+
+
+
+.languages span:hover{ 
+  cursor: pointer;
+}
+
+.textos-span, .textos-eng {
 
   color: white;
   position: absolute;
@@ -206,6 +239,7 @@
   z-index: 1000;
 }
 
+
 nav {
   width: 100%;
   height: 70px;
@@ -228,24 +262,34 @@ nav {
   top: 70px;
 }
 
-#stickyMenu {
+.stickyMenu {
   display: none;
 }
 
-#mainMenu ul,
-#stickyMenu ul {
+#spanish-sticky, #english-sticky{
+
+  z-index:4500;
+}
+
+#english{
+
+  display:none;
+}
+
+.mainMenu ul,
+.stickyMenu ul {
   list-style: none;
 
 }
 
-#mainMenu ul li a:hover,
-#stickyMenu ul li a:hover {
+.mainMenu ul li a:hover,
+.stickyMenu ul li a:hover {
   font-size: 19px;
   cursor: pointer;
 }
 
-#mainMenu ul li a:hover::after,
-#stickyMenu ul li a:hover::after {
+.mainMenu ul li a:hover::after,
+.stickyMenu ul li a:hover::after {
   content: "";
   display: inline-block;
   width: 110px;
@@ -257,20 +301,21 @@ nav {
 
 }
 
-#mainMenu ul li a::after,
-#stickyMenu ul li a::after {
+.mainMenu ul li a::after,
+.stickyMenu ul li a::after {
   --hover-image: url("../img/linea_blanca.png");
 
 }
 
-#mainMenu ul li,
-#stickyMenu ul li {
+.mainMenu ul li,
+.stickyMenu ul li {
   min-width: 180px;
   max-width: 180px;
   width: auto;
 }
 
-#menuHamburguesa {
+
+.menuHamburguesa {
   z-index: 5000;
   display: none;
   border: 1px solid gray;
@@ -284,7 +329,7 @@ nav {
 }
 
 
-#menuHamburguesa ul li {
+.menuHamburguesa ul li {
 
   height: auto;
   color: #676869;
@@ -293,14 +338,16 @@ nav {
 
 }
 
-#menuHamburguesa ul li a {
+.menuHamburguesa ul li a {
 
   text-decoration: none;
   color: #676869;
+  cursor:pointer;
+  
 
 }
 
-#menuHamburguesa ul li a:hover {
+.menuHamburguesa ul li a:hover {
 
   font-weight: bold;
 
@@ -362,7 +409,7 @@ li #social {
   cursor: pointer;
 }
 
-#mainMenu ul li a {
+.mainMenu ul li a {
   display: block;
   text-decoration: none;
   color: white;
@@ -375,7 +422,7 @@ li #social {
   font-size: 18px;
 }
 
-#stickyMenu ul li a {
+.stickyMenu ul li a {
   display: block;
   text-decoration: none;
   color: #595959;
@@ -388,7 +435,7 @@ li #social {
   font-size: 18px;
 }
 
-#mainMenu ul li a span {
+.mainMenu ul li a span {
 
   padding-left: 8%;
   padding-right: 8%;
@@ -397,7 +444,7 @@ li #social {
 
 }
 
-#stickyMenu ul li a span {
+.stickyMenu ul li a span {
 
   padding-left: 8%;
   padding-right: 8%;
@@ -406,7 +453,7 @@ li #social {
 
 }
 
-#stickyMenu .listMenu {
+.stickyMenu .listMenu {
   opacity: 0.8;
   height: 65px;
 }
@@ -1005,29 +1052,29 @@ ul {
     top: 59px;
   }
 
-  #mainMenu {
+  .mainMenu {
     width: 100%;
   }
 
-  #mainMenu .listMenu {
+  .mainMenu .listMenu {
     margin-top: 30px;
 
   }
 
-  #stickyMenu .listMenu {
+  .stickyMenu .listMenu {
 
     height: auto;
     margin-top: 30px
   }
 
-  #mainMenu ul li,
-  #stickyMenu ul li {
+  .mainMenu ul li,
+  .stickyMenu ul li {
     min-width: 200px;
     max-width: 200px;
   }
 
-  #stickyMenu ul li a,
-  #mainMenu ul li a {
+  .stickyMenu ul li a,
+  .mainMenu ul li a {
 
     width: 200px;
     font-size: 25px;
@@ -1035,8 +1082,8 @@ ul {
   }
 
 
-  #mainMenu ul li a:hover::after,
-  #stickyMenu ul li a:hover::after {
+  .mainMenu ul li a:hover::after,
+  .stickyMenu ul li a:hover::after {
     content: "";
     display: inline-block;
     width: 120px;
@@ -1057,8 +1104,8 @@ ul {
   }
 
 
-  #mainMenu ul li a:hover,
-  #stickyMenu ul li a:hover {
+  .mainMenu ul li a:hover,
+  .stickyMenu ul li a:hover {
     font-size: 27px;
     cursor: pointer;
   }
@@ -1588,23 +1635,23 @@ ul {
     top: 59px;
   }
 
-  #mainMenu {
+  .mainMenu {
     width: 100%;
   }
 
-  #mainMenu ul,
-  #stickyMenu {
+  .mainMenu ul,
+  .stickyMenu {
     margin-top: 30px;
   }
 
-  #mainMenu ul li,
-  #stickyMenu ul li {
+  .mainMenu ul li,
+  .stickyMenu ul li {
     min-width: 180px;
     max-width: 180px;
   }
 
-  #mainMenu ul li a:hover::after,
-  #stickyMenu ul li a:hover::after {
+  .mainMenu ul li a:hover::after,
+  .stickyMenu ul li a:hover::after {
     content: "";
     display: inline-block;
     width: 110px;
@@ -1625,21 +1672,21 @@ ul {
 
   }
 
-  #mainMenu ul li a,
-  #stickyMenu ul li a {
+  .mainMenu ul li a,
+  .stickyMenu ul li a {
 
     font-size: 18px;
     width: 180px;
   }
 
-  #mainMenu ul li a:hover,
-  #stickyMenu ul li a:hover {
+  .mainMenu ul li a:hover,
+  .stickyMenu ul li a:hover {
     font-size: 19px;
     cursor: pointer;
   }
 
 
-  #stickyMenu .listMenu {
+  .stickyMenu .listMenu {
     justify-content: center;
     height: 65px;
   }
@@ -2135,36 +2182,36 @@ ul {
 
 
 
-  #mainMenu {
+  .mainMenu {
     width: 100%;
   }
 
-  #mainMenu ul li,
-  #stickyMenu ul li {
+  .mainMenu ul li,
+  .stickyMenu ul li {
     min-width: 130px;
     max-width: 130px;
 
   }
 
-  #mainMenu ul li a,
-  #stickyMenu ul li a {
+  .mainMenu ul li a,
+  .stickyMenu ul li a {
     font-size: 15px;
     width: 130px;
   }
 
-  #stickyMenu .listMenu {
+  .stickyMenu .listMenu {
     opacity: 0.8;
     height: 55px;
   }
 
-  #mainMenu ul li a:hover,
-  #stickyMenu ul li a:hover {
+  .mainMenu ul li a:hover,
+  .stickyMenu ul li a:hover {
     font-size: 16px;
     cursor: pointer;
   }
 
-  #mainMenu ul li a:hover::after,
-  #stickyMenu ul li a:hover::after {
+  .mainMenu ul li a:hover::after,
+  .stickyMenu ul li a:hover::after {
     content: "";
     display: inline-block;
     width: 85px;
@@ -2185,8 +2232,8 @@ ul {
   }
 
 
-  #mainMenu ul,
-  #stickyMenu {
+  .mainMenu ul,
+  .stickyMenu {
     margin-top: 0px;
 
   }
@@ -2695,36 +2742,36 @@ ul {
 
 
 
-  #mainMenu {
+  .mainMenu {
     width: 100%;
   }
 
-  #mainMenu ul li,
-  #stickyMenu ul li {
+  .mainMenu ul li,
+  .stickyMenu ul li {
     min-width: 130px;
     max-width: 130px;
 
   }
 
-  #mainMenu ul li a,
-  #stickyMenu ul li a {
+  .mainMenu ul li a,
+  .stickyMenu ul li a {
     font-size: 15px;
     width: 130px;
   }
 
-  #stickyMenu .listMenu {
+  .stickyMenu .listMenu {
     opacity: 0.8;
     height: 55px;
   }
 
-  #mainMenu ul li a:hover,
-  #stickyMenu ul li a:hover {
+  .mainMenu ul li a:hover,
+  .stickyMenu ul li a:hover {
     font-size: 16px;
     cursor: pointer;
   }
 
-  #mainMenu ul li a:hover::after,
-  #stickyMenu ul li a:hover::after {
+  .mainMenu ul li a:hover::after,
+  .stickyMenu ul li a:hover::after {
     content: "";
     display: inline-block;
     width: 85px;
@@ -2745,8 +2792,8 @@ ul {
   }
 
 
-  #mainMenu ul,
-  #stickyMenu {
+  .mainMenu ul,
+  .stickyMenu {
     margin-top: 0px;
 
   }
@@ -3251,35 +3298,35 @@ ul {
   }
 
 
-  #mainMenu {
+  .mainMenu {
     width: 100%;
   }
 
-  #mainMenu ul li,
-  #stickyMenu ul li {
+  .mainMenu ul li,
+  .stickyMenu ul li {
     min-width: 130px;
     max-width: 130px;
 
   }
 
-  #mainMenu ul li a,
-  #stickyMenu ul li a {
+  .mainMenu ul li a,
+  .stickyMenu ul li a {
     font-size: 14px;
   }
 
-  #stickyMenu .listMenu {
+  .stickyMenu .listMenu {
     opacity: 0.8;
     height: 55px;
   }
 
-  #mainMenu ul li a:hover,
-  #stickyMenu ul li a:hover {
+  .mainMenu ul li a:hover,
+  .stickyMenu ul li a:hover {
     font-size: 15px;
     cursor: pointer;
   }
 
-  #mainMenu ul li a:hover::after,
-  #stickyMenu ul li a:hover::after {
+  .mainMenu ul li a:hover::after,
+  .stickyMenu ul li a:hover::after {
     content: "";
     display: inline-block;
     width: 80px;
@@ -3793,34 +3840,34 @@ ul {
     top: 59px;
   }
 
-  #mainMenu {
+  .mainMenu {
     width: 100%;
   }
 
-  #mainMenu ul li a:hover,
-  #stickyMenu ul li a:hover {
+  .mainMenu ul li a:hover,
+  .stickyMenu ul li a:hover {
     font-size: 15px;
     cursor: pointer;
   }
 
-  #stickyMenu .listMenu {
+  .stickyMenu .listMenu {
     opacity: 0.8;
     height: 45px;
   }
 
-  #mainMenu ul li,
-  #stickyMenu ul li {
+  .mainMenu ul li,
+  .stickyMenu ul li {
     min-width: 100px;
     max-width: 100px;
   }
 
-  #mainMenu ul li a,
-  #stickyMenu ul li a {
+  .mainMenu ul li a,
+  .stickyMenu ul li a {
     font-size: 14px;
   }
 
-  #mainMenu ul li a:hover::after,
-  #stickyMenu ul li a:hover::after {
+  .mainMenu ul li a:hover::after,
+  .stickyMenu ul li a:hover::after {
     content: "";
     display: inline-block;
     width: 70px;
@@ -4253,41 +4300,41 @@ ul {
   height: auto;
 }
 
-  #mainMenu ul li,
-  #stickyMenu ul li {
+  .mainMenu ul li,
+  .stickyMenu ul li {
     min-width: 80px;
     max-width: 80px;
   }
 
-  #mainMenu ul li a,
-  #stickyMenu ul li a {
+  .mainMenu ul li a,
+  .stickyMenu ul li a {
     font-size: 10px;
   }
 
-  #mainMenu .listMenu,
-  #stickyMenu .listMenu {
+  .mainMenu .listMenu,
+  .stickyMenu .listMenu {
     justify-content: start;
   }
 
-  #stickyMenu ul li a {
+  .stickyMenu ul li a {
 
     width: 80px;
 
   }
 
-  #stickyMenu .listMenu {
+  .stickyMenu .listMenu {
 
     height: 35px;
   }
 
-  #mainMenu ul li a:hover,
-  #stickyMenu ul li a:hover {
+  .mainMenu ul li a:hover,
+  .stickyMenu ul li a:hover {
     font-size: 11px;
     cursor: pointer;
   }
 
-  #mainMenu ul li a:hover::after,
-  #stickyMenu ul li a:hover::after {
+  .mainMenu ul li a:hover::after,
+  .stickyMenu ul li a:hover::after {
 
     width: 50px;
 
@@ -4427,8 +4474,8 @@ ul {
     margin-left: 0%;
   }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
@@ -4600,7 +4647,7 @@ ul {
   }
 
 
-  #menuHamburguesa ul li {
+  .menuHamburguesa ul li {
     padding: 5rem 2rem;
     font-size: 22px;
   }
@@ -4963,8 +5010,8 @@ ul {
     margin-left: 0%;
   }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
@@ -5135,7 +5182,7 @@ ul {
 }
 
 
-#menuHamburguesa ul li {
+.menuHamburguesa ul li {
   padding: 5rem 2rem;
   font-size: 22px;
 }
@@ -5497,8 +5544,8 @@ html,
     margin-left: 0%;
   }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
@@ -5579,13 +5626,13 @@ html,
 
 
   
-  #menuHamburguesa ul li {
+  .menuHamburguesa ul li {
 
     font-size: 20px;
   }
 
 
-  #menuHamburguesa ul li {
+  .menuHamburguesa ul li {
     height: auto;
     color: #676869;
     padding: 4rem 2rem;
@@ -6033,8 +6080,8 @@ html,
     margin-left: 0%;
   }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
@@ -6220,13 +6267,13 @@ html,
   }
 
 
-  #menuHamburguesa ul li {
+  .menuHamburguesa ul li {
 
     font-size: 20px;
   }
 
 
-  #menuHamburguesa ul li {
+  .menuHamburguesa ul li {
     height: auto;
     color: #676869;
     padding: 4rem 2rem;
@@ -6567,8 +6614,8 @@ html,
     margin-left: 0%;
   }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
@@ -6753,13 +6800,13 @@ html,
   }
 
 
-  #menuHamburguesa ul li {
+  .menuHamburguesa ul li {
 
     font-size: 20px;
   }
 
 
-  #menuHamburguesa ul li {
+  .menuHamburguesa ul li {
     height: auto;
     color: #676869;
     padding: 4rem 2rem;
@@ -7092,7 +7139,7 @@ html,
   }
 
 
-  #menuHamburguesa ul {
+  .menuHamburguesa ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -7115,12 +7162,12 @@ html,
     height: 70px
   }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
-  #menuHamburguesa ul li {
+  .menuHamburguesa ul li {
     height: auto;
     color: #676869;
     padding: 2.5rem 2rem;
@@ -7648,8 +7695,8 @@ html,
 
   }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
@@ -8165,8 +8212,8 @@ html,
 
   }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
@@ -8759,12 +8806,14 @@ html,
   height: auto;
 }
 
-  #mainMenu,
-  #stickyMenu {
+  .mainMenu,
+  .stickyMenu {
     display: none;
   }
 
-  #menuHamburguesa ul li {
+  
+  
+  .menuHamburguesa ul li {
     height: auto;
     color: #676869;
     padding: 3rem 1rem;

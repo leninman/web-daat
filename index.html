@@ -23,6 +23,22 @@
 
 <body>
 
+  <div class="languages" id="langSpanish">
+    <span class="spa" style="color:#595959">Español</span>
+    <span><img style="height:15px" class="vzla-l" src="img/vzla.png" alt=""></span>
+    <span style="color:#595959">|</span>
+    <span class="eng" style="color:#595959">Inglés</span>
+    <span><img style="height:15px" class="usa-l" src="img/usa.png" alt=""></span>
+  </div>
+
+  <div class="languages" id="langEnglish">
+    <span class="spa" style="color:#595959">Spanish</span>
+    <span><img style="height:15px" class="vzla-l" src="img/vzla.png" alt=""></span>
+    <span style="color:#595959">|</span>
+    <span class="eng" style="color:#595959">English</span>
+    <span><img style="height:15px" class="usa-l" src="img/usa.png" alt=""></span>
+  </div>
+
   <div style="height:auto">
     <i class="fa-regular fa-bars" id="barras" style=""></i>
   </div>
@@ -38,7 +54,7 @@
 
 
 
-  <nav id="mainMenu">
+  <nav class="mainMenu" id="spanish">
 
     <ul class="listMenu">
       <li><a href="#cintillo" data-url="#principal">Principal</a></li>
@@ -50,7 +66,19 @@
 
   </nav>
 
-  <nav id="stickyMenu">
+  <nav class="mainMenu" id="english">
+
+    <ul class="listMenu">
+      <li><a href="#cintillo" data-url="#principal">Welcome</a></li>
+      <li><a href="#tituloNosotros" data-url="#nosotros">About us</a></li>
+      <li><a href="#tituloServicios" data-url="#servicios">Services</a></li>
+      <!--<li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>-->
+      <li><a href="#contactanos" data-url="#contactanos"><span>Contact us</span></a></li>
+    </ul>
+
+  </nav>
+
+  <nav class="stickyMenu" id="spanish-sticky">
 
     <ul class="listMenu">
       <li><a href="#cintillo" data-url="#principal">Principal</a></li>
@@ -62,7 +90,19 @@
 
   </nav>
 
-  <nav id="menuHamburguesa">
+  <nav class="stickyMenu" id="english-sticky">
+
+    <ul class="listMenu">
+      <li><a href="#cintillo" data-url="#principal">Welcome</a></li>
+      <li><a href="#tituloNosotros" data-url="#nosotros">About us</a></li>
+      <li><a href="#tituloServicios" data-url="#servicios">Services</a></li>
+      <!--<li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>-->
+      <li><a href="#contactanos" data-url="#contactanos"><span>Contact us</span></a></li>
+    </ul>
+
+  </nav>
+
+  <nav class="menuHamburguesa" id="mHSpanish">
 
     <ul>
       <li id="cerrar"><span>X</span></li>
@@ -71,7 +111,34 @@
       <li class="hamburguesaLi"><a href="#tituloServicios" data-url="#servicios">Servicios</a></li>
       <!--<li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>-->
       <li class="hamburguesaLi"><a href="#contactanos" data-url="#contactanos"><span>Contáctanos</span></a></li>
-      <li class="hamburguesaLi"><a href="">Español | Inglés</a></li>
+      <li class="hamburguesaLi" id="esp"><span>Español | <img style="height:15px" id="vzla" src="img/vzla.png" alt=""></span></li>
+      <li class="hamburguesaLi" id="eng"><span>Inglés  | <img style="height:15px" id="usa" src="img/usa.png" alt=""></span></li>
+      
+     
+      <li id="contenedorSocial">
+        <ul id="social">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-x-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </li>
+    </ul>
+
+  </nav>
+
+  <nav class="menuHamburguesa" id="mHEnglish">
+
+    <ul>
+      <li id="cerrar"><span>X</span></li>
+      <li class="hamburguesaLi"><a href="#cintillo" data-url="#principal">Welcome</a></li>
+      <li class="hamburguesaLi"><a href="#tituloNosotros" data-url="#nosotros">About us</a></li>
+      <li class="hamburguesaLi"><a href="#tituloServicios" data-url="#servicios">Services</a></li>
+      <!--<li><a href="#tituloProyectos" data-url="#proyectos">Proyectos</a></li>-->
+      <li class="hamburguesaLi"><a href="#contactanos" data-url="#contactanos"><span>Contact us</span></a></li>
+      <li class="hamburguesaLi" id="esp"><span>Spanish | <img style="height:15px" id="vzla" src="img/vzla.png" alt=""></span></li>
+      <li class="hamburguesaLi" id="eng"><span>English  | <img style="height:15px" id="usa" src="img/usa.png" alt=""></span></li>
       
      
       <li id="contenedorSocial">
@@ -89,27 +156,50 @@
 
   <div class="slideshow">
 
-     <span id="textoSomos" class="textos">Somos un</span>
+     <span id="textoSomos" class="textos-span">Somos un</span>
 
-      <span id="textoEquipo" class="textos">
+      <span id="textoEquipo" class="textos-span">
         Equipo de <br> profesionales</span>
 
-      <span id="textoTrabajamos" class="textos">
+      <span id="textoTrabajamos" class="textos-span">
         Que trabajamos para ofrecerte soluciones de alta <br>
         calidad de la mano con las nuevas tecnologías </span>
 
-      <span id="textoInnova" class="textos">La innovación en nuetros procesos</span>
-      <span id="textoNorte" class="textos">Es nuestro<br>principal norte</span>
+      <span id="textoInnova" class="textos-span">La innovación en nuetros procesos</span>
+      <span id="textoNorte" class="textos-span">Es nuestro<br>principal norte</span>
 
-      <span id="textoDiseña" class="textos">Diseña y crea con nosotros</span>
-      <span id="textoSitio" class="textos">Tu sitio web <br>responsive</span>
-      <span id="textoAdaptado" class="textos">Adaptado a cualquier dispositivo</span>
+      <span id="textoDiseña" class="textos-span">Diseña y crea con nosotros</span>
+      <span id="textoSitio" class="textos-span">Tu sitio web <br>responsive</span>
+      <span id="textoAdaptado" class="textos-span">Adaptado a cualquier dispositivo</span>
 
-      <span id="textoSoluciones" class="textos">Te ofrecemos soluciones <br>tecnológicas</span>
-      <span id="textoNecesidades" class="textos">Adaptadas a tus necesidades</span>
+      <span id="textoSoluciones" class="textos-span">Te ofrecemos soluciones <br>tecnológicas</span>
+      <span id="textoNecesidades" class="textos-span">Adaptadas a tus necesidades</span>
 
-      <span id="textoOfrecemos" class="textos">Te ofrecemos</span>
-      <span id="textoServicios" class="textos">Servicios de consultoría de <br>proyectos</span>
+      <span id="textoOfrecemos" class="textos-span">Te ofrecemos</span>
+      <span id="textoServicios" class="textos-span">Servicios de consultoría de <br>proyectos</span>
+
+
+
+      <span id="textoSomos" class="textos-eng">We are a</span>
+      <span id="textoEquipo" class="textos-eng">
+        Team of <br> professionals</span>
+
+      <span id="textoTrabajamos" class="textos-eng">
+        We work to offer you solutions <br>
+        high quality thanks to new technologies</span>
+
+      <span id="textoInnova" class="textos-eng">Innovation in our processes</span>
+      <span id="textoNorte" class="textos-eng">is our<br>main north</span>
+
+      <span id="textoDiseña" class="textos-eng">Design and create with us</span>
+      <span id="textoSitio" class="textos-eng">Your responsive <br>website</span>
+      <span id="textoAdaptado" class="textos-eng">Adapted to any device</span>
+
+      <span id="textoSoluciones" class="textos-eng">We offer you technological <br>solutions</span>
+      <span id="textoNecesidades" class="textos-eng">Adapted to your needs</span>
+
+      <span id="textoOfrecemos" class="textos-eng">We offer you</span>
+      <span id="textoServicios" class="textos-eng">Project consulting<br>services</span>
 
 
     <ul class="slider">
@@ -182,7 +272,8 @@
   <div id="tituloNosotros">
 
     <div>
-      <h1>Nosotros</h1>
+      <h1 class="spanish">Nosotros</h1>
+      <h1 class="english">About us</h1>
       <img id="linea" src="img/linea.png" alt="" />
     </div>
 
@@ -195,33 +286,21 @@
 
       <div class="item">
         <div class="titulosPrimarios">
-          <h2>Quiénes somos</h2>
+          <h2 class="spanish">Quiénes somos</h2>
+          <h2 class="english">Our Team</h2>
         </div>
       </div>
 
       <div>
-        <p> Somos un equipo de profesionales en las distintas áreas de TI con amplia experiencia y
+        <p class="spanish"> Somos un equipo de profesionales en las distintas áreas de TI con amplia experiencia y
           altamente capacitados para brindarle a su empresa o negocio soluciones tecnológicas de automatización a la
           medida,
           con alta calidad y con una excelente relación costo/beneficio.
         </p>
-      </div>
-
-    </div>
-
-    <div>
-
-      <div class="item">
-        <div class="titulosPrimarios">
-          <h2>Visión</h2>
-        </div>
-      </div>
-
-      <div>
-
-        <p>Posicionarnos como empresa líder en el sector de TI, como proveedor de productos y servicios tecnológicos,
-          a nivel nacional e internacional, con un amplio nivel de creatividad, responsabilidad y compromiso,
-          centrándonos en las necesidades del cliente.
+        <p class="english">We are a team of professionals in different areas of IT with extensive experience and
+          highly trained to provide your company or business with technological automation solutions to the
+          extent,
+          with high quality and an excellent cost/benefit ratio.
         </p>
       </div>
 
@@ -231,13 +310,40 @@
 
       <div class="item">
         <div class="titulosPrimarios">
-          <h2>Misión</h2>
+          <h2 class="spanish">Visión</h2>
+          <h2 class="english">Vision</h2>
         </div>
       </div>
 
       <div>
-        <p> Proveer a las empresas de diferentes ramos, en el mercado nacional e internacional, soluciones tecnológicas
+
+        <p class="spanish">Posicionarnos como empresa líder en el sector de TI, como proveedor de productos y servicios tecnológicos,
+          a nivel nacional e internacional, con un amplio nivel de creatividad, responsabilidad y compromiso,
+          centrándonos en las necesidades del cliente.
+        </p>
+        <p class="english">Position ourselves as a leading company in the IT sector, as a provider of technological products and services,
+          at a national and international level, with a high level of creativity, responsibility and commitment,
+          focusing on customer needs.
+        </p>
+      </div>
+
+    </div>
+
+    <div>
+
+      <div class="item">
+        <div class="titulosPrimarios">
+          <h2 class="spanish">Misión</h2>
+          <h2 class="english">Mission</h2>
+        </div>
+      </div>
+
+      <div>
+        <p class="spanish"> Proveer a las empresas de diferentes ramos, en el mercado nacional e internacional, soluciones tecnológicas
           integrales adecuadas a sus necesidades, con altos niveles de calidad e innovación, generando valor al negocio.
+        </p>
+        <p class="english">Provide companies in different sectors, in the national and international market, with technological solutions
+          comprehensive solutions appropriate to your needs, with high levels of quality and innovation, generating value for the business.
         </p>
       </div>
 
@@ -248,7 +354,8 @@
   <div id="tituloServicios">
 
     <div>
-      <h1>Servicios</h1>
+      <h1 class="spanish">Servicios</h1>
+      <h1 class="english">Services</h1>
       <img id="linea" src="img/linea.png" alt="" />
     </div>
 
@@ -269,18 +376,25 @@
         </div>
 
         <div class="tituloServ">
-          <h2>Fábrica de software</h2>
+          <h2 class="spanish">Fábrica de software</h2>
+          <h2 class="english">Software factory</h2>
         </div>
 
       </div>
 
       <div class="parrafoServ">
 
-        <p> Ofrecemos servicio de desarrollo de software completo y personalizado, cubriendo todas las etapas del ciclo
+        <p class="spanish"> Ofrecemos servicio de desarrollo de software completo y personalizado, cubriendo todas las etapas del ciclo
           de vida,
           comenzando desde el levantamiento de la información hasta la implantación en ambiente productivo,
           incluyendo el mantenimiento y soporte. Estos desarrollos van adaptados al negocio, a los procesos y a las
           necesidades funcionales del cliente.</p>
+
+        <p class="english">We offer complete and personalized software development service, covering all stages of the cycle
+          life,
+          starting from the collection of information to the implementation in a productive environment,
+          including maintenance and support. These developments are adapted to the business, the processes and the
+          functional needs of the client.</p>
 
       </div>
 
@@ -295,18 +409,27 @@
           <img id="iconoLaptop" src="img/icono_laptop.png" alt=""></img>
 
           <div class="item">
-            <h2>Desarrollo de software</h2>
+            <h2 class="spanish">Desarrollo de software</h2>
+            <h2 class="english">Software development</h2>
           </div>
 
         </div>
 
         <div class="parrafoDesa">
 
-          <p> Diseño, desarrollo, mantenimiento y/o soporte de soluciones web, según las necesidades del negocio.
+          <p class="spanish"> Diseño, desarrollo, mantenimiento y/o soporte de soluciones web, según las necesidades del negocio.
             Contamos con un equipo de especialistas en diversas áreas de ingeniería de software,
             quiénes en conjunto con el cliente y sus usuarios funcionales, llevan a cabo un estricto esquema de pruebas,
             aplicando constantemente metodologías ágiles de trabajo, con lo cual
             garantizan entregas continuas y una mejor calidad del producto.
+
+          </p>
+
+          <p class="english">Design, development, maintenance and/or support of web solutions, according to business needs.
+            We have a team of specialists in various areas of software engineering,
+            who, together with the client and its functional users, carry out a strict testing scheme,
+            constantly applying agile work methodologies, thereby
+            They guarantee continuous deliveries and better product quality.
 
           </p>
 
@@ -322,17 +445,25 @@
           <img id="iconoMovil" src="img/icono_movil.png" alt=""></img>
 
           <div class="item">
-            <h2>Desarrollo móvil</h2>
+            <h2 class="spanish">Desarrollo móvil</h2>
+            <h2 class="english">Mobile development</h2>
           </div>
 
         </div>
 
         <div class="parrafoDesa">
-          <p>Diseño y desarrollo de aplicaciones móviles nativas e híbridas, según las necesidades del negocio.
+          <p class="spanish">Diseño y desarrollo de aplicaciones móviles nativas e híbridas, según las necesidades del negocio.
             Contamos con un equipo de trabajo integral, experto en el área de desarrollo de software, quiénes en
             conjunto con el cliente y sus usuarios funcionales, llevan a cabo un estricto esquema de pruebas,
             aplicando constantemente metodologías ágiles de trabajo, con lo cual garantizan entregas continuas
             y una mejor calidad del producto.
+
+          </p>
+          <p class="english">Design and development of native and hybrid mobile applications, according to business needs.
+            We have a comprehensive work team, experts in the area of ​​software development, who in
+            Together with the client and its functional users, they carry out a strict testing scheme,
+            constantly applying agile work methodologies, thereby guaranteeing continuous deliveries
+            and better product quality.
 
           </p>
         </div>
@@ -355,17 +486,24 @@
         </div>
 
         <div class="tituloServ">
-          <h2>Ingeniería y consultoría de proyectos</h2>
+          <h2 class="spanish">Ingeniería y consultoría de proyectos</h2>
+          <h2 class="english">Engineering and project consulting</h2>
         </div>
 
       </div>
 
       <div class="parrafoServ">
-        <p> Realizamos la conceptualización del producto que necesita su empresa.
+        <p class="spanish"> Realizamos la conceptualización del producto que necesita su empresa.
           Llevamos a cabo sesiones de trabajo que son dirigidas por nuestros expertos consultores
           en conjunto con el usuario funcional, con lo cual podemos identificar las necesidades de
           automatización de los procesos y definir de forma clara los objetivos,
           incluyendo los beneficios que a corto, mediano y largo plazo se desean alcanzar.</p>
+        
+        <p class="english">We conceptualize the product your company needs.
+          We carry out work sessions that are led by our expert consultants
+          in conjunction with the functional user, with which we can identify the needs of
+          automation of processes and clearly defining objectives,
+          including the benefits that you want to achieve in the short, medium and long term.</p>
       </div>
 
 
@@ -381,15 +519,20 @@
         </div>
 
         <div class="tituloServ">
-          <h2>Gerencia de proyectos</h2>
+          <h2 class="spanish">Gerencia de proyectos</h2>
+          <h2 class="english">Project management</h2>
         </div>
       </div>
 
       <div class="parrafoServ">
-        <p> Es el servicio que ofrecemos a nuestros clientes para la ejecución de proyectos de tecnología de la
+        <p class="spanish"> Es el servicio que ofrecemos a nuestros clientes para la ejecución de proyectos de tecnología de la
           información,
           basados en marcos de trabajos ágiles y estándares de Project Management.
         </p>
+
+        <p class="english">It is the service that we offer to our clients for the execution of information technology projects.
+          information,
+          based on agile work frameworks and Project Management standards.</p>
       </div>
 
 
@@ -406,17 +549,23 @@
         </div>
 
         <div class="tituloServ">
-          <h2>Talento como servicio</h2>
+          <h2 class="spanish">Talento como servicio</h2>
+          <h2 class="english">Talent as a service</h2>
         </div>
       </div>
 
       <div class="parrafoServ">
-        <p>Somos proveedores de talento humano TI para su empresa, ya sea que desee tercerizar parte
+        <p class="spanish">Somos proveedores de talento humano TI para su empresa, ya sea que desee tercerizar parte
           o el total de su staff de tecnología. A través de nuestro catálogo de talento,
           realizamos una selección optimizada de personal para su proyecto,
           garantizando especialistas con altas capacidades técnicas en diferentes áreas tecnológicas.
 
         </p>
+
+        <p class="english">We are providers of IT human talent for your company, whether you want to outsource part
+          or the total of your technology staff. Through our talent catalog,
+          We carry out an optimized selection of personnel for your project,
+          guaranteeing specialists with high technical capabilities in different technological areas.</p>
       </div>
 
     </div>
@@ -435,7 +584,8 @@
   </div>
 
   <div id="dudasComentarios">
-    <h2>¿Dudas o comentarios? Contáctanos</h2>
+    <h2 class="spanish">¿Dudas o comentarios? Contáctanos</h2>
+    <h2 class="english">Have questions or comments? Contact us</h2>
   </div>
 
 
@@ -460,7 +610,9 @@
 
       <ul>
 
-        <li>Expertos en gerencia, consultoría, desarrollo de software y reclutamiento de personal.</li>
+        <li class="spanish">Expertos en gerencia, consultoría, desarrollo de software y reclutamiento de personal.</li>
+
+        <li class="english">Experts in management, consulting, software development and personnel recruitment.</li>
 
         <li>Copyright©humantalentstaff</li>
 
@@ -471,9 +623,10 @@
 
     <div id="footerServicios">
 
-      <h2>Servicios</h2>
+      <h2 class="spanish">Servicios</h2>
+      <h2 class="english">Services</h2>
 
-      <ul>
+      <ul class="spanish">
 
         <li>Fábrica de software.</li>
         <li>Ingeniería y consultoría de proyectos.</li>
@@ -482,11 +635,21 @@
 
       </ul>
 
+      <ul class="english">
+
+        <li>Software factory.</li>
+        <li>Engineering and project consulting.</li>
+        <li>Project management.</li>
+        <li>Talent as a service.</li>
+
+      </ul>
+
     </div>
 
     <div id="footerTecnologia">
 
-      <h2>Tecnología</h2>
+      <h2 class="spanish">Tecnología</h2>
+      <h2 class="english">Technology</h2>
 
       <ul>
 
@@ -501,7 +664,8 @@
 
     <div id="footerContacto">
 
-      <h2>Contacto</h2>
+      <h2 class="spanish">Contacto</h2>
+      <h2 class="english">Contact us</h2>
 
       <ul>
 
