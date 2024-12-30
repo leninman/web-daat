@@ -1,47 +1,58 @@
 $(document).ready(function () {
 
+
 	let language = "textos-span";
 	let stickyM = "spanish-sticky";
 	let mainMenu = "spanish";
 	let menuHamburguesa = "mHSpanish";
 	let langSpaEng = "langSpanish";
+	let valida;
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+	$('.menuHamburguesa ul .espn span').css('color', 'blue');
 
 
-	animacionEterna = true;
-	efectoEterno(); // Inicia la animación
+	checkMediaQuery();
 
-	$('#textoSomos' + '.' + language).css({ 'display': 'block' });
-
-	$('#textoEquipo' + '.' + language).css("display", "block") // Asegura que sea un bloque
-		.hide() // Oculta nuevamente para iniciar el fadeIn
-		.fadeIn(2000);
-	$('#textoTrabajamos' + '.' + language).css({ 'display': 'block' });
-
-	$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-	$('#textoNorte' + '.' + language).css({ 'display': 'none' });
-
-	$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-	$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-	$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
-
-	$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-	$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
-
-	$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-	$('#textoServicios' + '.' + language).css({ 'display': 'none' });
-
-
-	// Ejecutar la función inmediatamente cuando se cargue la página
-
-	checkMediaQuery(); // Comprobar al cargar la página
-
-	valida;
+	validaMediaQuery();
 
 	// Escuchar el redimensionamiento de la ventana y ejecutar la función
 	$(window).on('resize', function () {
 		$('#imgCentral_').css({ 'display': 'none' });
+		validaM();
 		checkMediaQuery(); // Comprobar al redimensionar la ventana
+
 	});
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	animacionEterna = true;
+	efectoEterno(); // Inicia la animación
+
+	$('.textoSomos' + '.' + language).css({ 'display': 'block' });
+
+	$('.textoEquipo' + '.' + language).css("display", "block") // Asegura que sea un bloque
+		.hide() // Oculta nuevamente para iniciar el fadeIn
+		.fadeIn(2000);
+	$('.textoTrabajamos' + '.' + language).css({ 'display': 'block' });
+
+	$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+	$('.textoNorte' + '.' + language).css({ 'display': 'none' });
+
+	$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+	$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+
+	$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
+
+	$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+	$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
+
+	$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+	$('.textoServicios' + '.' + language).css({ 'display': 'none' });
 
 
 	$('li .fa-circle').on('click', function () {
@@ -49,33 +60,39 @@ $(document).ready(function () {
 		$('#imgEquipo1').stop(true, true);
 		$('#imgEquipo2').stop(true, true);
 
-		$('#textoSomos' + '.' + language).stop(true, true);
+		$('.textoSomos' + '.' + language).stop(true, true);
 
-		$('#textoEquipo' + '.' + language).stop(true, true);
+		$('.textoEquipo' + '.' + language).stop(true, true);
 
-		$('#textoTrabajamos' + '.' + language).stop(true, true);
+		$('.textoTrabajamos' + '.' + language).stop(true, true);
 
-		$('#textoInnova' + '.' + language).stop(true, true);
-		$('#textoNorte' + '.' + language).stop(true, true);
+		$('.textoInnova' + '.' + language).stop(true, true);
+		$('.textoNorte' + '.' + language).stop(true, true);
 
-		$('#textoDiseña' + '.' + language).stop(true, true);
-		$('#textoSitio' + '.' + language).stop(true, true);
-		$('#textoAdaptado' + '.' + language).stop(true, true);
+		$('.textoDiseña' + '.' + language).stop(true, true);
+		$('.textoSitio' + '.' + language).stop(true, true);
+		
+		$('.textoAdaptado' + '.' + language).stop(true, true);
 
-		$('#textoSoluciones' + '.' + language).stop(true, true);
-		$('#textoNecesidades' + '.' + language).stop(true, true);
+		$('.textoSoluciones' + '.' + language).stop(true, true);
+		$('.textoNecesidades' + '.' + language).stop(true, true);
 
-		$('#textoOfrecemos' + '.' + language).stop(true, true);
-		$('#textoServicios' + '.' + language).stop(true, true);
+		$('.textoOfrecemos' + '.' + language).stop(true, true);
+		$('.textoServicios' + '.' + language).stop(true, true);
 
 
 	});
 
-	
+
 
 	$('.spa').on('click', function () {
 
-		console.log("Español");
+
+		$('#spanish .listMenu').css('display', 'block');
+		$('#spanish .listMenu').css('display', 'flex');
+		$('#spanish-sticky .listMenu').css('display', 'block');
+		$('#spanish-sticky .listMenu').css('display', 'Flex');
+
 		$('.spanish').css('display', 'block');
 		$('.english').css('display', 'none');
 		$('#spanish').css('display', 'block');
@@ -86,16 +103,17 @@ $(document).ready(function () {
 		$('.textos-eng').css('display', 'none');
 		$('.spa').css('color', 'blue');
 		$('.eng').css('color', '#595959');
-		langSpaEng="langSpanish";
+		langSpaEng = "langSpanish";
 		language = "textos-span";
 		stickyM = "spanish-sticky";
 		mainMenu = "spanish";
 
 		if ($(window).scrollTop() > 1) {
 
+			$('#' + mainMenu).hide();
 			$('#english-sticky').css('display', 'none');
 			$('#' + stickyM).css('display', 'block');
-			
+			$('#spanish-sticky .listMenu').css('background', 'white');
 
 		}
 
@@ -104,10 +122,14 @@ $(document).ready(function () {
 
 	});
 
-	
+
 	$('.eng').on('click', function () {
 
-		console.log("Inglés");
+
+		$('#english .listMenu').css('display', 'block');
+		$('#english .listMenu').css('display', 'flex');
+		$('#english-sticky .listMenu').css('display', 'block');
+		$('#english-sticky .listMenu').css('display', 'Flex');
 
 		$('.spanish').css('display', 'none');
 		$('.english').css('display', 'block');
@@ -119,17 +141,18 @@ $(document).ready(function () {
 		$('.textos-span').css('display', 'none');
 		$('.eng').css('color', 'blue');
 		$('.spa').css('color', '#595959');
-		langSpaEng="langEnglish";
+		langSpaEng = "langEnglish";
 		language = "textos-eng";
 		stickyM = "english-sticky";
 		mainMenu = "english";
 
-			
+
 		if ($(window).scrollTop() > 1) {
 
+			$('#' + mainMenu).hide();
 			$('#' + stickyM).css('display', 'block');
 			$('#spanish-sticky').css('display', 'none');
-					
+			$('#english-sticky .listMenu').css('background', 'white');
 
 		}
 
@@ -137,133 +160,157 @@ $(document).ready(function () {
 
 	});
 
-	$('.menuHamburguesa ul #eng span').on('click', function(){
+		  
+	$('.menuHamburguesa ul .engl span').on('click', function () {
+
 
 		$('.spanish').css('display', 'none');
-		$('.english').css('display', 'block');			
+		$('.english').css('display', 'block');
 		$('.textos-span').css('display', 'none');
 		$('.listMenu').css('display', 'none');
 		language = "textos-eng";
 		menuHamburguesa = "mHEnglish";
-		$('#mHSpanish').css('display','none');
-		$('#mHEnglish').css('display','block');
-		$('.menuHamburguesa ul #eng span').css('color','blue');
-		$('.menuHamburguesa ul #esp span').css('color','#676869');
-		
+		mainMenu = "english";
+		$('#mHSpanish').css('display', 'none');
+		$('#mHEnglish').css('display', 'block');	
+		$('.menuHamburguesa ul .engl span').css('color', 'blue');		
+		$('.menuHamburguesa ul .espn span').css('color', '#676869');
+		langSpaEng = "langEnglish";
+
 		nextSlider();
 	});
 
 
-	$('.menuHamburguesa ul #esp span').on('click', function(){
+	
+	$('.menuHamburguesa ul .espn span').on('click', function () {
+
 
 		$('.spanish').css('display', 'block');
-		$('.english').css('display', 'none');		
+		$('.english').css('display', 'none');
 		$('.textos-eng').css('display', 'none');
 		$('.listMenu').css('display', 'none');
 		language = "textos-span";
 		menuHamburguesa = "mHSpanish";
-		$('#mHSpanish').css('display','block');
-		$('#mHEnglish').css('display','none');
-		$('.menuHamburguesa ul #esp span').css('color','blue');
-		$('.menuHamburguesa ul #eng span').css('color','#676869');
+		mainMenu = "spanish";
+		$('#mHSpanish').css('display', 'block');
+		$('#mHEnglish').css('display', 'none');		
+		$('.menuHamburguesa ul .espn span').css('color', 'blue');		
+		$('.menuHamburguesa ul .engl span').css('color', '#676869');
 		
+		langSpaEng = "langSpanish";
+
 		nextSlider();
 	});
 
-	$('.vzla-l').on('click', function(){	
-		
-		console.log("vzla");
+	$('.vzla-l').on('click', function () {
+
+
+		$('#spanish .listMenu').css('display', 'block');
+		$('#spanish .listMenu').css('display', 'flex');
+		$('#spanish-sticky .listMenu').css('display', 'block');
+		$('#spanish-sticky .listMenu').css('display', 'Flex');
 
 		$('.spanish').css('display', 'block');
 		$('.english').css('display', 'none');
 		$('#spanish').css('display', 'block');
 		$('#english').css('display', 'none');
 		$('#langSpanish').css('display', 'block');
-		$('#langSpanish').css('position', 'fixed');		
+		$('#langSpanish').css('position', 'fixed');
 		$('#langEnglish').css('display', 'none');
 		$('.textos-eng').css('display', 'none');
 		$('.spa').css('color', 'blue');
 		$('.eng').css('color', '#595959');
-		langSpaEng="langSpanish";
+
+		langSpaEng = "langSpanish";
 		language = "textos-span";
 		stickyM = "spanish-sticky";
 		mainMenu = "spanish";
 
 		if ($(window).scrollTop() > 1) {
-
+			$('#' + mainMenu).hide();
 			$('#english-sticky').css('display', 'none');
 			$('#' + stickyM).css('display', 'block');
 
 		}
 
+
 		nextSlider();
 
 	});
 
-	$('.usa-l').on('click', function(){
+	$('.usa-l').on('click', function () {
 
-		console.log("usa");
 
-		langSpaEng="langEnglish";
+		$('#english .listMenu').css('display', 'block');
+		$('#english .listMenu').css('display', 'flex');
+		$('#english-sticky .listMenu').css('display', 'block');
+		$('#english-sticky .listMenu').css('display', 'Flex');
+
 		$('.spanish').css('display', 'none');
 		$('.english').css('display', 'block');
 		$('#spanish').css('display', 'none');
 		$('#english').css('display', 'block');
 		$('#langSpanish').css('display', 'none');
 		$('#langEnglish').css('display', 'block');
-		$('#langEnglish').css('position', 'fixed');	
+		$('#langEnglish').css('position', 'fixed');
 		$('.textos-span').css('display', 'none');
 		$('.eng').css('color', 'blue');
 		$('.spa').css('color', '#595959');
-		
+
+		langSpaEng = "langEnglish";
 		language = "textos-eng";
 		stickyM = "english-sticky";
 		mainMenu = "english";
 
-			
-		if ($(window).scrollTop() > 1) {
 
+		if ($(window).scrollTop() > 1) {
+			$('#' + mainMenu).hide();
 			$('#' + stickyM).css('display', 'block');
 			$('#spanish-sticky').css('display', 'none');
 
 		}
 
+
 		nextSlider();
 
 	});
 
-	$('#vzla').on('click', function(){
+	$('.vzla').on('click', function () {
+
 
 		$('.spanish').css('display', 'block');
-		$('.english').css('display', 'none');	
+		$('.english').css('display', 'none');
 		$('#spanish').css('display', 'block');
-		$('#english').css('display', 'none');	
+		$('#english').css('display', 'none');
 		$('.textos-eng').css('display', 'none');
-		$('.listMenu').css('display', 'none');	
+		$('.listMenu').css('display', 'none');
 		language = "textos-span";
 		menuHamburguesa = "mHSpanish";
-		$('#mHSpanish').css('display','block');
-		$('#mHEnglish').css('display','none');
-		$('.menuHamburguesa ul #esp span').css('color','blue');
-		$('.menuHamburguesa ul #eng span').css('color','#676869');
-		
+		mainMenu = "spanish";
+		$('#mHSpanish').css('display', 'block');
+		$('#mHEnglish').css('display', 'none');		
+		$('.menuHamburguesa ul .espn span').css('color', 'blue');		
+		$('.menuHamburguesa ul .engl span').css('color', '#676869');
+
 		nextSlider();
 
 	})
 
-	$('#usa').on('click', function(){
+	$('.usa').on('click', function () {
 
 		$('.spanish').css('display', 'none');
-		$('.english').css('display', 'block');	
+		$('.english').css('display', 'block');
 		$('.textos-span').css('display', 'none');
 		$('.listMenu').css('display', 'none');
 		language = "textos-eng";
 		menuHamburguesa = "mHEnglish";
-		$('#mHSpanish').css('display','none');
-		$('#mHEnglish').css('display','block');
-		$('.menuHamburguesa ul #eng span').css('color','blue');
-		$('.menuHamburguesa ul #esp span').css('color','#676869');
-		
+		mainMenu = "english";
+		$('#mHSpanish').css('display', 'none');
+		$('#mHEnglish').css('display', 'block');		
+		$('.menuHamburguesa ul .engl span').css('color', 'blue');	
+		$('.menuHamburguesa ul .espn span').css('color', '#676869');
+
+
 		nextSlider();
 
 	})
@@ -274,9 +321,10 @@ $(document).ready(function () {
 		if (window.matchMedia('(max-width: 740px) and (orientation: portrait)').matches) {
 
 
-			$('#'+langSpaEng).css('display', 'none');
+			$('#' + langSpaEng).css('display', 'none');
 			$('.stickyMenu' + '#' + stickyM).css('display', 'none');
-			$('#' + mainMenu).css('display', 'none');
+			$('#english').css('display', 'none');
+			$('#spanish').css('display', 'none');
 			$('#cintillo_').css('display', 'none');
 			$('#logo_').css('display', 'none');
 
@@ -288,9 +336,8 @@ $(document).ready(function () {
 		} else {
 
 
-			//console.log('La pantalla no cumple con la media query.');
 
-			$('#'+langSpaEng).css('display', 'block');
+			$('#' + langSpaEng).css('display', 'block');
 
 			valida = false;
 
@@ -306,70 +353,136 @@ $(document).ready(function () {
 
 			$(window).on('scroll', function () {
 
-				if ($(window).scrollTop() > 1) {
-
-					console.log("pasa por aqui:::"+langSpaEng);
-
-					$('.stickyMenu' + '#' + stickyM).addClass('menu-fixed');
-					$('.stickyMenu' + '#english-sticky').addClass('menu-fixed');					
-					$('#'+langSpaEng).css("position", "fixed");
-					
-				
-
-					if (!valida) {
-
-						
-						$('.stickyMenu' + '#' + stickyM).show();
-
-						$('#' + mainMenu).hide();
-
-						$('#' + stickyM + ' ul').css({ 'background': 'white' });
-
-						$('#' + stickyM + ' ul').css({ 'border-bottom': '1px solid #D1D1D1' });
-
-						$('#english-sticky  ul').css({ 'background': 'white' });
-
-						$('#english-sticky  ul').css({ 'border-bottom': '1px solid #D1D1D1' });
-
-						$('#cintillo_').addClass('logo-fixed');
-
-						$('#cintillo_').show()
-
-						$('#logo_').addClass('logo-fixed');
-
-						$('#logo_').show()
-
-						cambiarImagenHover('img/linea_gris.png');
-
-					}
-
-
-
-				} else {
-
-
-					$('.stickyMenu' + '#' + stickyM).addClass('menu-fixed');
-
-					if (!valida) {
-
-						$('.stickyMenu' + '#' + stickyM).hide();
-
-						$('#' + mainMenu).show();
-
-
-					}
-
-					cambiarImagenHover('img/linea_blanca.png');
-
-
-				}
-
-
+				validaMediaQuery();
 
 			});
+
+
 		}
 	}
 
+
+	function validaMediaQuery() {
+
+
+		if ($(window).scrollTop() > 1) {
+
+
+			$('.stickyMenu' + '#' + stickyM).addClass('menu-fixed');
+			$('.stickyMenu' + '#english-sticky').addClass('menu-fixed');
+			$('#' + langSpaEng).css("position", "fixed");
+
+
+
+			if (!valida) {
+
+
+				$('.stickyMenu' + '#' + stickyM).show();
+
+				$('#' + mainMenu).hide();
+
+				$('#' + stickyM + ' ul').css({ 'background': 'white' });
+
+				$('#' + stickyM + ' ul').css({ 'border-bottom': '1px solid #D1D1D1' });
+
+				$('#english-sticky  ul').css({ 'background': 'white' });
+
+				$('#english-sticky  ul').css({ 'border-bottom': '1px solid #D1D1D1' });
+
+				$('#cintillo_').addClass('logo-fixed');
+
+				$('#cintillo_').show()
+
+				$('#logo_').addClass('logo-fixed');
+
+				$('#logo_').show()
+
+				cambiarImagenHover('img/linea_gris.png');
+
+			}
+
+
+
+		} else {
+
+
+			$('.stickyMenu' + '#' + stickyM).addClass('menu-fixed');
+
+
+			if (!valida) {
+
+				$('.stickyMenu' + '#' + stickyM).hide();
+
+				$('#' + mainMenu).show();
+
+
+			}
+
+			cambiarImagenHover('img/linea_blanca.png');
+
+
+		}
+
+
+
+	}
+
+	function validaM() {
+
+
+
+		if (menuHamburguesa == "mHSpanish") {
+
+			$('.spa').css('color', 'blue');
+			$('.eng').css('color', '#676869');
+
+
+		} else {
+
+
+			$('.spa').css('color', '#676869');
+			$('.eng').css('color', 'blue');
+
+
+		}
+
+
+
+		if (langSpaEng == "langSpanish") {
+
+
+			$('.menuHamburguesa ul .espn span').css('color', 'blue');			
+			$('.menuHamburguesa ul .engl span').css('color', '#676869');
+			stickyM = "spanish-sticky";
+			mainMenu = "spanish";
+			menuHamburguesa = "mHSpanish";			
+			$('.mainMenu').css('display', 'block');
+			$('#spanish .listMenu').css('display', 'block');
+			$('#english .listMenu').css('display', 'none');
+			$('#spanish .listMenu').css('display', 'flex');
+			$('#spanish-sticky .listMenu').css('display', 'block');
+			$('#spanish-sticky .listMenu').css('display', 'Flex');
+
+
+
+		} else {
+
+
+			$('.menuHamburguesa ul .engl span').css('color', 'blue');			
+			$('.menuHamburguesa ul .espn span').css('color', '#676869');
+			stickyM = "english-sticky";
+			mainMenu = "english";
+			menuHamburguesa = "mHEnglish";			
+			$('.mainMenu').css('display', 'block');
+			$('#english .listMenu').css('display', 'block');
+			$('#spanish .listMenu').css('display', 'none');
+			$('#english .listMenu').css('display', 'flex');
+			$('#english-sticky .listMenu').css('display', 'block');
+			$('#english-sticky .listMenu').css('display', 'flex');
+
+
+		}
+	}
 
 	function cambiarImagenHover(imagenUrl) {
 
@@ -397,11 +510,6 @@ $(document).ready(function () {
 			const targetId = this.getAttribute('href');
 			const newUrl = this.dataset.url;
 
-			// Hacer scroll a la sección correspondiente
-			//document.querySelector(targetId).scrollIntoView({
-			//behavior: 'smooth'
-			//});
-
 			const targetSection = document.querySelector(targetId);
 
 			// Obtener las coordenadas de la sección
@@ -420,14 +528,8 @@ $(document).ready(function () {
 	var imgItems = $('.slider li').length; // Numero de Slides
 	var imgPos = 1;
 
-	// Agregando paginacion --
-	/*for(i = 1; i <= imgItems; i++){
-		$('.pagination').append('<li><span class="fa fa-circle"></span></li>');
-	} */
-	//------------------------
+	imgEquipo1.classList.add('animacion');
 
-	/*$('#imgEquipo1').fadeIn(3000);//Realiza el efecto fundirse en la imgen Equipo1, la primera vez*/
-	$('#imgEquipo1').animate({ 'opacity': '1' }, 1000);
 	$('.slider li').hide(); // Ocultamos todos los slides
 	$('.slider li:first').show(); // Mostramos el primer slide	
 	$('.pagination li:first').css({ 'color': '#0048FF' }); // Damos estilos al primer item de la paginacion
@@ -435,8 +537,6 @@ $(document).ready(function () {
 	// Ejecutamos todas las funciones
 
 	$('.pagination li').click(pagination);
-	/*$('.right span').click(nextSlider);*/
-	/*$('.left span').click(prevSlider);*/
 
 
 	myTimer = setInterval(nextSlider, 5000);
@@ -451,13 +551,10 @@ $(document).ready(function () {
 
 		myTimer = setInterval(nextSlider, 5000);
 
-		//console.log('Entra por el pagination');
-
 		var paginationPos = $(this).index() + 1; // Posicion de la paginacion seleccionada
 
 
-		$('.slider li').hide(); // Ocultamos todos los slides
-		//$('.slider li:nth-child('+ paginationPos +')').fadeIn(); // Mostramos el Slide seleccionado	
+		$('.slider li').hide(); // Ocultamos todos los slides			
 		$('.slider li:nth-child(' + paginationPos + ')').show();
 		// Dandole estilos a la paginacion seleccionada
 		$('.pagination li').css({ 'color': '#FFFFFF' });
@@ -466,92 +563,34 @@ $(document).ready(function () {
 		imgPos = paginationPos;
 
 
-		//if (imgPos != 1) {
-
-		//$('#imgEquipo1').css('opacity', '0');
-
-		/*$('#imgEquipo1').hide();*/
-
-
-		//} else {
-
-
-		//$('#imgEquipo1').animate({ 'opacity': '1' }, 1000);
-
-
-		/*$('#imgEquipo1').fadeIn(2500);*/
-		//}
-
-
-		//if (imgPos != 2) {
-
-		/*$('#imgEquipo2').hide();	*/
-		//$('#imgEquipo2').css('opacity', '0');
-
-
-		//} else {
-
-		/*$('#imgEquipo2').css('opacity', '1');*/
-
-
-		/*$('#imgEquipo2').show();*/
-
-		/*$('#imgEquipo2').css("opacity", 0.2).effect("blind",{direction:"right",mode:"show"},2000, function(){*/
-
-		/*$('#imgEquipo2').css("opacity", 0.2).effect("blind",{direction:"left"},2000, function(){
-
-			$('#imgEquipo2').fadeTo(200,0.50);
-			$('#imgEquipo2').fadeTo(200,0.60);
-			$('#imgEquipo2').fadeTo(200,1);
-
-		  });	*/
-
-		/*$('#imgEquipo2')
-			.css({
-				opacity: 0,
-				position: 'absolute',
-				right: '600px'
-			})
-			.animate({
-				opacity: 1,
-				right: '0px' // posición final en su lugar original
-			}, 1000); 
-
-
-		$('.pagination li').css({ 'z-index': 100 });*/
-
-
-
-		//}
-
 		if (imgPos == 1) {
 
-			$('#imgEquipo1').animate({ 'opacity': '1' }, 1000);
-
+			$('#imgEquipo1').removeClass('hide').addClass('animacion');
 			$('#imgEquipo2').css('opacity', '0');
 
-			$('#textoSomos' + '.' + language).css({ 'display': 'block' });
-			$('#textoEquipo' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoSomos' + '.' + language).css({ 'display': 'block' });
+			$('.textoEquipo' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(2000);
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'block' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'block' });
 
-			$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-			$('#textoNorte' + '.' + language).css({ 'display': 'none' });
+			$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+			$('.textoNorte' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-			$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
+			$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+			$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-			$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
+			$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+			$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-			$('#textoServicios' + '.' + language).css({ 'display': 'none' });
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+			$('.textoServicios' + '.' + language).css({ 'display': 'none' });
 
 		} else if (imgPos == 2) {
 
-			$('#imgEquipo1').css('opacity', '0');
+			$('#imgEquipo1').removeClass('animacion').addClass('hide');
 
 			$('#imgEquipo2')
 				.css({
@@ -568,22 +607,22 @@ $(document).ready(function () {
 			$('.pagination li').css({ 'z-index': 100 });
 
 
-			$('#textoSomos' + '.' + language).css({ 'display': 'none' });
-			$('#textoEquipo' + '.' + language).css({ 'display': 'none' });
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'none' });
+			$('.textoSomos' + '.' + language).css({ 'display': 'none' });
+			$('.textoEquipo' + '.' + language).css({ 'display': 'none' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-			$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
+			$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+			$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-			$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
+			$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+			$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-			$('#textoServicios' + '.' + language).css({ 'display': 'none' });
-
-			$('#textoInnova' + '.' + language).css({ 'display': 'block' });
-			$('#textoNorte' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+			$('.textoServicios' + '.' + language).css({ 'display': 'none' });
+			$('.textoInnova' + '.' + language).css({ 'display': 'block' });
+			$('.textoNorte' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(1000);
 
@@ -592,80 +631,83 @@ $(document).ready(function () {
 
 		} else if (imgPos == 3) {
 
-			$('#textoSitio' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoSitio' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(1000);
 
-			$('#imgEquipo1').css('opacity', '0');
+			$('#imgEquipo1').removeClass('animacion').addClass('hide');
 			$('#imgEquipo2').css('opacity', '0');
 
-			$('#textoSomos' + '.' + language).css({ 'display': 'none' });
-			$('#textoEquipo' + '.' + language).css({ 'display': 'none' });
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'none' });
+			$('.textoSomos' + '.' + language).css({ 'display': 'none' });
+			$('.textoEquipo' + '.' + language).css({ 'display': 'none' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-			$('#textoNorte' + '.' + language).css({ 'display': 'none' });
+			$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+			$('.textoNorte' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-			$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
+			$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+			$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-			$('#textoServicios' + '.' + language).css({ 'display': 'none' });
-			$('#textoDiseña' + '.' + language).css({ 'display': 'block' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'block' });
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+			$('.textoServicios' + '.' + language).css({ 'display': 'none' });
+			$('.textoDiseña' + '.' + language).css({ 'display': 'block' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'block' });
 
 
 
 		} else if (imgPos == 4) {
 
-			$('#imgEquipo1').css('opacity', '0');
+			$('#imgEquipo1').removeClass('animacion').addClass('hide');
 			$('#imgEquipo2').css('opacity', '0');
 
-			$('#textoSomos' + '.' + language).css({ 'display': 'none' });
-			$('#textoEquipo' + '.' + language).css({ 'display': 'none' });
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'none' });
+			$('.textoSomos' + '.' + language).css({ 'display': 'none' });
+			$('.textoEquipo' + '.' + language).css({ 'display': 'none' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-			$('#textoNorte' + '.' + language).css({ 'display': 'none' });
+			$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+			$('.textoNorte' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-			$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
+			$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+			$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-			$('#textoServicios' + '.' + language).css({ 'display': 'none' });
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+			$('.textoServicios' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoSoluciones' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoSoluciones' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(500);
 
-			$('#textoNecesidades' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoNecesidades' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(1000);
 
 		} else if (imgPos == 5) {
 
-			$('#imgEquipo1').css('opacity', '0');
+			$('#imgEquipo1').removeClass('animacion').addClass('hide');
 			$('#imgEquipo2').css('opacity', '0');
 
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'block' });
-			$('#textoServicios' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'block' });
+			$('.textoServicios' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(1000);
 
-			$('#textoSomos' + '.' + language).css({ 'display': 'none' });
-			$('#textoEquipo' + '.' + language).css({ 'display': 'none' });
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'none' });
+			$('.textoSomos' + '.' + language).css({ 'display': 'none' });
+			$('.textoEquipo' + '.' + language).css({ 'display': 'none' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-			$('#textoNorte' + '.' + language).css({ 'display': 'none' });
+			$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+			$('.textoNorte' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-			$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
+			$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+			$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-			$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
+			$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+			$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
 
 
 		}
@@ -678,24 +720,26 @@ $(document).ready(function () {
 
 		$('#imgEquipo1').stop(true, true);
 		$('#imgEquipo2').stop(true, true);
-		$('#textoSomos' + '.' + language).stop(true, true);
+		$('.textoSomos' + '.' + language).stop(true, true);
 
-		$('#textoEquipo' + '.' + language).stop(true, true);
+		$('.textoEquipo' + '.' + language).stop(true, true);
 
-		$('#textoTrabajamos' + '.' + language).stop(true, true);
+		$('.textoTrabajamos' + '.' + language).stop(true, true);
 
-		$('#textoInnova' + '.' + language).stop(true, true);
-		$('#textoNorte' + '.' + language).stop(true, true);
+		$('.textoInnova' + '.' + language).stop(true, true);
+		$('.textoNorte' + '.' + language).stop(true, true);
 
-		$('#textoDiseña' + '.' + language).stop(true, true);
-		$('#textoSitio' + '.' + language).stop(true, true);
-		$('#textoAdaptado' + '.' + language).stop(true, true);
+		$('.textoDiseña' + '.' + language).stop(true, true);
+		$('.textoSitio' + '.' + language).stop(true, true);
+		
+		$('.textoAdaptado' + '.' + language).stop(true, true);
 
-		$('#textoSoluciones' + '.' + language).stop(true, true);
-		$('#textoNecesidades' + '.' + language).stop(true, true);
+		$('.textoSoluciones' + '.' + language).stop(true, true);
+		$('.textoNecesidades' + '.' + language).stop(true, true);
 
-		$('#textoOfrecemos' + '.' + language).stop(true, true);
-		$('#textoServicios' + '.' + language).stop(true, true);
+		$('.textoOfrecemos' + '.' + language).stop(true, true);
+		$('.textoServicios' + '.' + language).stop(true, true);
+
 
 		clearInterval(myTimer);
 		myTimer = setInterval(nextSlider, 5000);
@@ -707,40 +751,47 @@ $(document).ready(function () {
 		$('.pagination li').css({ 'color': '#FFFFFF' });
 		$('.pagination li:nth-child(' + imgPos + ')').css({ 'color': '#0048FF' });
 
-		$('.slider li').hide(); // Ocultamos todos los slides
-		//$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
+		$('.slider li').hide(); // Ocultamos todos los slides		
 		$('.slider li:nth-child(' + imgPos + ')').show();
 
-		if (imgPos != 1) {
 
-			/*$('#imgEquipo1').hide();*/
-			$('#imgEquipo1').css('opacity', '0');
+		$('.pagination li').css({ 'z-index': 100 });
 
 
-		} else {
 
-			/*$('#imgEquipo1').fadeIn(2500);*/
-			$('#imgEquipo1').animate({ 'opacity': '1' }, 1000);
-		}
 
-		if (imgPos != 2) {
+		if (imgPos == 1) {
 
-			/*$('#imgEquipo2').hide();*/
+
 			$('#imgEquipo2').css('opacity', '0');
+			$('#imgEquipo1').removeClass('hide').addClass('animacion');
+
+			$('.textoSomos' + '.' + language).css({ 'display': 'block' });
+
+			$('.textoEquipo' + '.' + language).css("display", "block") // Asegura que sea un bloque
+				.hide() // Oculta nuevamente para iniciar el fadeIn
+				.fadeIn(2000);
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'block' });
+
+			$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+			$('.textoNorte' + '.' + language).css({ 'display': 'none' });
+
+			$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+			$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
+
+			$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+			$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
+
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+			$('.textoServicios' + '.' + language).css({ 'display': 'none' });
+
+		} else if (imgPos == 2) {
 
 
-		} else {
 
-
-			/*$('#imgEquipo2').show();*/
-
-			/*$('#imgEquipo2').css("opacity", 0.2).effect("blind",{direction:"right",mode:"show"},2000, function(){	
-				
-				$('#imgEquipo2').fadeTo(200,0.50);
-				$('#imgEquipo2').fadeTo(200,0.60);
-				$('#imgEquipo2').fadeTo(200,1);
-
-			  });*/
+			$('#imgEquipo1').removeClass('animacion').addClass('hide');
 
 			$('#imgEquipo2')
 				.css({
@@ -753,69 +804,25 @@ $(document).ready(function () {
 					right: '0px' // posición final en su lugar original
 				}, 2000);
 
-			/*$('#imgEquipo2')
-			.css({
-				opacity: 0,           // Inicia con opacidad en 0
-				width: '0',           // Ancho inicial en 0 para el efecto de brochazo
-				overflow: 'hidden',   // Oculta el contenido que desborda mientras se expande
-				whiteSpace: 'nowrap'  // Evita que el contenido se divida en múltiples líneas
-			})
-			.animate({
-				width: '100%',       // Expande el ancho al 100% del contenedor
-				opacity: 1           // Aumenta la opacidad a 1
-			}, 2000);   */
 
+			$('.textoSomos' + '.' + language).css({ 'display': 'none' });
+			$('.textoEquipo' + '.' + language).css({ 'display': 'none' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'none' });
 
+			$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+			$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
 
+			$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+			$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
 
-			$('.pagination li').css({ 'z-index': 100 });
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+			$('.textoServicios' + '.' + language).css({ 'display': 'none' });
 
-		}
+			$('.textoInnova' + '.' + language).css({ 'display': 'block' });
 
-
-		if (imgPos == 1) {
-
-
-			$('#textoSomos' + '.' + language).css({ 'display': 'block' });
-
-			$('#textoEquipo' + '.' + language).css("display", "block") // Asegura que sea un bloque
-				.hide() // Oculta nuevamente para iniciar el fadeIn
-				.fadeIn(2000);
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'block' });
-
-			$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-			$('#textoNorte' + '.' + language).css({ 'display': 'none' });
-
-			$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-			$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
-
-			$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-			$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
-
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-			$('#textoServicios' + '.' + language).css({ 'display': 'none' });
-
-		} else if (imgPos == 2) {
-
-
-			$('#textoSomos' + '.' + language).css({ 'display': 'none' });
-			$('#textoEquipo' + '.' + language).css({ 'display': 'none' });
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'none' });
-
-			$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-			$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
-
-			$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-			$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
-
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-			$('#textoServicios' + '.' + language).css({ 'display': 'none' });
-
-			$('#textoInnova' + '.' + language).css({ 'display': 'block' });
-
-			$('#textoNorte' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoNorte' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(1000);
 
@@ -824,74 +831,87 @@ $(document).ready(function () {
 
 		} else if (imgPos == 3) {
 
-			$('#textoSitio' + '.' + language).css("display", "block") // Asegura que sea un bloque
+
+			$('#imgEquipo1').removeClass('animacion').addClass('hide');
+			$('#imgEquipo2').css('opacity', '0');
+
+			$('.textoSitio' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(1000);
 
-			$('#textoSomos' + '.' + language).css({ 'display': 'none' });
-			$('#textoEquipo' + '.' + language).css({ 'display': 'none' });
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'none' });
+			$('.textoSomos' + '.' + language).css({ 'display': 'none' });
+			$('.textoEquipo' + '.' + language).css({ 'display': 'none' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-			$('#textoNorte' + '.' + language).css({ 'display': 'none' });
+			$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+			$('.textoNorte' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-			$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
+			$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+			$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-			$('#textoServicios' + '.' + language).css({ 'display': 'none' });
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+			$('.textoServicios' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoDiseña' + '.' + language).css({ 'display': 'block' });
-
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'block' });
+			$('.textoDiseña' + '.' + language).css({ 'display': 'block' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'block' });
 
 
 
 		} else if (imgPos == 4) {
 
-			$('#textoSomos' + '.' + language).css({ 'display': 'none' });
-			$('#textoEquipo' + '.' + language).css({ 'display': 'none' });
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'none' });
+			$('#imgEquipo1').removeClass('animacion').addClass('hide');
 
-			$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-			$('#textoNorte' + '.' + language).css({ 'display': 'none' });
+			$('#imgEquipo2').css('opacity', '0');
 
-			$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-			$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
+			$('.textoSomos' + '.' + language).css({ 'display': 'none' });
+			$('.textoEquipo' + '.' + language).css({ 'display': 'none' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'none' });
-			$('#textoServicios' + '.' + language).css({ 'display': 'none' });
+			$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+			$('.textoNorte' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoSoluciones' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+			$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
+
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'none' });
+			$('.textoServicios' + '.' + language).css({ 'display': 'none' });
+
+			$('.textoSoluciones' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(500);
 
-			$('#textoNecesidades' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoNecesidades' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(1000);
 
 		} else if (imgPos == 5) {
 
-			$('#textoOfrecemos' + '.' + language).css({ 'display': 'block' });
+			$('#imgEquipo1').removeClass('animacion').addClass('hide');
+			$('#imgEquipo2').css('opacity', '0');
 
-			$('#textoServicios' + '.' + language).css("display", "block") // Asegura que sea un bloque
+			$('.textoOfrecemos' + '.' + language).css({ 'display': 'block' });
+
+			$('.textoServicios' + '.' + language).css("display", "block") // Asegura que sea un bloque
 				.hide() // Oculta nuevamente para iniciar el fadeIn
 				.fadeIn(1000);
 
-			$('#textoSomos' + '.' + language).css({ 'display': 'none' });
-			$('#textoEquipo' + '.' + language).css({ 'display': 'none' });
-			$('#textoTrabajamos' + '.' + language).css({ 'display': 'none' });
+			$('.textoSomos' + '.' + language).css({ 'display': 'none' });
+			$('.textoEquipo' + '.' + language).css({ 'display': 'none' });
+			$('.textoTrabajamos' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoInnova' + '.' + language).css({ 'display': 'none' });
-			$('#textoNorte' + '.' + language).css({ 'display': 'none' });
+			$('.textoInnova' + '.' + language).css({ 'display': 'none' });
+			$('.textoNorte' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoDiseña' + '.' + language).css({ 'display': 'none' });
-			$('#textoSitio' + '.' + language).css({ 'display': 'none' });
-			$('#textoAdaptado' + '.' + language).css({ 'display': 'none' });
+			$('.textoDiseña' + '.' + language).css({ 'display': 'none' });
+			$('.textoSitio' + '.' + language).css({ 'display': 'none' });
+			
+			$('.textoAdaptado' + '.' + language).css({ 'display': 'none' });
 
-			$('#textoSoluciones' + '.' + language).css({ 'display': 'none' });
-			$('#textoNecesidades' + '.' + language).css({ 'display': 'none' });
+			$('.textoSoluciones' + '.' + language).css({ 'display': 'none' });
+			$('.textoNecesidades' + '.' + language).css({ 'display': 'none' });
 
 
 		}
@@ -899,7 +919,7 @@ $(document).ready(function () {
 	}
 
 
-	$('#cerrar span').on('click', function () {
+	$('.cerrar span').on('click', function () {
 
 		$('.menuHamburguesa').css('display', 'none');
 		$('body').css('overflow-y', 'scroll');
@@ -909,7 +929,7 @@ $(document).ready(function () {
 
 	$('#barras').on('click', function () {
 
-		$('#'+menuHamburguesa).css('display', 'block');
+		$('#' + menuHamburguesa).css('display', 'block');
 		$('body').css('overflow', 'hidden');
 
 
@@ -929,6 +949,7 @@ $(document).ready(function () {
 
 
 		if (window.matchMedia('(min-width: 100px) and (orientation: landscape)').matches) {
+
 
 			$('.menuHamburguesa').css('display', 'none');
 			$('#barras').css('display', 'none');
